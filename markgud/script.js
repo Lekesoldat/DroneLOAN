@@ -5,7 +5,7 @@ import routes from './routes.js';
 Rocket.render(
   document.getElementById('navigation'),
   Turbo.renderRoutes(routes)
-)
+);
 
 Rocket.render(
   document.getElementById('content'),
@@ -14,4 +14,4 @@ Rocket.render(
     null,
     'Lorem ipsum'
   )
-)
+);

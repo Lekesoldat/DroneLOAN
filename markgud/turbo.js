@@ -8,7 +8,7 @@ function renderLink(route) {
       innerText: route.title,
       onclick: e => e.preventDefault()
     }
-  )
+  );
 }
 
 function renderListItem(render) {
