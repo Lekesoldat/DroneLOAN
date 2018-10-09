@@ -2,7 +2,7 @@
 .DS_Store
 
 # Code
-.vscode
+.vscode/
 
 # Dependencies
 node_modules/
