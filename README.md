@@ -6,6 +6,6 @@ Will you write JavaScript code?
 - Make sure to do the following in the root folder of the project. -> DroneLOAN/
 
 ```bash
-    $ brew install node
-    $ npm install
+$ brew install node
+$ npm install
 ```
