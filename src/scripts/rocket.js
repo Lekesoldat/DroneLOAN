@@ -29,6 +29,15 @@ createElement(
 <a href="www.google.com" target="_blank"><p>Google.com</p></a>
 */
 
+
+/**
+ * Create HTML-element. 
+ * @param {string} tagName the type of the HTML element to be created.
+ * @param {Object} attributes the attributes passed to the HTML element to be created.
+ * @param {any[]} children the children of the HTML element to be created.
+ * 
+ * @returns The created HTML-element.
+ */
 export function createElement(tagName, attributes, children) {
   const element = document.createElement(tagName);
 
@@ -43,15 +52,19 @@ export function createElement(tagName, attributes, children) {
       if (child instanceof HTMLElement) {
         element.appendChild(child);
       } else {
-        element.innerText = child;
+        element.innerHTML = child;
       }
     }
   }
-
   return element;
 }
 
-// Appends the element to the end of root (container)
+
+/**
+ * Appends the element to the end of root (container).
+ * @param {HTMLElement} root 
+ * @param {HTMLElement} element 
+ */
 export const render = (root, element) => {
   root.appendChild(element);
 };

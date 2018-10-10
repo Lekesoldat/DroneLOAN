@@ -40,9 +40,10 @@ function renderList(routes) {
   );
 }
 
-/*
-Takes in routes array.
-*/
+/**
+ * 
+ * @param {any[]} routes the array with paths to the different files.
+ */
 export function renderRoutes(routes) {
   return renderList(routes);
 }
