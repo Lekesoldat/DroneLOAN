@@ -1,8 +1,8 @@
 /*
- FILE NAME: scripts/turbo.js
+ FILE NAME: scripts/routes.js
  WRITTEN BY: Magnus L. Holtet
  WHEN: October 2018
- PURPOSE: Specifies routes to be used by Turbo.
+ PURPOSE: Specifies routes to be used by Orbit.
  */
 
 import * as Rocket from './rocket.js';
