@@ -1,10 +1,73 @@
 /*
-  FILE NAME: 
-  WRITTEN BY: 
+  FILE NAME: './styles/style.css
+  WRITTEN BY: Magnus, ?
   WHEN: 
   PURPOSE: 
 */
+/* - - - - - - - - - - - - - - - - - - SELF-MADE GRID SYSTEM - - - - - - - - - - - - - - - - - - */
+
+/* 16.67% */
+.col-2 {
+  width: calc((2/12)*100%);
+  float: left;
+}
+
+/* 25% */
+.col-3 {
+  width: calc((3/12)*100%);
+  float: left;
+}
+
+/* 33.33% */
+.col-4 {
+  width: calc((4/12)*100%);
+  float: left;
+}
+
+/* 50% */
+.col-6 {
+  width: calc((6/12)*100%);
+  float: left;
+}
+
+/* 66.67% */
+.col-8 {
+  width: calc((8/12)*100%);
+  float: left;
+}
+
+/* 75% */
+.col-9 {
+  width: calc((9/12)*100%);
+  float: left;
+}
+/* 100% */
+.col-12 {
+  width: calc((12/12)*100%);
+  float: left;
+}
+
+.row {
+  width: 100%;
+  margin: 10px 0;
+  float: left;
+}
+
+/* Debugging*/
+.row > div {
+  background-color: #f09f9c;
+}
+
+.row p {
+  text-align: center;
+}
+
 /* - - - - - - - - - - - - - - - - - - CONTENT STYLING - - - - - - - - - - - - - - - - - - */
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -22,6 +85,10 @@ body {
 }
 
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
+nav {
+  height: 55px;
+}
+
 nav, footer {
   width: 100%;
   background-color: rgba(31, 29, 28, 0.84);
@@ -45,3 +112,4 @@ nav > ul > li > a, footer > ul > li {
 footer {
   height: 48px;
 }
+
