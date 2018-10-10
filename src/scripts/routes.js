@@ -10,7 +10,7 @@ import * as Rocket from './rocket.js';
 // Array with paths to the different pages in the nav bar.
 export default [
   {
-    path: '/index.html',
+    path: './index.html',
     title: Rocket.createElement(
       'img', 
       {
