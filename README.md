@@ -8,4 +8,5 @@ Will you write JavaScript code?
 ```bash
 $ brew install node
 $ npm install
+$ npm run serve
 ```
