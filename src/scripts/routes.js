@@ -14,7 +14,7 @@ export default [
     title: Rocket.createElement(
       'img', 
       {
-        src: '../img/droneIcon.png',
+        src: './img/droneIcon.png',
         alt: 'Drone Icon.',
         width: 20,
         heigth: 20
@@ -23,19 +23,19 @@ export default [
     )
   },
   {
-    path: '/drones.html',
+    path: './drones.html',
     title: 'OUR DRONES'
   },
   {
-    path: '/videos.html',
+    path: './videos.html',
     title: 'VIDEO GALLERY'
   },
   {
-    path: '/contact.html',
+    path: './contact.html',
     title: 'CONTACT'
   },
   {
-    path: '/about.html',
+    path: './about.html',
     title: 'ABOUT US'
   }
 ];
