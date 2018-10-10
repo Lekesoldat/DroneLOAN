@@ -4,7 +4,7 @@
   "description": "IT2805 - Web Technologies project.",
   "main": "index.js",
   "scripts": {
-    "serve": "serve"
+    "serve": "serve src"
   },
   "repository": {
     "type": "git",

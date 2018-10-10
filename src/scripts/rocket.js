@@ -2,7 +2,7 @@
  FILE NAME: scripts/rocket.js
  WRITTEN BY: Magnus L. Holtet
  WHEN: October 2018
- PURPOSE: Rocket: A Library for simplifying creation of HTML DOM-elements. 
+ PURPOSE: Rocket: A self-made library for simplifying creation of HTML DOM-elements. 
  */
 
 /* 
@@ -40,7 +40,11 @@ export function createElement(tagName, attributes, children) {
 
     // Iterate children and append to element
     for (const child of children) {
-      element.appendChild(child);
+      if (child instanceof HTMLElement) {
+        element.appendChild(child);
+      } else {
+        element.innerText = child;
+      }
     }
   }
 
@@ -51,17 +55,3 @@ export function createElement(tagName, attributes, children) {
 export const render = (root, element) => {
   root.appendChild(element);
 };
-
-// Test
-render(
-  document.getElementById('navigation'),
-  createElement(
-    'ol',
-    null,
-    [createElement(
-      'li',
-      {innerText: 'Hei'},
-      null
-    )]
-  )
-);
