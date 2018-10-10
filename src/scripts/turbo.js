@@ -6,7 +6,6 @@
  */
 
 import * as Rocket from './rocket.js';
-import routes from './routes.js';
 
 // Creates a clickable element, specifies where it leads and its content (children)
 function renderLink(route) {
