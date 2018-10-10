@@ -17,7 +17,9 @@ const fields = [
 // Create the footer.
 export default Rocket.createElement(
   'ul',
-  null,
+  {
+    className: 'container'
+  },
   fields.map(field => Rocket.createElement(
     'li', 
     null, 
