@@ -35,7 +35,9 @@ function renderListItem(route) {
 function renderList(routes) {
   return Rocket.createElement(
     'ul',
-    null,
+    {
+      className: 'container'
+    },
     routes.map(route => renderListItem(route))
   );
 }
