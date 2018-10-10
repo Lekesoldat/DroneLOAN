@@ -2,7 +2,7 @@
  FILE NAME: scripts/routes.js
  WRITTEN BY: Magnus L. Holtet
  WHEN: October 2018
- PURPOSE: Specifies routes to be used by Orbit.
+ PURPOSE: ES6 module that specifies routes to be used by Orbit.
  */
 
 import * as Rocket from './rocket.js';
