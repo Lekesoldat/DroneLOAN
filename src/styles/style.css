@@ -4,44 +4,47 @@
   WHEN: 
   PURPOSE: Styling for the whole page.
 */
-/* - - - - - - - - - - - - - - - - - - SELF-MADE GRID SYSTEM - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - SELF-MADE GRID SYSTEM: Thrust Grid - - - - - - - - - - - - - - - - - - */
 
-/* 16.67% */
+/* På en rad skal summen av boksene alltid være lik 12! */
+
+/* 16.67% - 6 bokser i bredden*/
 .col-2 {
   width: calc((2/12)*100%);
   float: left;
 }
 
-/* 25% */
+/* 25% - 4 bokser i bredden */
 .col-3 {
   width: calc((3/12)*100%);
   float: left;
 }
 
-/* 33.33% */
+/* 33.33% - 3 bokser i bredden*/
 .col-4 {
   width: calc((4/12)*100%);
   float: left;
 }
 
-/* 50% */
+/* 50% - 2 bokser i bredden */
 .col-6 {
   width: calc((6/12)*100%);
   float: left;
 }
 
-/* 66.67% */
+/* 66.67% - Opptar ca. 67% av bredden, må kombineres med andre bokser.*/
 .col-8 {
   width: calc((8/12)*100%);
   float: left;
 }
 
-/* 75% */
+/* 75% - Opptar 75% av bredden, må kombineres med andre bokser.*/
 .col-9 {
   width: calc((9/12)*100%);
   float: left;
 }
-/* 100% */
+
+/* 100% - Dekker hele siden.*/
 .col-12 {
   width: calc((12/12)*100%);
   float: left;
