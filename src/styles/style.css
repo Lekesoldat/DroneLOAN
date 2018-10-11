@@ -76,6 +76,7 @@ body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
+  background-color: #f2f2f2;
 }
 
 .container {
@@ -86,6 +87,71 @@ body {
 #content {
   min-height: calc(100vh - 55px - 48px);
 }
+
+/* Properties specifically for white boxes on ourdrones.html */
+
+#DJI {
+  font-weight: bold;
+}
+
+
+.whitebox {
+  font-family: "Trebuchet MS";
+  background-color: white;
+  max-width: 44%;
+  max-height: 44%;
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 55px;
+  overflow: hidden;
+
+}
+
+.bigwhitebox {
+  background-color: white;
+  font-family: "Trebuchet MS";
+  max-width: 88%;
+  max-height: 50%;
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  overflow: hidden;
+}
+
+
+#whitebox2 {
+position: absolute;
+left: 45%;
+top: 55px;
+}
+
+.whitebox > img {
+  max-width: 90%;
+  max-height: 90%;
+  position: relative;
+  left: 100px;
+}
+
+#whitebox1 > img {
+  right: 50px;
+}
+
+#whitebox2 > img {
+  position: relative;
+  right: 500px;
+}
+
+.bigwhitebox > img {
+  max-width: 50%;
+  max-height: 50%;
+  position: relative;
+  bottom: 100px;
+  left: 650px;
+}
+
 
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
 nav {
