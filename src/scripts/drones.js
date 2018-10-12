@@ -10,22 +10,23 @@ const drones = [
   {
     id: whitebox1,
     images: ['./img/DRONENAVN.jpg', './img/DRONENAVN.jpg', './img/DRONENAVN.jpg'], 
-    name: '',
-    description: '',
+    name: 'DJI Spark',
+    description: 'Very.',
     specs: ['Spec one', 'Spec two', 'Spec three']
   },
   {
     id: whitebox2,
     images: ['./img/DRONENAVN.jpg', './img/DRONENAVN.jpg', './img/DRONENAVN.jpg'],
-    name: '',
-    description: '',
+    name: 'DJI Mavic Air',
+    description: 'Interesting.',
     specs: ['Spec one', 'Spec two', 'Spec three']
   },
   {
     id: whitebox3,
     images: ['./img/DRONENAVN.jpg', './img/DRONENAVN.jpg', './img/DRONENAVN.jpg'],
-    name: '',
-    description: '',
+    name: 'Parrot Bepop 2',
+    description: 'Description.',
     specs: ['Spec one', 'Spec two', 'Spec three']
   }
 ];
+
