@@ -20,10 +20,12 @@
 
   <section id="content" class="container">
 
-    <!-- Header message  -->
+   
     <div class="row">
       <div class="col-12">
-        <p id="contactMessage">
+
+        <!-- Header message  -->
+        <p id="headerMessage">
           Got any complaints, praises, business inquiries? 
           Just fill out the form below, 
           and we wil reply before you can shout droneLOAN!
@@ -31,10 +33,10 @@
       </div>
     </div>
 
-    <!-- Contact form  -->
     <div class="row">
       <div class="col-6">
        
+        <!-- Contact form  -->
         <form action="" id="contactForm">          
           <label>
             <input class="inputField" type="text" name="name" placeholder="First name">
@@ -49,7 +51,7 @@
           <br>
 
           <label>
-            <input class="inputField" type="text" name="message" placeholder="Your inquiry">
+            <textarea class="inputField" name="message" placeholder="Your inquiry"></textarea>
           </label>
 
           <br>
@@ -58,21 +60,52 @@
 
         </form>
       </div>
-
+    
+      <!-- Empty collumn -->
       <div class="col-1">
-        <p>titeii</p>
-
+        <p>Empty box</p>
       </div>
 
+      <!-- Contact information -->
       <div class="col-5">
-        <p>Sjubø</p>
+        <div id="contactInformationBox">
+
+          <h4>Contact us</h4>
+          <p>Phone - 00 47 98 899 724</p>
+          <p>Email -  inquiries@droneloan.com</p>
+          
+        </div>
+
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+
+          <script>
+          function myMap() {
+          var mapProp= {
+              center:new google.maps.LatLng(51.508742,-0.120850),
+              zoom:5,
+          };
+          var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+          }
+          </script>
+
+          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+          </div>
+        </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p id="headerMessage">
+          Our number one priority is our customers. Not satisfied? Get one full day drone rental at no cost. 
+        </p>
       </div>
-
     </div>
-  </section>
 
+
+  </section>
+  
   <footer id="footer"></footer>
   <script type="module" src="scripts/index.js"></script>
-</body>
 
+  </body>
 </html>

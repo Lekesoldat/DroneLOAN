@@ -91,10 +91,6 @@
   background-color: #f09f9c;
 }
 
-.row p {
-  text-align: center;
-}
-
 /* - - - - - - - - - - - - - - - - - - CONTENT STYLING - - - - - - - - - - - - - - - - - - */
 * {
   margin-block-start: 0;
@@ -160,5 +156,18 @@ footer {
 
 /* - - - - - - - - - - - - - - - - - - CONTACT US - - - - - - - - - - - - - - - - - - */
 #headerMessage {
-  text-align: left;
+  text-align: center;
 }
+
+#contactInformationBox {
+    /* margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%; */
+
+    border: 1px solid black; 
+}
+
+#contactInformationBox > h4, #contactInformationBox p {
+  text-align: center;
+} 
