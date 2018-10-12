@@ -1,6 +1,6 @@
 <!--
-  FILE NAME: 
-  WRITTEN BY: 
+  FILE NAME: contact.html
+  WRITTEN BY: Andreas Amundsen
   WHEN: 
   PURPOSE: 
 -->
@@ -51,7 +51,7 @@
           <br>
 
           <label>
-            <textarea class="inputField" name="message" placeholder="Your inquiry" required></textarea>
+            <textarea id="contactInquiry" class="inputField" name="message" placeholder="Your inquiry" required></textarea>
           </label>
 
           <br>
@@ -80,15 +80,21 @@
 
           <script>
           function myMap() {
-          var mapProp= {
-              center:new google.maps.LatLng(51.508742,-0.120850),
-              zoom:5,
-          };
-          var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+            storeLatLng = {lat: 63.417831662, lng: 10.401831726}
+
+            var mapProp = {
+                center:new google.maps.LatLng(63.417831662, 10.401831726),
+                zoom:16,
+            };
+
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            
           }
+
           </script>
 
-          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUD161uyW5j432MBN_AN-MTGHSz50xl30&callback=myMap"></script>
 
           </div>
         </div>
