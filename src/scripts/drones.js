@@ -8,21 +8,21 @@
 // Array with 
 const drones = [
   {
-    id: whitebox1,
+    id: 0,
     images: ['./img/DRONENAVN.jpg', './img/DRONENAVN.jpg', './img/DRONENAVN.jpg'], 
     name: 'DJI Spark',
     description: 'Very.',
     specs: ['Spec one', 'Spec two', 'Spec three']
   },
   {
-    id: whitebox2,
+    id: 1,
     images: ['./img/DRONENAVN.jpg', './img/DRONENAVN.jpg', './img/DRONENAVN.jpg'],
     name: 'DJI Mavic Air',
     description: 'Interesting.',
     specs: ['Spec one', 'Spec two', 'Spec three']
   },
   {
-    id: whitebox3,
+    id: 2,
     images: ['./img/DRONENAVN.jpg', './img/DRONENAVN.jpg', './img/DRONENAVN.jpg'],
     name: 'Parrot Bepop 2',
     description: 'Description.',
