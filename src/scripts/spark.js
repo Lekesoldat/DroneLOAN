@@ -1,8 +1,8 @@
 /*
- FILE NAME: scripts/rocket.js
+ FILE NAME: scripts/spark.js
  WRITTEN BY: Magnus L. Holtet
  WHEN: October 2018
- PURPOSE: Rocket: A self-made library for simplifying creation of HTML DOM-elements. 
+ PURPOSE: ⚡️ Spark: A self-made library for simplifying creation of HTML DOM-elements. 
  */
 
 /* 
