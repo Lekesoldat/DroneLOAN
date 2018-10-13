@@ -5,7 +5,7 @@
  PURPOSE: For cleaner code.
  */
 
-import * as Rocket from './rocket.js';
+import * as Spark from './spark.js';
 
 // To be displayed in the footer
 const fields = [
@@ -15,12 +15,12 @@ const fields = [
 ];
 
 // Create the footer.
-export default Rocket.createElement(
+export default Spark.createElement(
   'ul',
   {
     className: 'container'
   },
-  fields.map(field => Rocket.createElement(
+  fields.map(field => Spark.createElement(
     'li', 
     null, 
     [field]

@@ -128,6 +128,7 @@ body {
 
 #content {
   min-height: calc(100vh - 55px - 48px);
+  overflow: hidden;
 }
 
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
@@ -144,8 +145,6 @@ nav > ul, footer > ul {
   max-width: 800px;
   list-style-type: none;
   text-align: center;
-  margin: auto;
-  overflow: hidden;
 }
 
 nav > ul > li, footer > ul > li {
