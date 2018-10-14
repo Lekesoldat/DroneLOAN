@@ -148,7 +148,7 @@ nav > ul, footer > ul {
 }
 
 nav > ul > li, footer > ul > li {
-  float: left;
+  display: inline-block;
   padding: 15px;
 }
 
