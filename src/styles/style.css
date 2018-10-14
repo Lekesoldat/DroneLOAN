@@ -8,88 +8,71 @@
 
 /* På en rad skal summen av boksene alltid være lik 12! */
 
+/* Applies to all classes starting with 'col' */
+[class^='col'] {
+  min-height: 1px;
+  float: left;
+}
+
 /* 8.33% - 12 bokser i bredden*/
 .col-1 {
   width: calc((1/12)*100%);
-  float: left;
-  min-height: 1px;
 }
 
 /* 16.67% - 6 bokser i bredden*/
 .col-2 {
   width: calc((2/12)*100%);
-  float: left;
-  min-height: 1px;
 }
 
 /* 25% - 4 bokser i bredden */
 .col-3 {
   width: calc((3/12)*100%);
-  float: left;
-  min-height: 1px;
 }
 
 /* 33.33% - 3 bokser i bredden*/
 .col-4 {
   width: calc((4/12)*100%);
-  float: left;
-  min-height: 1px;
 }
 
 /* 41.6% - Opptar ca. 42% av siden, må kombineres med andre bokser */
 .col-5 {
   width: calc((5/12)*100%);
-  float: left;
-  min-height: 1px;
+
 }
 
 /* 50% - 2 bokser i bredden */
 .col-6 {
   width: calc((6/12)*100%);
-  float: left;
-  min-height: 1px;
 }
 
 /* 58.3% - Opptar ca. 58% av bredden, må kombineres med andre bokser */
 .col-7 {
   width: calc((7/12)*100%);
-  float: left;
-  min-height: 1px;
 }
 
 /* 66.67% - Opptar ca. 67% av bredden, må kombineres med andre bokser.*/
 .col-8 {
   width: calc((8/12)*100%);
-  float: left;
-  min-height: 1px;
 }
 
 /* 75% - Opptar 75% av bredden, må kombineres med andre bokser.*/
 .col-9 {
   width: calc((9/12)*100%);
-  float: left;
-  min-height: 1px;
 }
 
 /* 83.33% - Opptar ca. 83 % av siden, må kombineres med andre bokser */
 .col-10 {
   width: calc((10/12)*100%);
-  float: left;
-  min-height: 1px;
 }
 
 /* 91.67%% - Opptar ca. 92 % av siden, må kombineres med andre bokser */
 .col-11 {
   width: calc((11/12)*100%);
-  float: left;
-  min-height: 1px;
 }
 
 /* 100% - Dekker hele siden.*/
 .col-12 {
   width: calc((12/12)*100%);
-  float: left;
-  min-height: 1px;
 }
 
 .row {
