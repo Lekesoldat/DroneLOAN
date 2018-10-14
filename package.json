@@ -4,7 +4,7 @@
   "description": "IT2805 - Web Technologies project.",
   "main": "index.js",
   "scripts": {
-    "serve": "serve src"
+    "serve": "live-server src"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,6 @@
   "homepage": "https://github.com/Lekesoldat/DroneLOAN#readme",
   "devDependencies": {
     "eslint": "^5.6.1",
-    "serve": "^10.0.2"
+    "live-server": "^1.2.0"
   }
 }
