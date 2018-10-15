@@ -2,15 +2,15 @@
  FILE NAME: scripts/navigation.js
  WRITTEN BY: Magnus L. Holtet
  WHEN: October 2018
- PURPOSE: Orbit: A self-made library extension of Rocket which handles navigation-bar rendering.
+ PURPOSE: Orbit: A self-made library extension of Spark which handles navigation-bar rendering.
  */
 
-import * as Rocket from './rocket.js';
+import * as Spark from './spark.js';
 
 const routes = [
   {
     path: './index.html',
-    title: Rocket.createElement(
+    title: Spark.createElement(
       'img',
       {
         src: './img/droneIcon.png',
@@ -42,7 +42,7 @@ const routes = [
 
 // Creates a clickable element, specifies where it leads and its content (children)
 function renderLink(route) {
-  return Rocket.createElement(
+  return Spark.createElement(
     'a',
     {
       href: route.path
@@ -55,7 +55,7 @@ function renderLink(route) {
 
 // Create a list item with an whatever as content.
 function renderListItem(route) {
-  return Rocket.createElement(
+  return Spark.createElement(
     'li',
     null,
     [
@@ -66,7 +66,7 @@ function renderListItem(route) {
 
 // Values is an array. Calls .render() on each item in values[]
 function renderList(routes) {
-  return Rocket.createElement(
+  return Spark.createElement(
     'ul',
     {
       className: 'container'
