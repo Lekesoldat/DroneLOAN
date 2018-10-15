@@ -86,7 +86,7 @@
 
 /* Debugging*/
 .row > div {
-  background-color: rgb(255, 0, 0); /*#f09f9c;*/
+  background-color: white; /*#f09f9c;*/
   overflow: hidden;
 }
 
@@ -116,6 +116,20 @@ body {
 #content {
   min-height: calc(100vh - 55px - 48px);
   overflow: hidden;
+}
+
+.ourdronesmavich1 {
+  font-size: 36px;
+  position: relative;
+  top: 150px;
+  left: 30px;
+}
+
+.ourdronesmavicp {
+  max-width: 25em;
+  position: relative;
+  top: 160px;
+  left: 30px;
 }
 
 
@@ -168,6 +182,16 @@ img {
   
   align-content: center;
   position: relative;
-  left: 100px;  
+  left: 100px;
+  overflow: hidden;
 
+}
+
+.mavicimg {
+  position: relative;
+}
+
+.whitebox {
+  height: 50%;
+  margin: 0px;
 }
