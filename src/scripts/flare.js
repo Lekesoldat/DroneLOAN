@@ -24,7 +24,7 @@ function traverse(element, callback) {
  */
 function appendChildren(parent, children) {
 
-  // If children is an Array, go through all elements and invoke appendChildre()
+  // If children is an Array, go through all elements and invoke appendChildren()
   if (children instanceof Array) {
     children.forEach(child => appendChildren(parent, child));
   

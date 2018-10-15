@@ -7,6 +7,8 @@
 
 import * as Spark from './spark.js';
 
+
+// TODO: Fix fields in footer
 // To be displayed in the footer
 const fields = [
   'Contact: contact@droneloan.com', 
