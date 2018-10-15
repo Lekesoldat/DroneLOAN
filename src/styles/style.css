@@ -93,15 +93,17 @@
 }
 
 .row {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%; 
   margin: 10px 0;
   float: left;
   min-height: 1px;
+  font-family: 'Trebuchet MS', Courier, monospace;
 }
 
 /* Debugging*/
 .row > div {
-  background-color: white; /*#f09f9c;*/
+  background-color: rgb(255, 0, 0); /*#f09f9c;*/
   overflow: hidden;
 }
 
