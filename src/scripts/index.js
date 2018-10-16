@@ -5,19 +5,19 @@
  PURPOSE: For modularity; Create navigation bar and footer. 
  */
 
-// Import Rocket along with
-import * as Rocket from './rocket.js';
+// Import Spark along with
+import * as Spark from './spark.js';
 import navigation from './navigation.js';
 import footer from './footer.js';
 
 // Render navigation bar
-Rocket.render (
+Spark.render (
   document.getElementById('navigation'),
   navigation
 );
 
 // Render footer
-Rocket.render(
+Spark.render(
   document.getElementById('footer'),
   footer
 );

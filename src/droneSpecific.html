@@ -1,8 +1,8 @@
 <!--
-  FILE NAME: 
-  WRITTEN BY: 
-  WHEN: 
-  PURPOSE: 
+  FILE NAME: ./droneSpecific.html
+  WRITTEN BY: Magnus L. Holtet
+  WHEN: October 2018
+  PURPOSE: ⚡️ Spark: A self-made library for simplifying creation of HTML DOM-elements.
 -->
 <html lang="en">
 
@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drone specific page</title>
   <link rel="stylesheet" href="./styles/style.css">
+  <script type="module" src="./scripts/drones.js"></script>
 </head>
 
 <body>
@@ -20,66 +21,83 @@
 
   <!-- Inneholder alt på siden -->
   <section class="container" id="content">
-
-    <!-- Definerer rad 1 -->
+    
+    <!-- Row with the drone title -->
     <div class="row">
-
-      <!-- Boks nummer 1 på rad 1 -->
-      <div class="col-3">
-        <p>25%</p>
-      </div>
-
-      <div class="col-3">
-        <p>25%</p>
-      </div>
-
-      <div class="col-3">
-        <p>25%</p>
-      </div>
-
-      <!-- Boks nummer 4 på rad 1 -->
-      <div class="col-3">
-        <p>25%</p>
+      <div class="col-12" id="">
+        <h1>{{ title }}</h1>
       </div>
     </div>
 
-    <!-- Definerer rad 2 -->
+    <!-- Row with the image carousel -->
     <div class="row">
-
-      <!-- Boks nummer 1 på rad 2 -->
-      <div class="col-4">
-        <p>33.3%</p>
+      <div class="col-3">
+        <!-- Empty -->
       </div>
 
-      <div class="col-4">
-        <p>33.3%</p>
+      <div class="col-6" id="carousel">
+        <ul>
+          {{ images }}
+        </ul>
       </div>
 
-      <!-- Boks nummer 3 på rad 2 -->
-      <div class="col-4">
-        <p>33.3%</p>
+      <div class="col-3">
+        <!-- Empty -->
       </div>
     </div>
 
-    <!-- Definerer rad 3 -->
+    <!-- Row with the description -->
     <div class="row">
-
-      <!-- Boks 1 på rad 3 -->
-      <div class="col-3">
-        <p>25%</p>
-      </div>
-
-      <!-- Boks 2 (den store) på rad 3 -->
-      <div class="col-6">
-        <p>50%</p>
-      </div>
-
-      <!-- Boks 3 på rad 3 -->
-      <div class="col-3">
-        <p>25%</p>
+      <div class="col-12" id="">
+        <h1>About</h1>
+        <p>{{ about }}</p>
       </div>
     </div>
+
+    <!-- Row with the specs -->
+    <div class="row">
+      <div class="col-12" id="">
+        <h1>Specs</h1>
+        
+        <ul>
+          {{ specs }}          
+        </ul>
+        
+      </div>
+    </div>
+
+    <!-- Row with form -->
+    <div class="row">
+      <div class="col-12">
+        <form>
+          <label>Your name:
+            <input type="text" placeholder="Ola Nordmann">
+          </label>
+
+          <label>Your mail:
+            <input type="email" placeholder="example@domain.com">
+          </label>
+          
+          <br />
+
+          <label>Address: <br />
+            <input type="text" placeholder="Street name"> <br />
+            <input type="text" placeholder="City"> <br />
+            <input type="text" placeholder="Country">
+          </label>
+
+          <label>Field of application: <br />
+            <textarea placeholder="Tissefant"></textarea>
+          </label>
+
+          <input type="submit" value="Request rental">
+        </form>
+      </div>
+    </div>
+
+
   </section>
+
 
   <footer id="footer"></footer>
   <script type="module" src="scripts/index.js"></script>
