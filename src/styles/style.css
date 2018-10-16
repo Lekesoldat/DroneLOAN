@@ -84,7 +84,7 @@
 
 /* Debugging*/
 .row > div {
-  background-color: #f09f9c;
+  background-color: #ffffff;
 }
 
 .row p {
@@ -98,6 +98,7 @@
 }
 
 body {
+  background-color: #F2F2F2;
   padding: 0;
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
@@ -112,6 +113,10 @@ body {
 #content {
   min-height: calc(100vh - 55px - 48px);
   overflow: hidden;
+}
+
+.row > .col-12 > h1 {
+  text-align: center;
 }
 
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
