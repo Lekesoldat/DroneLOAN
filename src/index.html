@@ -1,8 +1,8 @@
 <!--
-  FILE NAME: 
-  WRITTEN BY: 
-  WHEN: 
-  PURPOSE: 
+  FILE NAME: index.html
+  WRITTEN BY: Carl Smestad
+  WHEN: 16.10.2018
+  PURPOSE: Landing page
 -->
 <html lang="en">
   <head>
@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DroneLOAN</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/droneIcon.png">
   </head>
   <body>
     <header>
@@ -51,94 +52,97 @@
     <div class="row">
       <div class="col-12">
         <h1>Top renter's</h1>
+        <br>
       </div>
-
+      
       <div class="col-4">
-        <p>Image 1</p>
+          <a href="https://www.dji.com/phantom-4">
+            <div class="wrapper">
+            <p>
+              <img src="img/dji phantom 4.png" alt="Top renter 1" class="image" id="phantom4">
+              <div class="middle">
+                <div class="text">Learn More</div>
+              </div>
+            </p>
+          </div>
+        </a>
+        </div>
+
+    <div class="col-4">
+      <a href="https://www.dji.com/phantom-4">
+        <div class="wrapper">
+        <p>
+          <img src="img/Inspire2.png" alt="Top renter 1" class="image" id="inspire2">
+          <div class="middle">
+            <div class="text">Learn More</div>
+          </div>
+        </p>
+      </div>
+    </a>
+    </div>
+
+    <div class="col-4">
+        <a href="https://www.dji.com/phantom-4">
+          <div class="wrapper">
+          <p>
+            <img src="img/Mavic2.png" alt="Top renter 1" class="image">
+            <div class="middle">
+              <div class="text">Learn More</div>
+            </div>
+          </p>
+        </div>
+      </a>
       </div>
 
-      <div class="col-4">
-        <p>Image 2</p>
+    <div class="col-4">
+      <p><b>DJI PHANTOM 4 Advanced</b></p>
+      <ul id="specifications">
+        <li>Superior image stabilization</li>
+        <li>Excellent range</li>
+        <li>Long Battery life</li>
+        <li>4k 60FPS</li>
+      </ul>
+    </div>
+
+    
+    <div class="col-4">
+        <p><b>DJI Inspire 2</b></p>
+        <ul id="specifications">
+          <li>Optical Zoom Camera</li>
+          <li>6K CinemaDNG /RAW</li>
+          <li>Dual Battery system</li>
+          <li>Maximum Speed: 94kph</li>
+        </ul>
       </div>
 
-      <div class="col-4">
-        <p>Image 3</p>
+      
+    <div class="col-4">
+        <p><b>DJI Mavic 2 Pro</b></p>
+        <ul id="specifications">
+          <li>Optical Zoom Camera</li>
+          <li>4x Lossless FHD Video</li>
+          <li>48MP Super Resolution</li>
+          <li>31min Flight Time</li>
+        </ul>
       </div>
-
     <!-- Heldekkende video og beskrivelse under-->
 
       <div class="col-12">
-        <p>Video</p>
+        <br><br><br>
+        <p>
+          <video muted autoplay controls>
+          <source src="img/Chernobyl.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </p>
+        <br>
       </div>
       <div class="col-12">
-        <p>Footage from Tomorrowland 2018 with one of our DJI drones.</p>
+        <p><i>Footage from Chernobyl with one of our DJI drones.</i></p>
       </div>
     </div>
     
   </section>
-    <!-- Inneholder alt på siden -->
-    <section class="container" id="content">
-      
-      <!-- Definerer rad 1 -->
-      <div class="row">
-
-        <!-- Boks nummer 1 på rad 1 -->
-        <div class="col-3">
-          <p>25%</p>
-        </div>
-
-        <div class="col-3">
-          <p>25%</p>
-        </div>
-
-        <div class="col-3">
-          <p>25%</p>
-        </div>
-
-        <!-- Boks nummer 4 på rad 1 -->
-        <div class="col-3">
-          <p>25%</p>
-        </div>
-      </div>
-
-      <!-- Definerer rad 2 -->
-      <div class="row">
-
-        <!-- Boks nummer 1 på rad 2 -->
-        <div class="col-4">
-          <p>33.3%</p>
-        </div>
-
-        <div class="col-4">
-          <p>33.3%</p>
-        </div>
-
-        <!-- Boks nummer 3 på rad 2 -->
-        <div class="col-4">
-          <p>33.3%</p>
-        </div>
-      </div>
-
-      <!-- Definerer rad 3 -->
-      <div class="row">
-
-        <!-- Boks 1 på rad 3 -->
-        <div class="col-3">
-          <p>25%</p>
-        </div>
-
-        <!-- Boks 2 (den store) på rad 3 -->
-        <div class="col-6">
-          <p>50%</p>
-        </div>
-
-        <!-- Boks 3 på rad 3 -->
-        <div class="col-3">
-          <p>25%</p>
-        </div>
-      </div>
-
-    </section>
 
     <footer id="footer"></footer>
     <script type="module" src="scripts/index.js"></script>
