@@ -192,6 +192,12 @@ input[type="submit"] {
   width: 100%;
   height: 25px;
 }
+
+#googleMap {
+  width: 100%;
+  height: 200px;
+}
+
 /* - - - - - - - - - - - - - - - - - - IMAGE STYLING - - - - - - - - - - - - - - - - - - */
 img {
   max-width: 100%;
