@@ -158,6 +158,7 @@ footer {
 /* - - - - - - - - - - - - - - - - - - CONTACT US - - - - - - - - - - - - - - - - - - */
 #headerMessage {
   text-align: center;
+  font-style: italic; 
 }
 
 /* remove margin-top from the first inputfield, so it alligns with "Contact information" box */
@@ -174,6 +175,10 @@ footer {
     border: 1px solid black; 
 }
 
+#contactInputField {
+  margin-top: 43px;
+}
+
 #contactInformationBox > h4, #contactInformationBox p {
   text-align: center;
 } 
@@ -183,7 +188,9 @@ footer {
   /* Prevent textarea from resizing left or right */
   max-width: 100%;
   min-width: 100%;
-  padding-top: 6px;
+  padding-top: 10px;
+
+  margin-top: 43px;
 }
 
 /* TODO center allign button */
