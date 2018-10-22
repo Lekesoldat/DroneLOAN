@@ -37,7 +37,6 @@
 /* 41.6% - Opptar ca. 42% av siden, må kombineres med andre bokser */
 .col-5 {
   width: calc((5/12)*100%);
-
 }
 
 /* 50% - 2 bokser i bredden */
@@ -296,10 +295,40 @@ img {
   max-height: 100%;
 }
 
-#carousel {
-  align-content: center;
+/* - - - - - - - - - - - - - - - - - - IMAGE CAROUSEL - - - - - - - - - - - - - - - - - - */
+/* Used */
+.carousel {
+  position: relative;
 }
 
+/* Make image fit small box */
+.mini-image img {
+  width: 100%;
+}
+
+/* Start as hidden */
+.mySlides {
+  display: none;
+}
+
+/* Style cursor on hover*/
+.cursor {
+  cursor: pointer;
+}
+
+/* Fade images currently not active */
+.blur {
+  opacity: 0.6;
+}
+
+/* If image is active or mini image is hovered */
+.active,
+.blur:hover {
+  opacity: 1;
+}
+
+
+/* FLYTT DETTE OPP */
 .mavic img {
   height: 100%;
   position: relative;

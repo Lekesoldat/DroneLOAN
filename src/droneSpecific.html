@@ -2,16 +2,14 @@
   FILE NAME: ./droneSpecific.html
   WRITTEN BY: Magnus L. Holtet
   WHEN: October 2018
-  PURPOSE: ⚡️ Spark: A self-made library for simplifying creation of HTML DOM-elements.
+  PURPOSE: A template page for in-depth information about a drone. The content will be rendered by the JavaScript.
 -->
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drone specific page</title>
   <link rel="stylesheet" href="./styles/style.css">
-  <script type="module" src="./scripts/drones.js"></script>
 </head>
 
 <body>
@@ -19,7 +17,6 @@
     <nav id="navigation"></nav>
   </header>
 
-  <!-- Inneholder alt på siden -->
   <section class="container" id="content">
     
     <!-- Row with the drone title -->
@@ -29,21 +26,14 @@
       </div>
     </div>
 
-    <!-- Row with the image carousel -->
-    <div class="row">
-      <div class="col-3">
-        <!-- Empty -->
-      </div>
-
-      <div class="col-6" id="carousel">
-        <ul>
-          {{ images }}
-        </ul>
-      </div>
-
-      <div class="col-3">
-        <!-- Empty -->
-      </div>
+    <!-- Big image -->
+    <div id="bigImage">
+      {{ bigImage }}
+    </div>
+    
+    <!-- Thumbnails -->
+    <div id=miniImage">
+      {{ miniImage }}
     </div>
 
     <!-- Row with the description -->
@@ -56,7 +46,7 @@
 
     <!-- Row with the specs -->
     <div class="row">
-      <div class="col-12" id="">
+      <div class="col-12" id="test">
         <h1>Specs</h1>
         
         <ul>
@@ -67,9 +57,11 @@
     </div>
   </section>
 
-
   <footer id="footer"></footer>
-  <script type="module" src="scripts/index.js"></script>
+  
+  <!-- Scripts  -->
+  <script type="module" src="./scripts/index.js"></script>
+  <script type="module" src="./scripts/drones.js"></script>
 </body>
 
 </html>
