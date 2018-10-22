@@ -14,7 +14,7 @@ function traverse(element, callback) {
   for (const child of element.children) {
     traverse(child, callback);
   }
-
+  
   callback(element);
 }
 
