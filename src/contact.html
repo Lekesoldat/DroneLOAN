@@ -1,6 +1,6 @@
 <!--
-  FILE NAME: 
-  WRITTEN BY: 
+  FILE NAME: contact.html
+  WRITTEN BY: Andreas Amundsen
   WHEN: 
   PURPOSE: 
 -->
@@ -9,7 +9,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SETT TITTEL HER</title>
+  <title>Contact us</title>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -19,40 +19,86 @@
   </header>
 
   <section id="content" class="container">
+
+   
     <div class="row">
+      <div class="col-12">
 
+        <!-- Header message  -->
+        <p id="headerMessage">
+          Got any complaints, praises, business inquiries? 
+          Just fill out the form below, 
+          and we wil reply before you can shout droneLOAN!
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
       <div class="col-6">
-
+       
         <!-- Contact form  -->
-        <form action="">          
+        <form action="" id="contactForm">          
           <label>
-            <input class="inputField" type="text" name="name" value="Your name">
+            <input class="inputField" id="contactFirstInputField" type="text" name="name" placeholder="First name" required>
           </label>
 
           <br>
           
           <label>
-            <input class="inputField" type="text" name="email" value="E-mail">
+            <input class="inputField" id="contactInputField" type="email" name="email" placeholder="E-mail" required>
           </label>
 
           <br>
 
           <label>
-            <input class="inputField" type="text" name="message" value="Your inquiry">
+            <textarea class="inputField" id="contactInquiry"  name="message" placeholder="Your inquiry" required></textarea>
           </label>
 
           <br>
 
-          <input type="submit" value="Submit">
+          
+          <input type="submit" value="Submit" id="contactSubmitButton">
 
         </form>
+      </div>
+    
+      <!-- Empty collumn -->
+      <div class="col-1">
+        
+      </div>
 
+      <!-- Contact information -->
+      <div class="col-5">
+        <div id="contactInformationBox">
+
+          <h4>Contact us</h4>
+          <p>Phone - 00 47 98 899 724</p>
+          <p>Email -  inquiries@droneloan.com</p>
+          
+        </div>
+
+        <!-- Div for Google Maps API -->
+        <div id="googleMap">
+          
+
+        </div>
+
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUD161uyW5j432MBN_AN-MTGHSz50xl30&callback=myMap"></script> -->
+      </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p id="headerMessage">
+          Our number one priority is our customers. Not satisfied? Get one full day drone rental at no cost. 
+        </p>
       </div>
     </div>
+
+
   </section>
-
+  
   <footer id="footer"></footer>
-  <script type="module" src="scripts/index.js"></script>
-</body>
-
+  <!-- <script type="module" src="scripts/index.js"></script> -->
+  <script src="scripts/map.js" defer></script>
+  </body>
 </html>

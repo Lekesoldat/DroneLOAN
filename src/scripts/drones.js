@@ -35,6 +35,8 @@ const drones = [
 // Grabs query parameters
 const params = new URLSearchParams(document.location.search);
 const id = params.get('id');
+
+// Loop through the drones array and find the first element where ID matches.
 const drone = drones.find(drone => drone.id == id);
 
 // If ID is valid

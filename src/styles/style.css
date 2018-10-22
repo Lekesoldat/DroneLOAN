@@ -1,6 +1,6 @@
 /*
   FILE NAME: './styles/style.css
-  WRITTEN BY: Magnus, ?
+  WRITTEN BY: Magnus, Andreas
   WHEN: 
   PURPOSE: Styling for the whole page.
 */
@@ -86,12 +86,16 @@
 
 /* Debugging*/
 .row > div {
+<<<<<<< HEAD
   background-color: white; /*#f09f9c;*/
   overflow: hidden;
 }
 
 .row p {
   text-align: center;
+=======
+   background-color: #f09f9c;
+>>>>>>> 8dfadcf046ab18aff2eeb920bac5c6e5b2c0865d
 }
 
 /* - - - - - - - - - - - - - - - - - - CONTENT STYLING - - - - - - - - - - - - - - - - - - */
@@ -164,6 +168,71 @@ nav > ul > li > a, footer > ul > li {
 
 footer {
   height: 48px;
+}
+
+/* - - - - - - - - - - - - - - - - - - HTML FORM - - - - - - - - - - - - - - - - - - */
+.inputField {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid black;
+
+}
+
+/* 
+  CSS Lifehack
+  margin: top right bottom left
+  margin: top bottom 
+*/
+
+/* - - - - - - - - - - - - - - - - - - CONTACT US - - - - - - - - - - - - - - - - - - */
+#headerMessage {
+  text-align: center;
+  font-style: italic; 
+}
+
+/* remove margin-top from the first inputfield, so it alligns with "Contact information" box */
+#contactFirstInputField {
+  margin-top: 0px;
+}
+
+#contactInformationBox {
+    /* margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%; */
+
+    border: 1px solid black; 
+}
+
+#contactInputField {
+  margin-top: 43px;
+}
+
+#contactInformationBox > h4, #contactInformationBox p {
+  text-align: center;
+} 
+
+#contactInquiry {
+  height: 150px;
+  /* Prevent textarea from resizing left or right */
+  max-width: 100%;
+  min-width: 100%;
+  padding-top: 10px;
+
+  margin-top: 43px;
+}
+
+/* TODO center allign button */
+input[type="submit"] {
+  margin-top: 5%;
+  width: 100%;
+  height: 25px;
+}
+
+#googleMap {
+  width: 100%;
+  height: 200px;
 }
 
 /* - - - - - - - - - - - - - - - - - - IMAGE STYLING - - - - - - - - - - - - - - - - - - */
