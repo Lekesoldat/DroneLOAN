@@ -264,6 +264,8 @@ footer {
 
 #contactInformationBox > h4, #contactInformationBox p {
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 16px;
 } 
 
 #contactInquiry {
