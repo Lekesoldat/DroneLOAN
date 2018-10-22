@@ -24,7 +24,7 @@ const drones = [
     specs: ['Spec one', 'Spec two', 'Spec three']
   },
   {
-    id: '..',
+    id: 2,
     images: ['./img/DRONENAVN.jpg', './img/DRONENAVN.jpg', './img/DRONENAVN.jpg'],
     name: 'Parrot Bepop 2',
     description: 'Description.',
