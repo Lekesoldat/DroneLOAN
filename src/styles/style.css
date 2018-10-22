@@ -81,21 +81,17 @@
   margin: 10px 0;
   float: left;
   min-height: 1px;
-  font-family: 'Trebuchet MS', Courier, monospace;
+  font-family: 'PingFang SC', 'Trebuchet MS', Courier, monospace;
 }
 
 /* Debugging*/
 .row > div {
-<<<<<<< HEAD
   background-color: white; /*#f09f9c;*/
   overflow: hidden;
 }
 
 .row p {
   text-align: center;
-=======
-   background-color: #f09f9c;
->>>>>>> 8dfadcf046ab18aff2eeb920bac5c6e5b2c0865d
 }
 
 /* - - - - - - - - - - - - - - - - - - CONTENT STYLING - - - - - - - - - - - - - - - - - - */
@@ -122,23 +118,81 @@ body {
   overflow: hidden;
 }
 
-.twotextperline {
-  height: 70%;
+/* - - - - - - - - - - - - - - - - - - OURDRONES.HTML BOX STYLING - - - - - - - - - - - - - - - - - - */
+
+.border {
+  max-width: 1%;
 }
 
-.twotextperline h1 {
+.singlebox {
+  height: 66%;
+  width: 49%;
+}
+
+.singlebox h1 {
   position: relative;
   top: 5px;
   left: 30px;
 }
 
-.mathiasBox h1, .mathiasBox p {
+.mavic {
+  height: 55%;
+  width: 49.5%;
+}
+
+.mavic h1 {
+  font-size: 36px;
+  position: relative;
+  left: 10%;
+  top: 40%;
+}
+
+.mavictext {
+  position: relative;
+  top: 50%;
+  left: 3%;
+  text-align: left;
+}
+
+#phantomtext {
+  max-width: 40ch;
+  line-height: 1.5em;
+  position: relative;
+  top: 2%;
+  left: 5%;
   
 }
 
-.mathiasBox {
-  height: 55%;
+#phantomlearn {
+  position: relative;
+  right: 10%;
 }
+
+#maviclearn {
+  position: relative;
+  right: 0%;
+  top: 44%;
+  
+}
+
+.phantomrentnow {
+  max-width: 20%;
+  max-height: 20%;
+  position: relative;
+  left: 30px;
+}
+
+.mavicrentnow {
+  max-width: 20%;
+  max-height: 20%;
+  position: static;
+  left: 30%;
+  top: 245px;
+}
+
+
+
+
 
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
 nav {
@@ -245,10 +299,16 @@ img {
   align-content: center;
 }
 
-.mathiasBox img {
+.mavic img {
   height: 100%;
   position: relative;
   left: 100px;
+}
+
+
+
+#phantomimg {
+  height: 67%;
 }
 
 .rentnow {
@@ -256,4 +316,10 @@ img {
   max-height: 20%;
   position: relative;
   left: 30px;
+}
+
+
+
+#phantomrent {
+  top: 30px;
 }
