@@ -37,7 +37,6 @@
 /* 41.6% - Opptar ca. 42% av siden, må kombineres med andre bokser */
 .col-5 {
   width: calc((5/12)*100%);
-
 }
 
 /* 50% - 2 bokser i bredden */
@@ -76,8 +75,7 @@
 }
 
 .row {
-  max-width: 100%;
-  max-height: 100%; 
+  width: 100%;
   margin: 10px 0;
   float: left;
   min-height: 1px;
@@ -109,7 +107,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -190,7 +188,30 @@ body {
   top: 245px;
 }
 
+.mavic img {
+  height: 100%;
+  position: relative;
+  left: 100px;
+}
 
+
+
+#phantomimg {
+  height: 67%;
+}
+
+.rentnow {
+  max-width: 20%;
+  max-height: 20%;
+  position: relative;
+  left: 30px;
+}
+
+
+
+#phantomrent {
+  top: 30px;
+}
 
 
 
@@ -265,6 +286,8 @@ footer {
 
 #contactInformationBox > h4, #contactInformationBox p {
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 16px;
 } 
 
 #contactInquiry {
@@ -295,31 +318,34 @@ img {
   max-height: 100%;
 }
 
-#carousel {
-  align-content: center;
-}
-
-.mavic img {
-  height: 100%;
+/* - - - - - - - - - - - - - - - - - - IMAGE CAROUSEL - - - - - - - - - - - - - - - - - - */
+/* Used */
+.carousel {
   position: relative;
-  left: 100px;
 }
 
-
-
-#phantomimg {
-  height: 67%;
+/* Make image fit small box */
+.mini-image img {
+  width: 100%;
 }
 
-.rentnow {
-  max-width: 20%;
-  max-height: 20%;
-  position: relative;
-  left: 30px;
+/* Start as hidden */
+.mySlides {
+  display: none;
 }
 
+/* Style cursor on hover*/
+.cursor {
+  cursor: pointer;
+}
 
+/* Fade images currently not active */
+.blur {
+  opacity: 0.6;
+}
 
-#phantomrent {
-  top: 30px;
+/* If image is active or mini image is hovered */
+.active,
+.blur:hover {
+  opacity: 1;
 }
