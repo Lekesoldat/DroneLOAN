@@ -134,7 +134,7 @@ body {
 }
 
 .mavic {
-  height: 400px;
+  height: 350px;
   width: 49.5%;
 }
 
@@ -142,14 +142,15 @@ body {
   font-size: 36px;
   position: relative;
   left: 10%;
-  top: 40%;
+  top: 30%;
 }
 
 .mavictext {
+  width: 40ch;
   position: relative;
-  top: 50%;
-  left: 3%;
-  text-align: left;
+  top: 35%;
+  left: 5%;
+  text-align: center;
 }
 
 #phantomtext {
@@ -168,8 +169,8 @@ body {
 
 #maviclearn {
   position: relative;
-  right: 0%;
-  top: 44%;
+  right: 10px;
+  top: 60px;
   
 }
 
@@ -184,8 +185,8 @@ body {
   max-width: 20%;
   max-height: 20%;
   position: static;
-  left: 30%;
-  top: 245px;
+  left: 10px;
+  
 }
 
 .mavic img {
