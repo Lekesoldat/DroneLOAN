@@ -79,7 +79,7 @@
   margin: 10px 0;
   float: left;
   min-height: 1px;
-  font-family: 'PingFang SC', 'Trebuchet MS', Courier, monospace;
+  font-family: 'Trebuchet MS', Courier, monospace;
 }
 
 /* Debugging*/
@@ -130,7 +130,7 @@ body {
 .singlebox h1 {
   position: relative;
   top: 5px;
-  left: 30px;
+  left: 20px;
 }
 
 .mavic {
@@ -146,7 +146,8 @@ body {
 }
 
 .mavictext {
-  width: 40ch;
+  line-height: 1.5em;
+  width: 45ch;
   position: relative;
   top: 35%;
   left: 5%;
@@ -154,48 +155,51 @@ body {
 }
 
 #phantomtext {
+  font-size: 14px;
   max-width: 40ch;
   line-height: 1.5em;
   position: relative;
   top: 2%;
-  left: 5%;
-  
+  left: 20px;
+
 }
 
 #phantomlearn {
+  font-size: 14px;
   position: relative;
-  right: 10%;
+  right: 25px;
+  bottom: 5px;
 }
 
 #maviclearn {
+  font-size: 14px;
   position: relative;
-  right: 10px;
-  top: 60px;
+  right: 30px;
+  top: 150px;
   
 }
 
 .phantomrentnow {
-  max-width: 20%;
-  max-height: 20%;
+  max-width: 25%;
+  max-height: 25%;
   position: relative;
-  left: 30px;
+  left: 20px;
+  top: 15px;
+}
+
+.mavicimg {
+  height: 100%;
+  position: relative;
+  left: 20px;
 }
 
 .mavicrentnow {
-  max-width: 20%;
-  max-height: 20%;
-  position: static;
-  left: 10px;
-  
-}
-
-.mavic img {
-  height: 100%;
+  max-width: 25%;
+  max-height: 25%;
   position: relative;
-  left: 100px;
+  left: 20px;
+  top: 173px;
 }
-
-
 
 #phantomimg {
   height: 67%;
@@ -208,13 +212,13 @@ body {
   left: 30px;
 }
 
-
-
-#phantomrent {
-  top: 30px;
+.mg1img {
+  overflow: hidden;
+  position: relative;
+  right: 120px;
+  max-width: 850px;
+  max-height: 400px;
 }
-
-
 
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
 nav {
@@ -318,6 +322,7 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+
 
 /* - - - - - - - - - - - - - - - - - - IMAGE CAROUSEL - - - - - - - - - - - - - - - - - - */
 /* Used */
