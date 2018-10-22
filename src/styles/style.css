@@ -79,11 +79,17 @@
   margin: 10px 0;
   float: left;
   min-height: 1px;
+  font-family: 'PingFang SC', 'Trebuchet MS', Courier, monospace;
 }
 
 /* Debugging*/
 .row > div {
-   background-color: #f09f9c;
+  background-color: white; /*#f09f9c;*/
+  overflow: hidden;
+}
+
+.row p {
+  text-align: center;
 }
 
 /* - - - - - - - - - - - - - - - - - - CONTENT STYLING - - - - - - - - - - - - - - - - - - */
@@ -97,6 +103,7 @@ body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
+  background-color: #f2f2f2;
 }
 
 .container {
@@ -108,6 +115,82 @@ body {
   min-height: calc(100vh - 55px - 48px);
   overflow: hidden;
 }
+
+/* - - - - - - - - - - - - - - - - - - OURDRONES.HTML BOX STYLING - - - - - - - - - - - - - - - - - - */
+
+.border {
+  max-width: 1%;
+}
+
+.singlebox {
+  height: 66%;
+  width: 49%;
+}
+
+.singlebox h1 {
+  position: relative;
+  top: 5px;
+  left: 30px;
+}
+
+.mavic {
+  height: 55%;
+  width: 49.5%;
+}
+
+.mavic h1 {
+  font-size: 36px;
+  position: relative;
+  left: 10%;
+  top: 40%;
+}
+
+.mavictext {
+  position: relative;
+  top: 50%;
+  left: 3%;
+  text-align: left;
+}
+
+#phantomtext {
+  max-width: 40ch;
+  line-height: 1.5em;
+  position: relative;
+  top: 2%;
+  left: 5%;
+  
+}
+
+#phantomlearn {
+  position: relative;
+  right: 10%;
+}
+
+#maviclearn {
+  position: relative;
+  right: 0%;
+  top: 44%;
+  
+}
+
+.phantomrentnow {
+  max-width: 20%;
+  max-height: 20%;
+  position: relative;
+  left: 30px;
+}
+
+.mavicrentnow {
+  max-width: 20%;
+  max-height: 20%;
+  position: static;
+  left: 30%;
+  top: 245px;
+}
+
+
+
+
 
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
 nav {
@@ -157,6 +240,7 @@ footer {
 /* - - - - - - - - - - - - - - - - - - CONTACT US - - - - - - - - - - - - - - - - - - */
 #headerMessage {
   text-align: center;
+  font-style: italic; 
 }
 
 /* remove margin-top from the first inputfield, so it alligns with "Contact information" box */
@@ -173,6 +257,10 @@ footer {
     border: 1px solid black; 
 }
 
+#contactInputField {
+  margin-top: 43px;
+}
+
 #contactInformationBox > h4, #contactInformationBox p {
   text-align: center;
 } 
@@ -182,7 +270,9 @@ footer {
   /* Prevent textarea from resizing left or right */
   max-width: 100%;
   min-width: 100%;
-  padding-top: 6px;
+  padding-top: 10px;
+
+  margin-top: 43px;
 }
 
 /* TODO center allign button */
@@ -191,8 +281,14 @@ input[type="submit"] {
   width: 100%;
   height: 25px;
 }
+
+#googleMap {
+  width: 100%;
+  height: 200px;
+}
+
 /* - - - - - - - - - - - - - - - - - - IMAGE STYLING - - - - - - - - - - - - - - - - - - */
-img {
+img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -230,3 +326,28 @@ img {
 }
 
 
+/* FLYTT DETTE OPP */
+.mavic img {
+  height: 100%;
+  position: relative;
+  left: 100px;
+}
+
+
+
+#phantomimg {
+  height: 67%;
+}
+
+.rentnow {
+  max-width: 20%;
+  max-height: 20%;
+  position: relative;
+  left: 30px;
+}
+
+
+
+#phantomrent {
+  top: 30px;
+}
