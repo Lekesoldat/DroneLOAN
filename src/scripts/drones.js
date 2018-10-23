@@ -66,7 +66,7 @@ function renderBigImageDiv(image) {
   return Spark.createElement(
     'div',
     {
-      className: 'mySlides carousel'
+      className: 'mySlides carousel fade'
     },
     [
       renderImage(image)
@@ -101,7 +101,7 @@ function renderMiniImage(image, index) {
       src: image.src,
       alt: image.alt,
       className: 'blur cursor',
-      onclick: () => currentSlide(index + 1)
+      onclick: () => currentSlide(index)
     },
     null
   );
@@ -138,12 +138,11 @@ function renderMiniSection(images) {
 }
 
 /*  - - - - - - - - - - - CAROUSEL SCRIPT - - - - - - - - - - - */
-let imageIndex = 1;
+let imageIndex = 0;
 const currentSlide = n => showSlides(imageIndex = n);
+const slides = document.getElementsByClassName('mySlides');
 
 const showSlides = n => {
-  // Grab elements from page
-  const slides = document.getElementsByClassName('mySlides');
   const miniImages = document.getElementsByClassName('blur');
 
   // Hide all slides
@@ -157,13 +156,24 @@ const showSlides = n => {
   }
 
   // Display first image and set active
-  slides[imageIndex - 1].style.display = 'block';
-  miniImages[imageIndex - 1].className += ' active';
+  slides[imageIndex].style.display = 'block';
+  miniImages[imageIndex].className += ' active';
 };
 
-// Render first image on page load
-showSlides(imageIndex);
+const carousel = () => {
+  showSlides(imageIndex);
+  imageIndex++;
 
+  if (imageIndex > slides.length - 1) {
+    imageIndex = 0;
+  }
+
+  // Switch image every 8th second
+  setTimeout(carousel, 8000);
+};
+
+// Start the carousel
+carousel();
 
 /*  - - - - - - - - - - - FORM SCRIPT - - - - - - - - - - - */
 const form = document.getElementById('requestRental');
