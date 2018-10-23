@@ -83,6 +83,7 @@
 }
 
 /* Debugging*/
+/* Denne gir meg en hvit border strek rundt divene*/
 .row > div {
   background-color: white; /*#f09f9c;*/
   overflow: hidden;
@@ -119,12 +120,12 @@ body {
 /* - - - - - - - - - - - - - - - - - - OURDRONES.HTML BOX STYLING - - - - - - - - - - - - - - - - - - */
 
 .border {
-  max-width: 1%;
+  max-width: 2%;
 }
 
 .singlebox {
   height: 400px;
-  width: 49%;
+  width: 48.5%;
 }
 
 .singlebox h1 {
