@@ -164,3 +164,12 @@ const showSlides = n => {
 // Render first image on page load
 showSlides(imageIndex);
 
+
+/*  - - - - - - - - - - - FORM SCRIPT - - - - - - - - - - - */
+const form = document.getElementById('requestRental');
+const fakeRequest = evt => {
+  alert('⚡️' + '\tRequest sent!\n' + '⏳' + '\tWe will reach back to you shortly.');
+  evt.preventDefault();
+};
+
+form.addEventListener('submit', fakeRequest, true);
