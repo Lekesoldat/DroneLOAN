@@ -47,7 +47,247 @@ export default [
     specs: ['Spec one', 'Spec two', 'Spec three']
   },
   {
-    id: '..',
+    id: '3',
+    images: [
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'First image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Second image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Third image'
+      }
+    ],
+    name: 'Parrot Bepop 2',
+    description: 'Description.',
+    specs: ['Spec one', 'Spec two', 'Spec three']
+  },
+  {
+    id: '4',
+    images: [
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'First image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Second image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Third image'
+      }
+    ],
+    name: 'Parrot Bepop 2',
+    description: 'Description.',
+    specs: ['Spec one', 'Spec two', 'Spec three']
+  },
+  {
+    id: '5',
+    images: [
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'First image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Second image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Third image'
+      }
+    ],
+    name: 'Parrot Bepop 2',
+    description: 'Description.',
+    specs: ['Spec one', 'Spec two', 'Spec three']
+  },
+  {
+    id: '6',
+    images: [
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'First image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Second image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Third image'
+      }
+    ],
+    name: 'Parrot Bepop 2',
+    description: 'Description.',
+    specs: ['Spec one', 'Spec two', 'Spec three']
+  },
+  {
+    id: '7',
+    images: [
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'First image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Second image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Third image'
+      }
+    ],
+    name: 'Parrot Bepop 2',
+    description: 'Description.',
+    specs: ['Spec one', 'Spec two', 'Spec three']
+  },
+  {
+    id: '8',
+    images: [
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'First image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Second image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Third image'
+      }
+    ],
+    name: 'Parrot Bepop 2',
+    description: 'Description.',
+    specs: ['Spec one', 'Spec two', 'Spec three']
+  },
+  {
+    id: '9',
+    images: [
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'First image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Second image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Third image'
+      }
+    ],
+    name: 'Parrot Bepop 2',
+    description: 'Description.',
+    specs: ['Spec one', 'Spec two', 'Spec three']
+  },
+  {
+    id: '10',
+    images: [
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'First image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Second image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Third image'
+      }
+    ],
+    name: 'Parrot Bepop 2',
+    description: 'Description.',
+    specs: ['Spec one', 'Spec two', 'Spec three']
+  },
+  {
+    id: '11',
+    images: [
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'First image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Second image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Third image'
+      }
+    ],
+    name: 'Parrot Bepop 2',
+    description: 'Description.',
+    specs: ['Spec one', 'Spec two', 'Spec three']
+  },
+  {
+    id: '12',
+    images: [
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'First image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Second image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Third image'
+      }
+    ],
+    name: 'Parrot Bepop 2',
+    description: 'Description.',
+    specs: ['Spec one', 'Spec two', 'Spec three']
+  },
+  {
+    id: '13',
+    images: [
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'First image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Second image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Third image'
+      }
+    ],
+    name: 'Parrot Bepop 2',
+    description: 'Description.',
+    specs: ['Spec one', 'Spec two', 'Spec three']
+  },
+  {
+    id: '14',
+    images: [
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'First image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Second image'
+      },
+      {
+        src: './img/DRONENAVN.jpg',
+        alt: 'Third image'
+      }
+    ],
+    name: 'Parrot Bepop 2',
+    description: 'Description.',
+    specs: ['Spec one', 'Spec two', 'Spec three']
+  },
+  {
+    id: '15',
     images: [
       {
         src: './img/DRONENAVN.jpg',

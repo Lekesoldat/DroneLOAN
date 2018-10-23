@@ -1,6 +1,6 @@
 /*
   FILE NAME: './styles/style.css
-  WRITTEN BY: Magnus, Andreas
+  WRITTEN BY: Magnus, Andreas, Mathias
   WHEN: 
   PURPOSE: Styling for the whole page.
 */
@@ -221,6 +221,10 @@ body {
   max-height: 400px;
 }
 
+#phantomrent {
+  top: 30px;
+}
+
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
 nav {
   height: 55px;
@@ -257,7 +261,6 @@ footer {
   padding: 12px 20px;
   margin: 8px 0;
   border: 1px solid black;
-
 }
 
 /* 
@@ -341,6 +344,7 @@ img {
   display: none;
 }
 
+
 /* Style cursor on hover*/
 .cursor {
   cursor: pointer;
@@ -355,4 +359,20 @@ img {
 .active,
 .blur:hover {
   opacity: 1;
+}
+
+/* Creates a rather smooth transformation when switching images in the carousel */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .2;
+  };
+
+  to {
+    opacity: 1;
+  };
 }
