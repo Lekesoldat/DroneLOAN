@@ -1,6 +1,6 @@
 /*
   FILE NAME: './styles/style.css
-  WRITTEN BY: Magnus, Andreas
+  WRITTEN BY: Magnus, Andreas, Mathias
   WHEN: 
   PURPOSE: Styling for the whole page.
 */
@@ -188,10 +188,6 @@ body {
   top: 245px;
 }
 
-
-
-
-
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
 nav {
   height: 55px;
@@ -228,7 +224,6 @@ footer {
   padding: 12px 20px;
   margin: 8px 0;
   border: 1px solid black;
-
 }
 
 /* 
@@ -333,8 +328,6 @@ img {
   left: 100px;
 }
 
-
-
 #phantomimg {
   height: 67%;
 }
@@ -345,8 +338,6 @@ img {
   position: relative;
   left: 30px;
 }
-
-
 
 #phantomrent {
   top: 30px;
