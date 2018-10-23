@@ -188,6 +188,27 @@ body {
   top: 245px;
 }
 
+.mavic img {
+  height: 100%;
+  position: relative;
+  left: 100px;
+}
+
+#phantomimg {
+  height: 67%;
+}
+
+.rentnow {
+  max-width: 20%;
+  max-height: 20%;
+  position: relative;
+  left: 30px;
+}
+
+#phantomrent {
+  top: 30px;
+}
+
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
 nav {
   height: 55px;
@@ -258,6 +279,8 @@ footer {
 
 #contactInformationBox > h4, #contactInformationBox p {
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 16px;
 } 
 
 #contactInquiry {
@@ -318,27 +341,4 @@ img {
 .active,
 .blur:hover {
   opacity: 1;
-}
-
-
-/* FLYTT DETTE OPP */
-.mavic img {
-  height: 100%;
-  position: relative;
-  left: 100px;
-}
-
-#phantomimg {
-  height: 67%;
-}
-
-.rentnow {
-  max-width: 20%;
-  max-height: 20%;
-  position: relative;
-  left: 30px;
-}
-
-#phantomrent {
-  top: 30px;
 }
