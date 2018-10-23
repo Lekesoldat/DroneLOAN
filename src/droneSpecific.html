@@ -4,6 +4,7 @@
   WHEN: October 2018
   PURPOSE: A template page for in-depth information about a drone. The content will be rendered by the JavaScript.
 -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,19 +13,19 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<body>
-  <header>
-    <nav id="navigation"></nav>
-  </header>
+  <body>
+    <header>
+      <nav id="navigation"></nav>
+    </header>
 
-  <section class="container" id="content">
-    
-    <!-- Row with the drone title -->
-    <div class="row">
-      <div class="col-12" id="">
-        <h1>{{ title }}</h1>
+    <section class="container" id="content">
+      
+      <!-- Row with the drone title -->
+      <div class="row">
+        <div class="col-12">
+          <h1>{{ title }}</h1>
+        </div>
       </div>
-    </div>
 
     <!-- Big image -->
     <div id="bigImage">
@@ -36,32 +37,57 @@
       {{ miniImage }}
     </div>
 
-    <!-- Row with the description -->
-    <div class="row">
-      <div class="col-12" id="">
-        <h1>About</h1>
-        <p>{{ about }}</p>
+      <!-- Row with the description -->
+      <div class="row">
+        <div class="col-12" id="">
+          <h1>About</h1>
+          <p>{{ about }}</p>
+        </div>
       </div>
-    </div>
 
-    <!-- Row with the specs -->
-    <div class="row">
-      <div class="col-12" id="test">
-        <h1>Specs</h1>
-        
-        <ul>
-          {{ specs }}          
-        </ul>
-        
+      <!-- Row with the specs -->
+      <div class="row">
+        <div class="col-12" id="test">
+          <h1>Specs</h1>
+          <ul>
+            {{ specs }}
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <footer id="footer"></footer>
-  
-  <!-- Scripts  -->
-  <script type="module" src="./scripts/index.js"></script>
-  <script type="module" src="./scripts/drones.js"></script>
-</body>
+      <!-- Row with form -->
+      <div class="row">
+        <div class="col-12">
+          
+          <form id="requestRental">
+            <label>Your full name
+              <input class="inputField" type="text" placeholder="Bob Jensen" required>
+            </label>
 
+            <label>Your email
+              <input class="inputField" type="email" placeholder="email@example.com" required>
+            </label>
+
+            <label>Address
+              <input class="inputField" type="text" placeholder="Street name" required>
+              <input class="inputField" type="text" placeholder="City" required>
+              <input class="inputField" type="text" placeholder="Zip / Postal Code" required>
+            </label>
+
+            <label>Field of application
+              <textarea class="inputField" placeholder="Write here." rows="5" required></textarea>
+            </label>
+            
+            <input type="submit" method="post" value="Request rental">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer"></footer>
+    
+    <!-- Scripts  -->
+    <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/drones.js"></script>
+  </body>
 </html>
