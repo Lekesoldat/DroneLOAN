@@ -1,12 +1,12 @@
 /*
  FILE NAME: scripts/flare.js
- WRITTEN BY: Magnus L. Holtet.
+ WRITTEN BY: Magnus.
  WHEN: October 2018
  PURPOSE: ☄️ Flare: A self-made TEMPLATE library to render a drone selcted on Our Drones-page.
 */
 
 /**
- * Depth first search. Traverse through all elements in the HTML-tree and invoke callback().
+ * Depth first search. Traverse through all elements in the HTML-tree and invoke callback() on that element.
  * @param {HTMLElement} element 
  * @param {Function} callback 
  */
@@ -14,7 +14,7 @@ function traverse(element, callback) {
   for (const child of element.children) {
     traverse(child, callback);
   }
-
+  
   callback(element);
 }
 
@@ -24,7 +24,7 @@ function traverse(element, callback) {
  */
 function appendChildren(parent, children) {
 
-  // If children is an Array, go through all elements and invoke appendChildren()
+  // For each child in the Array, call appendChildren().
   if (children instanceof Array) {
     children.forEach(child => appendChildren(parent, child));
   
@@ -40,7 +40,7 @@ function appendChildren(parent, children) {
 
 /**
  * @param {HTMLElement} root 
- * @param {Obejct} mapping 
+ * @param {Obejct} mapping works as a dictionary 
  */
 export function fill(root, mapping) {
   // Pattern for matching {( )}

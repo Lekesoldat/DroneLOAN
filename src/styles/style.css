@@ -1,6 +1,6 @@
 /*
   FILE NAME: './styles/style.css
-  WRITTEN BY: Magnus, Andreas, Øyvind
+  WRITTEN BY: Magnus, Andreas, Mathias
   WHEN: 
   PURPOSE: Styling for the whole page.
 */
@@ -37,7 +37,6 @@
 /* 41.6% - Opptar ca. 42% av siden, må kombineres med andre bokser */
 .col-5 {
   width: calc((5/12)*100%);
-
 }
 
 /* 50% - 2 bokser i bredden */
@@ -80,24 +79,28 @@
   margin: 10px 0;
   float: left;
   min-height: 1px;
+  font-family: 'PingFang SC', 'Trebuchet MS', Courier, monospace;
 }
 
 /* Debugging*/
 .row > div {
-   background-color: #f09f9c;
+  background-color: white; /*#f09f9c;*/
+  overflow: hidden;
 }
+
 
 /* - - - - - - - - - - - - - - - - - - CONTENT STYLING - - - - - - - - - - - - - - - - - - */
 * {
   margin-block-start: 0;
   margin-block-end: 0;
 }
-
 body {
+  background-color: #F2F2F2;
   padding: 0;
   margin: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 16px;
+  background-color: #f2f2f2;
 }
 
 .container {
@@ -108,6 +111,225 @@ body {
 #content {
   min-height: calc(100vh - 55px - 48px);
   overflow: hidden;
+}
+
+.row > .col-12 > h1 {
+  text-align: center;
+}
+
+
+.row > .col-12 > p > video{
+  width: 700px;
+  height: auto;
+}
+
+h1{
+  margin: .5em;
+}
+
+/* - - - - - - - - - - - - - - - - - - LANDING PAGE CONTENT STYLING - - - - - - - - - - - - - - - - - */
+
+#introduction > p, #slogan > p, #renter1 > p, #renter2 > p, #renter3 > p{
+  text-align: center;
+  margin: .5em 3em .5em 3em;
+}
+
+#inspire2{
+  margin-left: 2em;
+}
+
+#introduction > p:last-child, #slogan > p:last-child{
+  margin-bottom: 10px;
+}
+
+#specifications1 > ul, #specifications2 > ul, #specifications3 > ul{
+  margin-left: 1.5em;
+}
+
+#specifications1 > p, #specifications2 > p, #specifications3 > p{
+  margin-left: 3em;
+  font-weight: bold;
+}
+
+#specifications1 ul > li > p, #specifications2 ul > li > p, #specifications3 ul > li > p{
+  font-size: 12px;
+}
+
+#droneFootage > p{
+  margin-top: 10px;
+  text-align: center;
+}
+
+#droneFootageDescription > p{
+  text-align: center;
+  font-style: italic;
+  margin: -1em 0 1em 0;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - ABOUT US CONTENT STYLING - - - - - - - - - - - - - - - - - - - */
+
+#aboutMorten > p, #mortenDrones > p, #about > p{
+  margin: .5em 3em .5em 3em;
+  text-align: center;
+}
+
+#mortenRustad > p, #ourMission > p{
+  margin-top: 10px;
+  text-align: center;
+}
+
+#favDrones > p{
+  text-align: right;
+  margin-left: 2em;
+}
+#favDroneDescription > p{
+  margin-left: 3em;
+  text-align: left;
+}
+
+#favDroneDescription > p:last-child, #favDrones > p:last-child, #about > p:last-child{
+  margin-bottom: 10px;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - LANDINGE PAGE IMAGE STYLING - - - - - - - - - - - - - - - - -  */
+.wrapper {
+  position: relative;
+}
+
+.wrapper .image {
+opacity: 1;
+display: block;
+width: 100%;
+height: auto;
+transition: .5s ease;
+backface-visibility: hidden;
+}
+
+
+#inspire2, #phantom4, #mavic2{
+height: 150px;
+width: auto;
+}
+
+.middle {
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.wrapper:hover .image {
+opacity: 0.3;
+}
+
+.wrapper:hover .middle {
+opacity: 1;
+}
+
+.text {
+background-color: rgba(31, 29, 28, 0.84);
+color: white;
+font-size: 16px;
+padding: 16px 10px;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - OURDRONES.HTML BOX STYLING - - - - - - - - - - - - - - - - - - */
+
+.border {
+  max-width: 1%;
+}
+
+.singlebox {
+  height: 66%;
+  width: 49%;
+}
+
+.singlebox h1 {
+  position: relative;
+  top: 5px;
+  left: 30px;
+}
+
+.mavic {
+  height: 55%;
+  width: 49.5%;
+}
+
+.mavic h1 {
+  font-size: 36px;
+  position: relative;
+  left: 10%;
+  top: 40%;
+}
+
+.mavictext {
+  position: relative;
+  top: 50%;
+  left: 3%;
+  text-align: left;
+}
+
+#phantomtext {
+  max-width: 40ch;
+  line-height: 1.5em;
+  position: relative;
+  top: 2%;
+  left: 5%;
+  
+}
+
+#phantomlearn {
+  position: relative;
+  right: 10%;
+}
+
+#maviclearn {
+  position: relative;
+  right: 0%;
+  top: 44%;
+  
+}
+
+.phantomrentnow {
+  max-width: 20%;
+  max-height: 20%;
+  position: relative;
+  left: 30px;
+}
+
+.mavicrentnow {
+  max-width: 20%;
+  max-height: 20%;
+  position: static;
+  left: 30%;
+  top: 245px;
+}
+
+.mavic img {
+  height: 100%;
+  position: relative;
+  left: 100px;
+}
+
+#phantomimg {
+  height: 67%;
+}
+
+.rentnow {
+  max-width: 20%;
+  max-height: 20%;
+  position: relative;
+  left: 30px;
+}
+
+#phantomrent {
+  top: 30px;
 }
 
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
@@ -155,7 +377,6 @@ color:  rgba(31, 29, 28, 0.84);*/
   padding: 12px 20px;
   margin: 8px 0;
   border: 1px solid black;
-
 }
 
 /* 
@@ -190,6 +411,8 @@ color:  rgba(31, 29, 28, 0.84);*/
 
 #contactInformationBox > h4, #contactInformationBox p {
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 16px;
 } 
 
 #contactInquiry {
@@ -215,18 +438,58 @@ input[type="submit"] {
 }
 
 /* - - - - - - - - - - - - - - - - - - IMAGE STYLING - - - - - - - - - - - - - - - - - - */
-img {
+img {
   max-width: 100%;
   max-height: 100%;
 }
 
-#carousel {
-  align-content: center;
+/* - - - - - - - - - - - - - - - - - - IMAGE CAROUSEL - - - - - - - - - - - - - - - - - - */
+/* Used */
+.carousel {
+  position: relative;
 }
 
-#carousel > img {
-  max-width: 100%;
-  max-height: 100%;
+/* Make image fit small box */
+.mini-image img {
+  width: 100%;
+}
+
+/* Start as hidden */
+.mySlides {
+  display: none;
+}
+
+
+/* Style cursor on hover*/
+.cursor {
+  cursor: pointer;
+}
+
+/* Fade images currently not active */
+.blur {
+  opacity: 0.6;
+}
+
+/* If image is active or mini image is hovered */
+.active,
+.blur:hover {
+  opacity: 1;
+}
+
+/* Creates a rather smooth transformation when switching images in the carousel */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .2;
+  };
+
+  to {
+    opacity: 1;
+  };
 }
 
 /* - - - - - - - - - - - - - - - - - - VIDEO PAGE - - - - - - - - - - - - - - - - - - */
