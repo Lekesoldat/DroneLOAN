@@ -1,6 +1,6 @@
 /*
  FILE NAME: scripts/navigation.js
- WRITTEN BY: Magnus L. Holtet, Carl Smestad
+ WRITTEN BY: Magnus L. Holtet, Øyvind
  WHEN: October 2018
  PURPOSE: Orbit: A self-made library extension of Spark which handles navigation-bar rendering.
  */
@@ -57,7 +57,10 @@ function renderLink(route) {
 function renderListItem(route) {
   return Spark.createElement(
     'li',
-    null,
+    /* HUSK Å FJERNE DETTE */
+    {
+      className: "selectedTab"
+    },
     [
       renderLink(route)
     ]

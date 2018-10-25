@@ -28,11 +28,12 @@ function initMap() {
 
  */
 
-var map;
-var location = {lat: 63.417831662, lng: 10.401831726};
+
+
 
 function initMap(){
-  map = new google.maps.Map(document.getElementById('googleMap'), {
+  var location = {lat: 63.417831662, lng: 10.401831726};
+  var map = new google.maps.Map(document.getElementById('googleMap'), {
     center: location,
     zoom: 15,
     scrollwheel: false,
