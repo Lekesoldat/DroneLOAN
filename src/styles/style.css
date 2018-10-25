@@ -94,7 +94,7 @@
 /* Debugging*/
 /* Denne gir meg en hvit border strek rundt divene*/
 .row > div {
-  background-color: white; /*#f09f9c;*/
+  background-color: white; /*#f09f9c;*/ 
   overflow: hidden;
 }
 
@@ -391,8 +391,14 @@ footer {
 
 /* - - - - - - - - - - - - - - - - - - CONTACT US - - - - - - - - - - - - - - - - - - */
 #headerMessage {
+  margin-top: 1%;
   text-align: center;
   font-style: italic; 
+}
+
+#googleMap {
+  width: 100%;
+  margin-bottom: 40px;  
 }
 
 /* remove margin-top from the first inputfield, so it alligns with "Contact information" box */
@@ -405,12 +411,17 @@ footer {
     margin-left: 5%;
     margin-top: 5%;
     margin-bottom: 5%; */
-
+    
     border: 1px solid black; 
 }
 
 #contactInputField {
   margin-top: 43px;
+}
+
+#contactInformationBox {
+  background-color: white;
+  margin-bottom: 58px;
 }
 
 #contactInformationBox > h4, #contactInformationBox p {
@@ -419,8 +430,12 @@ footer {
   margin-bottom: 16px;
 } 
 
+#contactUsAddress {
+  text-align: center;
+}
+
 #contactInquiry {
-  height: 150px;
+  height: 200px;
   /* Prevent textarea from resizing left or right */
   max-width: 100%;
   min-width: 100%;
@@ -431,7 +446,7 @@ footer {
 
 /* TODO center allign button */
 input[type="submit"] {
-  margin-top: 5%;
+  margin-top: 7%;
   width: 100%;
   height: 25px;
 }
@@ -439,6 +454,15 @@ input[type="submit"] {
 #googleMap {
   width: 100%;
   height: 200px;
+}
+
+/* Override background-color: white; set by .row > class */
+#removeBackground {
+  background-color: transparent;
+}
+
+#contactUsMessage {
+  background-color: #F2F2F2
 }
 
 /* - - - - - - - - - - - - - - - - - - IMAGE STYLING - - - - - - - - - - - - - - - - - - */
