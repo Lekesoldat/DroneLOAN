@@ -319,7 +319,8 @@ img {
 
 /* Make image fit small box */
 .mini-image img {
-  width: 100%;
+  height: 150px;
+  width: auto;
 }
 
 /* Start as hidden */
