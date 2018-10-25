@@ -14,6 +14,11 @@
   float: left;
 }
 
+/* 24 bokser i bredden*/
+.col-05 {
+  width: calc((0.5/12)*100%);
+}
+
 /* 8.33% - 12 bokser i bredden*/
 .col-1 {
   width: calc((1/12)*100%);
@@ -37,6 +42,10 @@
 /* 41.6% - Opptar ca. 42% av siden, må kombineres med andre bokser */
 .col-5 {
   width: calc((5/12)*100%);
+}
+
+.col-575 {
+  width: calc((5.75/12)*100%);
 }
 
 /* 50% - 2 bokser i bredden */
@@ -79,10 +88,11 @@
   margin: 10px 0;
   float: left;
   min-height: 1px;
-  font-family: 'PingFang SC', 'Trebuchet MS', Courier, monospace;
+  font-family: 'Trebuchet MS', Courier, monospace;
 }
 
 /* Debugging*/
+/* Denne gir meg en hvit border strek rundt divene*/
 .row > div {
   background-color: white; /*#f09f9c;*/
   overflow: hidden;
@@ -241,95 +251,95 @@ padding: 16px 10px;
 
 /* - - - - - - - - - - - - - - - - - - OURDRONES.HTML BOX STYLING - - - - - - - - - - - - - - - - - - */
 
-.border {
-  max-width: 1%;
-}
-
-.singlebox {
-  height: 66%;
-  width: 49%;
-}
-
-.singlebox h1 {
-  position: relative;
-  top: 5px;
-  left: 30px;
+.textbox > h1, img, a, p {
+  height: 50px;
+  max-height: 400px;
 }
 
 .mavic {
-  height: 55%;
-  width: 49.5%;
+  height: 350px;
 }
 
-.mavic h1 {
+.mavic > h1 {
   font-size: 36px;
   position: relative;
   left: 10%;
-  top: 40%;
+  top: 30%;
 }
 
 .mavictext {
+  line-height: 1.5em;
+  width: 45ch;
   position: relative;
-  top: 50%;
-  left: 3%;
-  text-align: left;
+  top: 35%;
+  left: 5%;
+  text-align: center;
 }
 
-#phantomtext {
+.row:nth-child(2),.row:nth-child(6), .row:nth-child(8) {
+  margin-top: -10px;
+}
+
+/*.row:nth-child(3),.row:nth-child(4),.row:nth-child(5),.row:nth-child(7) {
+  margin-top: 20px;
+}
+
+.mavic:nth-child(1), .mavic:nth-child(2){
+  margin-top: 10px;
+}*/
+
+.col-575 > p,a {
+  color: black;
+  font-size: 15px;
   max-width: 40ch;
   line-height: 1.5em;
-  position: relative;
-  top: 2%;
-  left: 5%;
-  
 }
 
-#phantomlearn {
+.col-575 > a {
   position: relative;
-  right: 10%;
+  bottom: 20px;
+  left: 10%;
 }
 
-#maviclearn {
+.col-575 > h1, p {
   position: relative;
-  right: 0%;
-  top: 44%;
-  
+  left: 10%;
 }
 
-.phantomrentnow {
-  max-width: 20%;
-  max-height: 20%;
+.mavic > a {
+  margin: 0px;
+  color: black;
+  position: relative;
+  left: 10%;
+  top: 145px;
+}
+
+.mavic > img {
+  height: 100%;
   position: relative;
   left: 30px;
 }
 
 .mavicrentnow {
-  max-width: 20%;
-  max-height: 20%;
-  position: static;
-  left: 30%;
-  top: 245px;
-}
-
-.mavic img {
-  height: 100%;
+  max-width: 25%;
+  max-height: 25%;
   position: relative;
-  left: 100px;
-}
-
-#phantomimg {
-  height: 67%;
+  top: 185px;
 }
 
 .rentnow {
-  max-width: 20%;
-  max-height: 20%;
+  max-width: 25%;
+  max-height: 25%;
   position: relative;
   left: 30px;
+  top: 0px;
 }
 
-#phantomrent {
-  top: 30px;
+.imgbox > img {
+  width: 350px;
+  height: 290px;
+  position: relative;
+  left: 20px;
 }
 
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
@@ -438,6 +448,7 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+
 
 /* - - - - - - - - - - - - - - - - - - IMAGE CAROUSEL - - - - - - - - - - - - - - - - - - */
 .carousel {
