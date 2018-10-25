@@ -1,6 +1,6 @@
 /*
  FILE NAME: scripts/droneInfo.js
- WRITTEN BY: Magnus, Mathias
+ WRITTEN BY: Magnus, Mathias.
  WHEN: October 2018
  PURPOSE: Store information about each drone. Will be used in 'drones.js'
  */
