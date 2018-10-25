@@ -251,7 +251,7 @@ padding: 16px 10px;
 
 /* - - - - - - - - - - - - - - - - - - OURDRONES.HTML BOX STYLING - - - - - - - - - - - - - - - - - - */
 
-.textbox > h1, img, a, p {
+.textbox > h1, .textbox > img, .textbox > a, .textbox > p {
   height: 50px;
   max-height: 400px;
 }
@@ -276,7 +276,7 @@ padding: 16px 10px;
   text-align: center;
 }
 
-.row:nth-child(2),.row:nth-child(6), .row:nth-child(8) {
+.verticalDroneSpace:nth-child(2), .verticalDroneSpace:nth-child(6), .verticalDroneSpace:nth-child(8) {
   margin-top: -10px;
 }
 
@@ -288,7 +288,7 @@ padding: 16px 10px;
   margin-top: 10px;
 }*/
 
-.col-575 > p,a {
+.col-575 > p, .col-575 >a {
   color: black;
   font-size: 15px;
   max-width: 40ch;
@@ -301,7 +301,7 @@ padding: 16px 10px;
   left: 10%;
 }
 
-.col-575 > h1, p {
+.col-575 > h1, .col-575 > p {
   position: relative;
   left: 10%;
 }
