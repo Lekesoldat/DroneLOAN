@@ -1,6 +1,6 @@
 /*
  FILE NAME: scripts/navigation.js
- WRITTEN BY: Magnus L. Holtet
+ WRITTEN BY: Magnus L. Holtet, Carl Smestad
  WHEN: October 2018
  PURPOSE: Orbit: A self-made library extension of Spark which handles navigation-bar rendering.
  */
@@ -13,10 +13,10 @@ const routes = [
     title: Spark.createElement(
       'img',
       {
-        src: './img/droneIcon.png',
+        src: './img/droneIconWhite.png',
         alt: 'Drone Icon.',
-        width: 20,
-        heigth: 20
+        width: 30,
+        heigth: 30
       },
       null
     )
