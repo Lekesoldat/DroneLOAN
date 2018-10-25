@@ -1,6 +1,6 @@
 /*
   FILE NAME: './styles/style.css
-  WRITTEN BY: Magnus, Andreas, Mathias
+  WRITTEN BY: Magnus, Andreas, Mathias, Øyvind, Carl
   WHEN: 
   PURPOSE: Styling for the whole page.
 */
@@ -432,27 +432,36 @@ input[type="submit"] {
 }
 
 /* - - - - - - - - - - - - - - - - - - IMAGE STYLING - - - - - - - - - - - - - - - - - - */
+
+/* Fit to parent */
 img {
   max-width: 100%;
   max-height: 100%;
 }
 
 /* - - - - - - - - - - - - - - - - - - IMAGE CAROUSEL - - - - - - - - - - - - - - - - - - */
-/* Used */
 .carousel {
   position: relative;
 }
 
 /* Make image fit small box */
+
+.mini-image {
+  height: 150px;
+}
+
 .mini-image img {
+  height: 100%;
   width: 100%;
 }
 
 /* Start as hidden */
-.mySlides {
+.mySlides{
   display: none;
+  text-align: center;
+  overflow: hidden;
+  height: 450px;
 }
-
 
 /* Style cursor on hover*/
 .cursor {
