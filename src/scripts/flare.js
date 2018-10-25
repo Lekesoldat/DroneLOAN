@@ -6,7 +6,7 @@
 */
 
 /**
- * Depth first search. Traverse through all elements in the HTML-tree and invoke callback().
+ * Depth first search. Traverse through all elements in the HTML-tree and invoke callback() on that element.
  * @param {HTMLElement} element 
  * @param {Function} callback 
  */
@@ -14,7 +14,7 @@ function traverse(element, callback) {
   for (const child of element.children) {
     traverse(child, callback);
   }
-
+  
   callback(element);
 }
 
@@ -24,7 +24,7 @@ function traverse(element, callback) {
  */
 function appendChildren(parent, children) {
 
-  // If children is an Array, go through all elements and invoke appendChildren()
+  // For each child in the Array, call appendChildren().
   if (children instanceof Array) {
     children.forEach(child => appendChildren(parent, child));
   
@@ -40,7 +40,7 @@ function appendChildren(parent, children) {
 
 /**
  * @param {HTMLElement} root 
- * @param {Obejct} mapping 
+ * @param {Obejct} mapping works as a dictionary 
  */
 export function fill(root, mapping) {
   // Pattern for matching {( )}
