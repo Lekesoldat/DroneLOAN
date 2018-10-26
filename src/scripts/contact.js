@@ -1,3 +1,22 @@
+// Removes text from input fields
+function clearInputFields() {
+  document.getElementById('contactFirstInputField').value = '';
+  document.getElementById('contactInputField').value = '';
+  document.getElementById('contactInquiry').value = ''; 
+}
+
+// Display an alert when contact form is submitted
+const contactForm = document.getElementById('contactForm');
+const fakeRequest = evt => {
+  alert('Thank you for contacting us, you will hear from us shortly');
+  evt.preventDefault();
+
+  clearInputFields();
+};
+
+contactForm.addEventListener('submit', fakeRequest, true);
+
+// Google Maps API related functions
 function initMap(){
   var location = {lat: 63.417831662, lng: 10.401831726};
   var map = new google.maps.Map(document.getElementById('googleMap'), {
@@ -24,3 +43,4 @@ function initMap(){
     }
   });
 }
+
