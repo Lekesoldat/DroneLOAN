@@ -51,7 +51,7 @@ function renderImage(image) {
     'img',
     {
       src: image.src,
-      alt: image.alt,
+      alt: image.alt
     },
     null
   );

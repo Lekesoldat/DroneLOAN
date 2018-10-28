@@ -1,6 +1,6 @@
 /*
   FILE NAME: './styles/style.css
-  WRITTEN BY: Magnus, Andreas, Mathias
+  WRITTEN BY: Magnus, Andreas, Mathias, Øyvind, Carl
   WHEN: 
   PURPOSE: Styling for the whole page.
 */
@@ -12,6 +12,11 @@
 [class^='col'] {
   min-height: 1px;
   float: left;
+}
+
+/* 24 bokser i bredden*/
+.col-05 {
+  width: calc((0.5/12)*100%);
 }
 
 /* 8.33% - 12 bokser i bredden*/
@@ -37,6 +42,10 @@
 /* 41.6% - Opptar ca. 42% av siden, må kombineres med andre bokser */
 .col-5 {
   width: calc((5/12)*100%);
+}
+
+.col-575 {
+  width: calc((5.75/12)*100%);
 }
 
 /* 50% - 2 bokser i bredden */
@@ -79,12 +88,13 @@
   margin: 10px 0;
   float: left;
   min-height: 1px;
-  font-family: 'PingFang SC', 'Trebuchet MS', Courier, monospace;
+  font-family: 'Trebuchet MS', Courier, monospace;
 }
 
 /* Debugging*/
+/* Denne gir meg en hvit border strek rundt divene*/
 .row > div {
-  background-color: white; /*#f09f9c;*/
+  background-color: white; /*#f09f9c;*/ 
   overflow: hidden;
 }
 
@@ -158,12 +168,13 @@ h1{
 #droneFootage > p{
   margin-top: 10px;
   text-align: center;
+  margin-bottom: -15px;
 }
 
-#droneFootageDescription > p{
+#droneFootageDescription  p{
   text-align: center;
   font-style: italic;
-  margin: -1em 0 1em 0;
+  margin-bottom: 10px;
 }
 
 
@@ -200,136 +211,136 @@ h1{
 }
 
 .wrapper .image {
-opacity: 1;
-display: block;
-width: 100%;
-height: auto;
-transition: .5s ease;
-backface-visibility: hidden;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
 
 #inspire2, #phantom4, #mavic2{
-height: 150px;
-width: auto;
+  height: 150px;
+  width: auto;
 }
 
 .middle {
-transition: .5s ease;
-opacity: 0;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .wrapper:hover .image {
-opacity: 0.3;
+  opacity: 0.3;
 }
 
 .wrapper:hover .middle {
-opacity: 1;
+  opacity: 1;
 }
 
 .text {
-background-color: rgba(31, 29, 28, 0.84);
-color: white;
-font-size: 16px;
-padding: 16px 10px;
+  background-color: rgba(31, 29, 28, 0.84);
+  color: white;
+  font-size: 16px;
+  padding: 16px 10px;
 }
 
 
 /* - - - - - - - - - - - - - - - - - - OURDRONES.HTML BOX STYLING - - - - - - - - - - - - - - - - - - */
 
-.border {
-  max-width: 1%;
-}
-
-.singlebox {
-  height: 66%;
-  width: 49%;
-}
-
-.singlebox h1 {
-  position: relative;
-  top: 5px;
-  left: 30px;
+.textbox > h1, .textbox > img, .textbox > a, .textbox > p {
+  height: 50px;
+  max-height: 400px;
 }
 
 .mavic {
-  height: 55%;
-  width: 49.5%;
+  height: 350px;
 }
 
-.mavic h1 {
+.mavic > h1 {
   font-size: 36px;
   position: relative;
   left: 10%;
-  top: 40%;
+  top: 30%;
 }
 
 .mavictext {
+  line-height: 1.5em;
+  width: 45ch;
   position: relative;
-  top: 50%;
-  left: 3%;
-  text-align: left;
+  top: 35%;
+  left: 5%;
+  text-align: center;
 }
 
-#phantomtext {
+.verticalDroneSpace:nth-child(2), .verticalDroneSpace:nth-child(6), .verticalDroneSpace:nth-child(8) {
+  margin-top: -10px;
+}
+
+/*.row:nth-child(3),.row:nth-child(4),.row:nth-child(5),.row:nth-child(7) {
+  margin-top: 20px;
+}
+
+.mavic:nth-child(1), .mavic:nth-child(2){
+  margin-top: 10px;
+}*/
+
+.col-575 > p, .col-575 > a {
+  color: black;
+  font-size: 15px;
   max-width: 40ch;
   line-height: 1.5em;
-  position: relative;
-  top: 2%;
-  left: 5%;
-  
 }
 
-#phantomlearn {
+.col-575 > a {
   position: relative;
-  right: 10%;
+  bottom: 20px;
+  left: 40px;
 }
 
-#maviclearn {
+.col-575 > h1, .col-575 > p {
   position: relative;
-  right: 0%;
-  top: 44%;
-  
+  left: 10%;
 }
 
-.phantomrentnow {
-  max-width: 20%;
-  max-height: 20%;
+.mavic > a {
+  margin: 0px;
+  color: black;
+  position: relative;
+  left: 10%;
+  top: 70px;
+}
+
+.mavic > img {
+  height: 100%;
   position: relative;
   left: 30px;
 }
 
 .mavicrentnow {
-  max-width: 20%;
-  max-height: 20%;
-  position: static;
-  left: 30%;
-  top: 245px;
-}
-
-.mavic img {
-  height: 100%;
+  max-width: 25%;
+  max-height: 25%;
   position: relative;
-  left: 100px;
-}
-
-#phantomimg {
-  height: 67%;
+  top: 110px;
 }
 
 .rentnow {
-  max-width: 20%;
-  max-height: 20%;
+  max-width: 25%;
+  max-height: 25%;
   position: relative;
   left: 30px;
+  top: 0px;
 }
 
-#phantomrent {
-  top: 30px;
+.imgbox > img {
+  width: 350px;
+  height: 290px;
+  position: relative;
+  left: 20px;
 }
 
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
@@ -381,8 +392,14 @@ footer {
 
 /* - - - - - - - - - - - - - - - - - - CONTACT US - - - - - - - - - - - - - - - - - - */
 #headerMessage {
+  margin-top: 1%;
   text-align: center;
   font-style: italic; 
+}
+
+#googleMap {
+  width: 100%;
+  margin-bottom: 40px;  
 }
 
 /* remove margin-top from the first inputfield, so it alligns with "Contact information" box */
@@ -395,12 +412,17 @@ footer {
     margin-left: 5%;
     margin-top: 5%;
     margin-bottom: 5%; */
-
+    
     border: 1px solid black; 
 }
 
 #contactInputField {
   margin-top: 43px;
+}
+
+#contactInformationBox {
+  background-color: white;
+  margin-bottom: 58px;
 }
 
 #contactInformationBox > h4, #contactInformationBox p {
@@ -409,8 +431,12 @@ footer {
   margin-bottom: 16px;
 } 
 
+#contactUsAddress {
+  text-align: center;
+}
+
 #contactInquiry {
-  height: 150px;
+  height: 200px;
   /* Prevent textarea from resizing left or right */
   max-width: 100%;
   min-width: 100%;
@@ -421,7 +447,7 @@ footer {
 
 /* TODO center allign button */
 input[type="submit"] {
-  margin-top: 5%;
+  margin-top: 7%;
   width: 100%;
   height: 25px;
 }
@@ -431,28 +457,47 @@ input[type="submit"] {
   height: 200px;
 }
 
+/* Override background-color: white; set by .row > class */
+#removeBackground {
+  background-color: transparent;
+}
+
+#contactUsMessage {
+  background-color: #F2F2F2
+}
+
 /* - - - - - - - - - - - - - - - - - - IMAGE STYLING - - - - - - - - - - - - - - - - - - */
+
+/* Fit to parent */
 img {
   max-width: 100%;
   max-height: 100%;
 }
 
+
 /* - - - - - - - - - - - - - - - - - - IMAGE CAROUSEL - - - - - - - - - - - - - - - - - - */
-/* Used */
 .carousel {
   position: relative;
 }
 
 /* Make image fit small box */
+
+.mini-image {
+  height: 150px;
+}
+
 .mini-image img {
+  height: 100%;
   width: 100%;
 }
 
 /* Start as hidden */
-.mySlides {
+.mySlides{
   display: none;
+  text-align: center;
+  overflow: hidden;
+  height: 450px;
 }
-
 
 /* Style cursor on hover*/
 .cursor {

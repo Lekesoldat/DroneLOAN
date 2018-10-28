@@ -1,8 +1,8 @@
 <!--
   FILE NAME: ./droneSpecific.html
-  WRITTEN BY: Magnus L. Holtet
+  WRITTEN BY: Magnus, Andreas
   WHEN: October 2018
-  PURPOSE: A template page for in-depth information about a drone. The content will be rendered by the JavaScript.
+  PURPOSE: A template page for in-depth information about a drone. The content will be rendered by Flare..
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -28,18 +28,18 @@
       </div>
 
     <!-- Big image -->
-    <div id="bigImage">
+    <div class="row">
       {{ bigImage }}
     </div>
     
     <!-- Thumbnails for carousel -->
-    <div id=miniImage">
+    <div class="miniImage"">
       {{ miniImage }}
     </div>
 
       <!-- Row with the description -->
       <div class="row">
-        <div class="col-12" id="">
+        <div class="col-12">
           <h1>About</h1>
           <p>{{ about }}</p>
         </div>
@@ -83,7 +83,6 @@
         </div>
       </div>
     </section>
-
     <footer id="footer"></footer>
     
     <!-- Scripts  -->
