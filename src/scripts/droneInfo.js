@@ -24,7 +24,7 @@ export default [
     ],
     name: 'DJI Spark',
     description: 'Very.',
-    specs: ['Spec one', 'Spec two', 'Spec three']
+    specs: ['Max Flight Time: 16 minutes', 'Max Speed: 50 kph', 'Weight: 300g']
   },
 
   {
@@ -45,7 +45,7 @@ export default [
     ],
     name: 'DJI Phantom 4 Pro v2.0',
     description: 'Description.',
-    specs: ['Spec one', 'Spec two', 'Spec three']
+    specs: ['Max Flight Time: 30 minutes', 'Max Speed: 72 kph', 'Weight: 1375g']
   },
   {
     id: '3',
@@ -65,7 +65,7 @@ export default [
     ],
     name: 'DJI Phantom 4 Advanced',
     description: 'Description.',
-    specs: ['Spec one', 'Spec two', 'Spec three']
+    specs: ['Max Flight Time: 30 minutes', 'Max Speed: 72 kph.', 'Weight: 1368g']
   },
   {
     id: '4',
@@ -85,7 +85,7 @@ export default [
     ],
     name: 'DJI Mavic 2 Pro',
     description: 'Description.',
-    specs: ['Spec one', 'Spec two', 'Spec three']
+    specs: ['Max Flight Time: 31 minutes', 'Max Speed: 72 kph', 'Weight: 907g']
   },
   {
     id: '5',
@@ -105,7 +105,7 @@ export default [
     ],
     name: 'DJI Mavic 2 Zoom',
     description: 'Description.',
-    specs: ['Spec one', 'Spec two', 'Spec three']
+    specs: ['Max Flight Time: 31 minutes', 'Max Speed: 72 kph', 'Weight: 905g']
   },
   {
     id: '6',
@@ -125,7 +125,7 @@ export default [
     ],
     name: 'DJI Inspire 2',
     description: 'Description.',
-    specs: ['Spec one', 'Spec two', 'Spec three']
+    specs: ['Max Flight Time: 27 minutes', 'Max Speed: 94 kph', 'Weight: 3440g']
   },
   {
     id: '7',
@@ -145,7 +145,7 @@ export default [
     ],
     name: 'DJI Matrice 600',
     description: 'Description.',
-    specs: ['Spec one', 'Spec two', 'Spec three']
+    specs: ['Max Flight Time: 40 minutes', 'Max Speed: 65 kph', 'Weight: 9600g']
   },
   {
     id: '8',
@@ -165,7 +165,7 @@ export default [
     ],
     name: 'DJI Mg-1p',
     description: 'Description.',
-    specs: ['Spec one', 'Spec two', 'Spec three']
+    specs: ['Max Flight Time: 20 minutes', 'Max Speed: 54 kph', 'Weight: 9700g']
   },
   {
     id: '9',
@@ -185,7 +185,7 @@ export default [
     ],
     name: 'Parrot Anafi',
     description: 'Description.',
-    specs: ['Spec one', 'Spec two', 'Spec three']
+    specs: ['Max Flight Time: 25 minutes', 'Max Speed: 55 kph', 'Weight: 320g']
   },
   {
     id: '10',
@@ -205,6 +205,6 @@ export default [
     ],
     name: 'Parrot Disco',
     description: 'Description.',
-    specs: ['Spec one', 'Spec two', 'Spec three']
+    specs: ['Max Flight Time: 15 minutes', 'Max Speed: 52 kph', 'Weight: 390g']
   }
 ];

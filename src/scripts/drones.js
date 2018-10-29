@@ -36,7 +36,11 @@ if (drone) {
         'li',
         null,
         [
-          spec
+          Spark.createElement(
+            'p',
+            null,
+            [spec]
+          )
         ]
       ))
     }
@@ -169,7 +173,7 @@ const carousel = () => {
   }
 
   // Switch image every 8th second
-  setTimeout(carousel, 8000);
+  setTimeout(carousel, 4000);
 };
 
 // Start the carousel

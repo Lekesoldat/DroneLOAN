@@ -8,7 +8,7 @@ function clearInputFields() {
 // Display an alert when contact form is submitted
 const contactForm = document.getElementById('contactForm');
 const fakeRequest = evt => {
-  alert('Thank you for contacting us, you will hear from us shortly');
+  alert('Thank you for contacting us!🎉 You will hear from us shortly');
   evt.preventDefault();
 
   clearInputFields();
@@ -30,17 +30,6 @@ function initMap(){
       position: google.maps.ControlPosition.LEFT_BOTTOM
     },
 
-  });
-
-  var marker = new google.maps.Marker({
-    position: location,
-    map: map,
-    animation: google.maps.Animation.DROP, 
-    title: 'droneLOAN', 
-    icon: {
-      url: 'www.droneLOAN.com',
-      scaledSize: new google.maps.Size(75, 120)
-    }
   });
 }
 
