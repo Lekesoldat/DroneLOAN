@@ -14,10 +14,12 @@ const params = new URLSearchParams(document.location.search);
 const id = params.get('id');
 
 // Loop through the drones array and find the first element where ID matches.
-const { name, description, images, specs } = drones.find(drone => drone.id == id);
+const drone = drones.find(drone => drone.id == id);
 
-// Name will not be blank if a valid drone is found.
-if (name != '') {
+// If a matching drone is found.
+if (drone) {
+  const { name, description, images, specs } = drone;
+  
   Flare.fill(
     // Root
     document.getElementById('content'),
