@@ -23,7 +23,7 @@ export default [
       }
     ],
     name: 'DJI Spark',
-    description: 'Very.',
+    description: 'DJI Spark is considered to be DJIs "edit & share" drone. The Spark does not require a controller allowing you to fly in no time. Spark supports hand gestures and palm landing permits stylish selfies among your friends.',
     specs: ['Max Flight Time: 16 minutes', 'Max Speed: 50 kph', 'Weight: 300g']
   },
 
@@ -44,7 +44,7 @@ export default [
       }
     ],
     name: 'DJI Phantom 4 Pro v2.0',
-    description: 'Description.',
+    description: 'Our DJI Phantom 4 Pro v2.0 is suited for "prosumers" that wish to take aerial photography at near professional level. The Phantom series is suited for adventures where you can take your equipment with you by car or by other means of transportation. ',
     specs: ['Max Flight Time: 30 minutes', 'Max Speed: 72 kph', 'Weight: 1375g']
   },
   {
@@ -64,7 +64,7 @@ export default [
       }
     ],
     name: 'DJI Phantom 4 Advanced',
-    description: 'Description.',
+    description: 'The DJI Phantom 4 Advanced is the little brother of the Pro v2.0. The Advanced main difference is that aperture is fixed, making ND filters necessary for most daytime operations. We would recommend to pick the pro version if you plan to photograph in narrow environments as the Pro v2.0 has 360° obstacle avoidance system.',
     specs: ['Max Flight Time: 30 minutes', 'Max Speed: 72 kph.', 'Weight: 1368g']
   },
   {
@@ -84,7 +84,7 @@ export default [
       }
     ],
     name: 'DJI Mavic 2 Pro',
-    description: 'Description.',
+    description: 'DJI Mavic 2 Pro is the prime standard for portable yet powerful aerial photography. The camera of the Mavic is almost up to par with the Phantom serier making it the ultimate choice for long travels to your scenery. The drone fits easily in a backpack so you can include it in your everyday carry.',
     specs: ['Max Flight Time: 31 minutes', 'Max Speed: 72 kph', 'Weight: 907g']
   },
   {
@@ -104,7 +104,7 @@ export default [
       }
     ],
     name: 'DJI Mavic 2 Zoom',
-    description: 'Description.',
+    description: 'The Mavic 2 Zoom is DJI all new portable consumer drone with optical zoom capability. Create stunning video with dolly zoom or make those subjects up close and personal. The Mavic 2 Zoom is a cheaper option than the pro version, but compensates with the advanced zoom features that you currently can not find in any other consumer drone.',
     specs: ['Max Flight Time: 31 minutes', 'Max Speed: 72 kph', 'Weight: 905g']
   },
   {
@@ -124,7 +124,7 @@ export default [
       }
     ],
     name: 'DJI Inspire 2',
-    description: 'Description.',
+    description: 'The DJI Inspire 2 is the entry level drone for the professional market. The camera is a fully featured system camera where the gimbal can be controlled by a second operator. This allows for the operator to split the workload allowing  the photographer to fully focus.',
     specs: ['Max Flight Time: 27 minutes', 'Max Speed: 94 kph', 'Weight: 3440g']
   },
   {
@@ -144,7 +144,7 @@ export default [
       }
     ],
     name: 'DJI Matrice 600',
-    description: 'Description.',
+    description: 'DJI Matrice 600 Pro is the upper level standard for professional videography, and is the industry standard in Hollywood. The Matrice allows for any fully fledged DSLR even a RED camera. This versatility renders nearly endless possibilities.',
     specs: ['Max Flight Time: 40 minutes', 'Max Speed: 65 kph', 'Weight: 9600g']
   },
   {
@@ -164,7 +164,7 @@ export default [
       }
     ],
     name: 'DJI Mg-1p',
-    description: 'Description.',
+    description: 'The DJI MG-1p an ultra advanced drone that aims to move agriculture into the next century. Crop dusting from above was pioneered by the Piper Pawnee in the 70s and 80s. DJIs vision is to inherit the spirit of the Pawnee, and create the new flag standard for aerial crop dusting. Five MG-1ps can simultaneously crop dust a field, increasing efficiency and cost at the same time.',
     specs: ['Max Flight Time: 20 minutes', 'Max Speed: 54 kph', 'Weight: 9700g']
   },
   {
@@ -184,7 +184,7 @@ export default [
       }
     ],
     name: 'Parrot Anafi',
-    description: 'Description.',
+    description: 'The Parrot Anafi focuses on the core flight characteristics of drone flying without compromising camera quality. Anafi is considered to be a good choice for newcomers that wants a fun experience with drone flying.',
     specs: ['Max Flight Time: 25 minutes', 'Max Speed: 55 kph', 'Weight: 320g']
   },
   {
@@ -204,7 +204,7 @@ export default [
       }
     ],
     name: 'Parrot Disco',
-    description: 'Description.',
+    description: 'Parrot Disco aims to create a birds eye effect to your imagery. The Disco utilizes lift-by-wing instead of propeller giving more time in the air than the ground. The Parrot Disco is the perfect fit for wide areas with large space for landing and take off. Pick the Disco if you plan to make fast paced action scenes over scenery that expands over large areas.',
     specs: ['Max Flight Time: 15 minutes', 'Max Speed: 52 kph', 'Weight: 390g']
   }
 ];
