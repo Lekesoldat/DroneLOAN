@@ -298,7 +298,7 @@ h1{
 
 .col-575 > a {
   position: relative;
-  bottom: 20px;
+  bottom: 0px;
   left: 40px;
 }
 
@@ -312,7 +312,7 @@ h1{
   color: black;
   position: relative;
   left: 10%;
-  top: 70px;
+  top: 30px;
 }
 
 .mavic > img {
@@ -325,14 +325,15 @@ h1{
   max-width: 25%;
   max-height: 25%;
   position: relative;
-  top: 110px;
+  right: 20px;
+  top: 70px;
 }
 
 .rentnow {
   max-width: 25%;
   max-height: 25%;
   position: relative;
-  left: 30px;
+  right: 20px;
   top: 0px;
 }
 
