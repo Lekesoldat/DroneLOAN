@@ -36,7 +36,11 @@ if (drone) {
         'li',
         null,
         [
-          spec
+          Spark.createElement(
+            'p',
+            null,
+            [spec]
+          )
         ]
       ))
     }
