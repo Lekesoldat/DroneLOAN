@@ -94,7 +94,7 @@
 /* Debugging*/
 /* Denne gir meg en hvit border strek rundt divene*/
 .row > div {
-  background-color: white; /*#f09f9c;*/
+  background-color: white; /*#f09f9c;*/ 
   overflow: hidden;
 }
 
@@ -379,7 +379,6 @@ footer {
   height: 48px;
 }
 
-
 /* - - - - - - - - - - - - - - - - - - HTML FORM - - - - - - - - - - - - - - - - - - */
 .inputField {
   width: 100%;
@@ -394,10 +393,28 @@ footer {
   margin: top bottom 
 */
 
+input[type="submit"] {
+  margin-top: 30px;
+  width: 100%;
+  height: 25px;
+}
+
+/* Does not want it to apply to submit */
+input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid, textarea:valid {
+    border: 1px solid green;
+}
+
+
 /* - - - - - - - - - - - - - - - - - - CONTACT US - - - - - - - - - - - - - - - - - - */
 #headerMessage {
+  margin-top: 1%;
   text-align: center;
   font-style: italic; 
+}
+
+#googleMap {
+  width: 100%;
+  margin-bottom: 40px;  
 }
 
 /* remove margin-top from the first inputfield, so it alligns with "Contact information" box */
@@ -410,12 +427,17 @@ footer {
     margin-left: 5%;
     margin-top: 5%;
     margin-bottom: 5%; */
-
+    
     border: 1px solid black; 
 }
 
 #contactInputField {
   margin-top: 43px;
+}
+
+#contactInformationBox {
+  background-color: white;
+  margin-bottom: 58px;
 }
 
 #contactInformationBox > h4, #contactInformationBox p {
@@ -424,8 +446,12 @@ footer {
   margin-bottom: 16px;
 } 
 
+#contactUsAddress {
+  text-align: center;
+}
+
 #contactInquiry {
-  height: 150px;
+  height: 200px;
   /* Prevent textarea from resizing left or right */
   max-width: 100%;
   min-width: 100%;
@@ -434,16 +460,18 @@ footer {
   margin-top: 43px;
 }
 
-/* TODO center allign button */
-input[type="submit"] {
-  margin-top: 5%;
-  width: 100%;
-  height: 25px;
-}
-
 #googleMap {
   width: 100%;
   height: 200px;
+}
+
+/* Override background-color: white; set by .row > class */
+#removeBackground {
+  background-color: transparent;
+}
+
+#contactUsMessage {
+  background-color: #F2F2F2
 }
 
 /* - - - - - - - - - - - - - - - - - - IMAGE STYLING - - - - - - - - - - - - - - - - - - */
@@ -452,6 +480,31 @@ input[type="submit"] {
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+/* - - - - - - - - - - - - - - - - - - DRONE SPECIFIC - - - - - - - - - - - - - - - - - - */
+.droneContent * {
+  padding: 12px;
+}
+
+#rental {
+  text-align: center;
+  line-height: 50px;
+}
+
+
+#rental input, #rental textarea {
+  display: block;
+  width: 80%;
+  padding: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+}
+
+#specsDiv ul {
+  list-style: none;
+  text-align: center;
 }
 
 
