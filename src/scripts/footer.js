@@ -24,6 +24,8 @@ export default Spark.createElement(
   fields.map(field => Spark.createElement(
     'li', 
     null, 
-    [field]
+    [
+      field
+    ]
   ))
 );
