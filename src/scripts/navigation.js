@@ -59,7 +59,7 @@ function renderLink( route ) {
 // Create a list item with an whatever as content.
 function renderListItem(route, index) {
   // Renders which page is active
-  const status = ((index == tab) ? 'activeTab' : 'inactiveTab');
+  const status = ((index == tab) ? 'activeTab' : null);
 
   return Spark.createElement(
     'li',
