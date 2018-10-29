@@ -39,7 +39,7 @@
 
       <!-- Row with the description -->
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 droneContent">
           <h1>About</h1>
           <p>{{ about }}</p>
         </div>
@@ -47,7 +47,7 @@
 
       <!-- Row with the specs -->
       <div class="row">
-        <div class="col-12" id="test">
+        <div class="col-12 droneContent" id="specsDiv">
           <h1>Specs</h1>
           <ul>
             {{ specs }}
@@ -57,25 +57,24 @@
 
       <!-- Row with form -->
       <div class="row">
-        <div class="col-12">
-          
+        <div class="col-12" id="rental">
           <form id="requestRental">
             <label>Your full name
-              <input class="inputField" type="text" placeholder="Bob Jensen" required>
+              <input type="text" placeholder="Bob Jensen" required>
             </label>
 
             <label>Your email
-              <input class="inputField" type="email" placeholder="email@example.com" required>
+              <input type="email" placeholder="email@example.com" required>
             </label>
 
             <label>Address
-              <input class="inputField" type="text" placeholder="Street name" required>
-              <input class="inputField" type="text" placeholder="City" required>
-              <input class="inputField" type="text" placeholder="Zip / Postal Code" required>
+              <input type="text" placeholder="Street name" required>
+              <input type="text" placeholder="City" required>
+              <input type="number" placeholder="Zip / Postal Code" min="0000" max="9999" required>
             </label>
 
             <label>Field of application
-              <textarea class="inputField" placeholder="Write here." rows="5" required></textarea>
+              <textarea placeholder="Write here." rows="5" required></textarea>
             </label>
             
             <input type="submit" method="post" value="Request rental">
