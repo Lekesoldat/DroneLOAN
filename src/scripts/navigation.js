@@ -9,11 +9,11 @@ import * as Spark from './spark.js';
 
 // Grabs query parameters
 const params = new URLSearchParams(document.location.search);
-const id = params.get('id');
+const tab = params.get('tab');
 
 const routes = [
   {
-    path: './index.html?id=0',
+    path: './index.html?tab=0',
     title: Spark.createElement(
       'img',
       {
@@ -26,19 +26,19 @@ const routes = [
     )
   },
   {
-    path: './drones.html?id=1',
+    path: './drones.html?tab=1',
     title: 'OUR DRONES'
   },
   {
-    path: './videos.html?id=2',
+    path: './videos.html?tab=2',
     title: 'VIDEO GALLERY'
   },
   {
-    path: './contact.html?id=3',
+    path: './contact.html?tab=3',
     title: 'CONTACT'
   },
   {
-    path: './about.html?id=4',
+    path: './about.html?tab=4',
     title: 'ABOUT US'
   }
 ];
@@ -59,7 +59,7 @@ function renderLink( route ) {
 // Create a list item with an whatever as content.
 function renderListItem(route, index) {
   // Renders which page is active
-  const status = ((index == id) ? 'activeTab' : 'inactiveTab');
+  const status = ((index == tab) ? 'activeTab' : 'inactiveTab');
 
   return Spark.createElement(
     'li',
