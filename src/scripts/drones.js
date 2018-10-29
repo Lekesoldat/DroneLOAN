@@ -14,32 +14,33 @@ const params = new URLSearchParams(document.location.search);
 const id = params.get('id');
 
 // Loop through the drones array and find the first element where ID matches.
-const drone = drones.find(drone => drone.id == id);
+const { name, description, images, specs } = drones.find(drone => drone.id == id);
 
-// If ID is valid
-if (drone) {
-  // 
+// Name will not be blank if a valid drone is found.
+if (name != '') {
   Flare.fill(
     // Root
     document.getElementById('content'),
     
     // Mapping
     {
-      title: drone.name,
-      about: drone.description,
+      title: name,
+      about: description,
 
-      bigImage: renderCarouselElement(drone.images),
-      miniImage: renderMiniSection(drone.images),
+      bigImage: renderCarouselElement(images),
+      miniImage: renderMiniSection(images),
 
       // <li></li>
-      specs: drone.specs.map(spec => Spark.createElement(
+      specs: specs.map(spec => Spark.createElement(
         'li',
         null,
         [
           Spark.createElement(
             'p',
             null,
-            [spec]
+            [
+              spec
+            ]
           )
         ]
       ))
