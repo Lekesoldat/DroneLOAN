@@ -11,10 +11,14 @@
 /* Applies to all classes starting with 'col' */
 [class^='col'] {
   min-height: 1px;
-  float: left;
 }
 
-/* 24 bokser i bredden*/
+@media only screen and (min-width: 1001px) {
+  [class^='col'] {
+    float: left;
+  }
+}
+  /* 24 bokser i bredden*/
 .col-05 {
   width: calc((0.5/12)*100%);
 }
@@ -534,7 +538,6 @@ img {
 .videoText{
   margin-top: 10%;
   margin-bottom: 10%;
-  padding-right: 10%
 }
 
 .whiteBackground {
@@ -543,9 +546,18 @@ img {
   margin-bottom: 10px;
 }
 
+.horisontalLine {
+  background-color: black;
+}
+
 /* - - - - - - - - - - - - - - - - - - RESPONSIVENESS - - - - - - - - - - - - - - - - - - */
 
 @media only screen and (min-width: 1001px) {
+
+  .videoText {
+    padding-right: 10%;
+  }
+
   .imgbox > img {
     position: relative;
   }
@@ -558,7 +570,7 @@ img {
     position: relative;
   }
 
-  .fill {
+  .heightVideopage {
     height: 250px;
   }
 }
@@ -575,6 +587,19 @@ img {
   .fullscreen iframe {
     margin: auto;
     display: block;
+  }
+
+  .videoTextbox {
+    max-width: 340px;
+    margin: auto;
+  }
+
+  .fill {
+    background-color: transparent;
+  }
+
+  .horisontalLine {
+    display: none;
   }
 
 
