@@ -89,7 +89,7 @@ function renderMiniSection(images) {
   return Spark.createElement(
     'div',
     {
-      className: 'row'
+      className: 'row white'
     },
     images.map((image, index) => Spark.createElement(
       'div',
