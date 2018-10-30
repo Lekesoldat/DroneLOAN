@@ -1,6 +1,6 @@
 <!--
   FILE NAME: ./droneSpecific.html
-  WRITTEN BY: Magnus.
+  WRITTEN BY: Magnus
   WHEN: October 2018
   PURPOSE: A template page for in-depth information about a drone. The content will be rendered by Flare..
 -->
@@ -12,12 +12,12 @@
   <title>Drone specific page</title>
   <link rel="stylesheet" href="./styles/style.css">
 
-    <script>
-      /*  - - - - - - - - - - - DISPLAY CONTENT WHEN PAGE IS LOADED - - - - - - - - - - - */
-      const displayContent = () => {
-        const cover = document.getElementById('cover').style.visibility = 'hidden';
-      };
-    </script>
+  <script>
+    /*  - - - - - - - - - - - DISPLAY CONTENT WHEN PAGE IS LOADED - - - - - - - - - - - */
+    const displayContent = () => {
+      document.getElementById('cover').style.visibility = 'hidden';
+    };
+  </script>
 </head>
 
   <body onload="displayContent()">
@@ -53,13 +53,15 @@
         </div>
       </div>
 
-      <!-- Row with the specs -->
+      <!-- Row with specs -->
       <div class="row">
-        <div class="col-12 droneContent" id="specsDiv">
+        <div class="col-12 droneContent">
           <h1>Specs</h1>
-          <ul>
+
+          <div id="specsDiv">
             {{ specs }}
-          </ul>
+          </div>
+          
         </div>
       </div>
 
