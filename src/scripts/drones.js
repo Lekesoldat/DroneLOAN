@@ -32,27 +32,13 @@ if (drone) {
       bigImage: renderCarouselElement(images),
       miniImage: renderMiniSection(images),
 
-      // <li></li>
-      specs: specs.map(spec => Spark.createElement(
-        'li',
-        null,
-        [
-          Spark.createElement(
-            'p',
-            null,
-            [
-              spec
-            ]
-          )
-        ]
-      ))
+      
+      specs: renderTable(specs)
     }
   );
 }
 
 /* Image carousel scripts */
-
-// Used for creation of the big image in the carousel
 function renderImage(image) {
   return Spark.createElement(
     'img',
@@ -64,11 +50,6 @@ function renderImage(image) {
   );
 }
 
-/* Returns the following HTML
-  <div class="mySlides carousel">
-    <img src="image.src" alt="image.alt">
-  </div>
-*/
 function renderBigImageDiv(image) {
   return Spark.createElement(
     'div',
@@ -81,13 +62,6 @@ function renderBigImageDiv(image) {
   );
 }
 
-/* Returns the following HTML
-  <div class="col-12">
-    <div class="mySlides carousel">
-      <img src="path">
-    </div>
-  </div>
-*/
 function renderCarouselElement(images) {
   return Spark.createElement(
     'div',
@@ -98,9 +72,6 @@ function renderCarouselElement(images) {
   );
 }
 
-/* Returns the following HTML
-  <img class="blur cursor" src="image.path" alt="image.alt" onclick="currentSlide(index + 1)">
-*/
 function renderMiniImage(image, index) {
   return Spark.createElement(
     'img',
@@ -114,18 +85,6 @@ function renderMiniImage(image, index) {
   );
 }
 
-/* Creates
-  <div class="row">
-
-    <div class="col-4 mini-image">
-      <img class="blur cursor" src="image.path" alt="image.alt" onclick="currentSlide(index + 1)">
-    </div>
-
-    .
-    .
-    .
-
-*/
 function renderMiniSection(images) {
   return Spark.createElement(
     'div',
@@ -144,7 +103,7 @@ function renderMiniSection(images) {
   );
 }
 
-/*  - - - - - - - - - - - CAROUSEL SCRIPT - - - - - - - - - - - */
+/*  - - - - - - - - - - - AUTOMATED CAROUSEL SCRIPT - - - - - - - - - - - */
 let imageIndex = 0;
 const currentSlide = n => showSlides(imageIndex = n);
 const slides = document.getElementsByClassName('mySlides');
@@ -190,3 +149,48 @@ const fakeRequest = evt => {
 };
 
 form.addEventListener('submit', fakeRequest, true);
+
+
+/*  - - - - - - - - - - - GENERATE SPEC TABLE SCRIPT - - - - - - - - - - - */
+
+function renderTable(specs) {
+  return Spark.createElement(
+    'table',
+    {
+      id: 'displaySpecs'
+    },
+    [
+      createHeaderRow(specs),
+      createDataRow(specs)
+    ]
+  );
+}
+
+function createHeaderRow(specs) {
+  return Spark.createElement(
+    'tr',
+    null,
+    Object.keys(specs).map(key => Spark.createElement(
+      'th',
+      null,
+      [
+        key
+      ]
+    ))
+  
+  );
+}
+
+function createDataRow(specs) {
+  return Spark.createElement(
+    'tr',
+    null,
+    Object.values(specs).map(spec => Spark.createElement(
+      'td',
+      null,
+      [
+        spec
+      ]
+    ))
+  );
+}
