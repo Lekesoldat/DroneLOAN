@@ -584,7 +584,7 @@ img {
     width: 100%;
   }
 
-  .fullscreen iframe {
+  .fullscreen * {
     margin: auto;
     display: block;
   }
