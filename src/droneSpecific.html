@@ -1,6 +1,6 @@
 <!--
   FILE NAME: ./droneSpecific.html
-  WRITTEN BY: Magnus.
+  WRITTEN BY: Magnus
   WHEN: October 2018
   PURPOSE: A template page for in-depth information about a drone. The content will be rendered by Flare..
 -->
@@ -11,13 +11,23 @@
   <meta charset="UTF-8">
   <title>Drone specific page</title>
   <link rel="stylesheet" href="./styles/style.css">
+
+  <script>
+    /*  - - - - - - - - - - - DISPLAY CONTENT WHEN PAGE IS LOADED - - - - - - - - - - - */
+    const displayContent = () => {
+      document.getElementById('cover').style.visibility = 'hidden';
+    };
+  </script>
+
+  <link rel="icon" href="./img/droneIcon.png" type="img/png">
 </head>
 
-  <body>
+  <body onload="displayContent()">
     <header>
       <nav id="navigation"></nav>
     </header>
 
+    <div id="cover"></div>
     <section class="container" id="content">
       
       <!-- Row with the drone title -->
@@ -28,7 +38,7 @@
       </div>
 
     <!-- Big image -->
-    <div class="row">
+    <div class="row white">
       {{ bigImage }}
     </div>
     
@@ -38,25 +48,27 @@
     </div>
 
       <!-- Row with the description -->
-      <div class="row">
+      <div class="row white">
         <div class="col-12 droneContent">
           <h1>About</h1>
           <p>{{ about }}</p>
         </div>
       </div>
 
-      <!-- Row with the specs -->
-      <div class="row">
-        <div class="col-12 droneContent" id="specsDiv">
+      <!-- Row with specs -->
+      <div class="row white">
+        <div class="col-12 droneContent">
           <h1>Specs</h1>
-          <ul>
+
+          <div id="specsDiv">
             {{ specs }}
-          </ul>
+          </div>
+          
         </div>
       </div>
 
       <!-- Row with form -->
-      <div class="row">
+      <div class="row white">
         <div class="col-12" id="rental">
           <form id="requestRental">
             <label>Your full name

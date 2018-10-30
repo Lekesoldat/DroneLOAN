@@ -1,8 +1,8 @@
 <!--
   FILE NAME: contact.html
   WRITTEN BY: Andreas Amundsen
-  WHEN: 
-  PURPOSE: 
+  WHEN: October 2018
+  PURPOSE: Provide a clean and intuivite way for the costumer to contact droneLOAN costumer service, and look up the where droneLOAN is located on Google Maps
 -->
 <html lang="en">
 
@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact us</title>
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" href="./img/droneIcon.png" type="img/png">
 </head>
 
 <body>
@@ -23,9 +24,7 @@
       <div class="col-12">
         <!-- Header message  -->
         <p class="pageMessage">
-          Got any complaints, praises, business inquiries? 
-          Just fill out the form below, 
-          and we wil reply before you can shout droneLOAN!
+          We strive to deliver the best experience for our customers. If you have any complaints or inquiries, please do not hesitate to contact us.
         </p>
       </div>
     </div>
@@ -36,36 +35,33 @@
         <!-- Contact form  -->
         <form action="" id="contactForm">          
           <label>
-            <input class="inputField" id="contactFirstInputField" type="text" name="name" placeholder="First name" required>
+            <input class="inputField" id="contactNameInputField" type="text" name="name" placeholder="First name" required>
           </label>
 
           <br>
           
           <label>
-            <input class="inputField" id="contactInputField" type="email" name="email" placeholder="E-mail" required>
+            <input class="inputField" id="contactEmailInputField" type="email" name="email" placeholder="E-mail" required>
           </label>
 
           <br>
 
           <label>
-            <textarea class="inputField" id="contactInquiry"  name="message" placeholder="Your inquiry" required></textarea>
+            <textarea class="inputField" id="contactInquiryMessage"  name="message" placeholder="Your inquiry" required></textarea>
           </label>
 
           <br>
 
-          
           <input type="submit" value="Submit" id="contactSubmitButton">
 
         </form>
       </div>
     
       <!-- Empty collumn -->
-      <div class="col-1">
-        
-      </div>
+      <div class="col-1"></div>
 
-      <!-- Contact information -->
       <div class="col-5">
+        <!-- Contact information -->
         <div id="contactInformationBox">
 
           <h4>Contact us</h4>
@@ -77,22 +73,24 @@
         <!-- Google Maps API integration -->
         <div id="googleMap"></div>
 
+        <!-- Display address below Google Map -->
         <p id="contactUsAddress">Høgskoleringen 1, 7491 Trondheim</p>
         
     </div>
 
     <div class="row">
       <div class="col-12">
+        <!-- Bottom page message -->
         <p class="pageMessage">
-          Our number one priority is our customers. Not satisfied? Get one full day drone rental at no cost. 
+          Rest assured that our customer service team will reply to your inquiry as soon as possible.
         </p>
       </div>
     </div>
   </section>
   
   <footer id="footer"></footer>
-  <!-- <script type="module" src="scripts/index.js"></script> -->
   <script src="scripts/contact.js"></script>
+  <!-- Import Google Maps API functionality -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUD161uyW5j432MBN_AN-MTGHSz50xl30&callback=initMap"></script>
   <script type="module" src="./scripts/index.js"></script>
   </body>
