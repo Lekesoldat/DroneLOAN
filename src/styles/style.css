@@ -118,20 +118,6 @@ body {
   margin: auto;
 }
 
-@media only screen and (max-width: 1000px) {
-  .container {
-    max-width: 80%;
-    margin: auto;
-  }
-  .fullscreen {
-    width: 100%;
-  }
-
-  .fullscreen iframe {
-    display: block;
-  }
-}
-
 #content {
   min-height: calc(100vh - 55px - 48px);
   overflow: hidden;
@@ -588,6 +574,21 @@ img {
   margin-bottom: 10px;
 }
 
-iframe {
-  margin: auto;
+/* - - - - - - - - - - - - - - - - - - RESPONSIVENESS - - - - - - - - - - - - - - - - - - */
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    max-width: 80%;
+    margin: auto;
+  }
+  .fullscreen {
+    width: 100%;
+  }
+
+  .fullscreen iframe {
+    display: block;
+    margin: auto;
+  }
+
+  
 }
