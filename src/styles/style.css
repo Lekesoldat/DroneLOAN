@@ -217,7 +217,10 @@ h1{
   margin-bottom: 10px;
 }
 
-
+p > #storefront {
+  width: 700px;
+  height: auto;
+}
 
 /* - - - - - - - - - - - - - - - - - - LANDINGE PAGE IMAGE STYLING - - - - - - - - - - - - - - - - -  */
 .wrapper {
