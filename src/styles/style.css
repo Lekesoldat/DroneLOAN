@@ -375,12 +375,16 @@ nav > ul > li, footer > ul > li {
   display: inline-block;
   padding: 15px;
   padding-right: 20px; 
+  
+  margin: 0 1em 0 1em;
 }
 
 nav > ul > li > a, footer > ul > li {
   text-decoration: none;
   color: white;
 }
+
+
 
 footer {
   height: 48px;
