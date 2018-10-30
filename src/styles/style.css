@@ -181,11 +181,13 @@ h1{
 
 
 /* - - - - - - - - - - - - - - - - - - ABOUT US CONTENT STYLING - - - - - - - - - - - - - - - - - - - */
+#mortenDrones {
+  font-weight: bold;
+}
 
 #aboutMorten > p, #mortenDrones > p, #about > p{
   margin: .5em 3em .5em 3em;
   text-align: center;
-  
 }
 #about {
   margin-top: 10px;
