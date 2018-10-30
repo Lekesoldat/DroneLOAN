@@ -13,7 +13,7 @@ const tab = params.get('tab');
 
 const routes = [
   {
-    path: './index.html?tab=0',
+    path: './index.html',
     title: Spark.createElement(
       'img',
       {
