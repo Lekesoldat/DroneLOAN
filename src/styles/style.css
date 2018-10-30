@@ -425,11 +425,22 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
 }
 
 /* Remove margin-top from the first inputfield, so it alligns with "Contact information" box */
-#contactFirstInputField {
+#contactNameInputField {
   margin-top: 0px;
 }
 
-#contactInputField {
+#contactEmailInputField {
+  margin-top: 10%;
+}
+
+#contactInquiryMessage {
+  height: 27%;
+  
+  /* Prevent textarea from resizing left or right */
+  max-width: 100%;
+  min-width: 100%;
+
+  padding-top: 2%;
   margin-top: 10%;
 }
 
@@ -442,29 +453,18 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
 #contactInformationBox > h4, #contactInformationBox p {
   text-align: center;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 } 
-
-/* Center allign store address  */
-#contactUsAddress {
-  text-align: center;
-}
-
-#contactInquiry {
-  height: 27%;
-  
-  /* Prevent textarea from resizing left or right */
-  max-width: 100%;
-  min-width: 100%;
-
-  padding-top: 2%;
-  margin-top: 12%;
-}
 
 #googleMap {
   width: 100%;
   height: 27%;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
+}
+
+/* Center allign store address  */
+#contactUsAddress {
+  text-align: center;
 }
 
 /* - - - - - - - - - - - - - - - - - - IMAGE STYLING - - - - - - - - - - - - - - - - - - */
