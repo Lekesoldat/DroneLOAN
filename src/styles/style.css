@@ -396,62 +396,56 @@ footer {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* - - - - - - - - - - - - - - - - - - HTML FORM - - - - - - - - - - - - - - - - - - */
-.inputField {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: 1px solid black;
-}
-
-input[type="submit"] {
-  margin-top: 30px;
-  width: 100%;
-  height: 25px;
-}
-
+/* - - - - - - - - - - - - - - - - - - COMMON HTML FORM - - - - - - - - - - - - - - - - - - */
 /* Does not want it to apply to submit */
 input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid, textarea:valid {
     border: 1px solid green;
 }
 
-
 /* - - - - - - - - - - - - - - - - - - CONTACT US - - - - - - - - - - - - - - - - - - */
-.pageMessage {
-  margin-top: 3%;
+/* Center allign text strings */
+.contactCenterMessage {
   text-align: center;
+}
+
+.contactStyleMessage {
+  margin-top: 3%;
   font-style: italic; 
 }
 
-/* Remove margin-top from the first inputfield, so it alligns with "Contact information" box */
-#contactNameInputField {
-  margin-top: 0px;
+/* Applies styling to each inputfield */
+.inputField {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 7%;
+  border: 1px solid black;
 }
 
-#contactEmailInputField {
-  margin-top: 10%;
+/* Submit button */
+input[type="submit"] {
+  width: 100%;
+  height: 25px;
 }
 
-#contactInquiryMessage {
+#contactInquiryInput {
   height: 27%;
   
   /* Prevent textarea from resizing left or right */
   max-width: 100%;
   min-width: 100%;
 
-  padding-top: 2%;
+  /* Make extra space above inquiry input */
   margin-top: 10%;
 }
 
 #contactInformationBox {
   background-color: white;
-  margin-bottom: 17%;
+  margin-bottom: 20%;
   border: 1px solid black; 
 }
 
 #contactInformationBox > h4, #contactInformationBox p {
-  text-align: center;
-  margin-top: 5%;
+  margin-top: 4.5%;
   margin-bottom: 3%;
 } 
 
@@ -459,11 +453,6 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
   width: 100%;
   height: 27%;
   margin-bottom: 6%;
-}
-
-/* Center allign store address  */
-#contactUsAddress {
-  text-align: center;
 }
 
 /* - - - - - - - - - - - - - - - - - - IMAGE STYLING - - - - - - - - - - - - - - - - - - */
