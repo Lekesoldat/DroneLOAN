@@ -1,7 +1,7 @@
 /*
   FILE NAME: './styles/style.css
   WRITTEN BY: Magnus, Andreas, Mathias, Øyvind, Carl
-  WHEN: 
+  WHEN: October 2018.
   PURPOSE: Styling for the whole page.
 */
 /* - - - - - - - - - - - - - - - - - - SELF-MADE GRID SYSTEM: Thrust Grid - - - - - - - - - - - - - - - - - - */
@@ -11,10 +11,14 @@
 /* Applies to all classes starting with 'col' */
 [class^='col'] {
   min-height: 1px;
-  float: left;
 }
 
-/* 24 bokser i bredden*/
+@media only screen and (min-width: 1001px) {
+  [class^='col'] {
+    float: left;
+  }
+}
+  /* 24 bokser i bredden*/
 .col-05 {
   width: calc((0.5/12)*100%);
 }
@@ -92,11 +96,9 @@
 }
 
 /* Debugging*/
-/* Denne gir meg en hvit border strek rundt divene*/
 .row > div {
   overflow: hidden;
 }
-
 
 /* - - - - - - - - - - - - - - - - - - CONTENT STYLING - - - - - - - - - - - - - - - - - - */
 * {
@@ -181,11 +183,13 @@ h1{
 
 
 /* - - - - - - - - - - - - - - - - - - ABOUT US CONTENT STYLING - - - - - - - - - - - - - - - - - - - */
+#mortenDrones {
+  font-weight: bold;
+}
 
 #aboutMorten > p, #mortenDrones > p, #about > p{
   margin: .5em 3em .5em 3em;
   text-align: center;
-  
 }
 #about {
   margin-top: 10px;
@@ -317,6 +321,21 @@ p > #storefront {
   text-align: center;
 }
 
+.textbox > p, .textbox > a {
+  color: black;
+  font-size: 15px;
+  max-width: 40ch;
+  line-height: 1.5em;
+}
+
+.textbox > a {
+  position: relative;
+  bottom: 0px;
+  left: 40px;
+}
+
+
+
 .mavic > a {
   margin: 0px;
   color: black;
@@ -334,15 +353,14 @@ p > #storefront {
 .rentnow {
   max-width: 25%;
   max-height: 25%;
-  /*position: relative;
-  right: 20px;
+
+  /*right: 20px;
   top: 0px;*/
 }
 
 .imgbox > img {
   width: 350px;
   height: 290px;
-  position: relative;
   left: 20px;
 }
 
@@ -389,62 +407,56 @@ footer {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* - - - - - - - - - - - - - - - - - - HTML FORM - - - - - - - - - - - - - - - - - - */
-.inputField {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: 1px solid black;
-}
-
-input[type="submit"] {
-  margin-top: 30px;
-  width: 100%;
-  height: 25px;
-}
-
+/* - - - - - - - - - - - - - - - - - - COMMON HTML FORM - - - - - - - - - - - - - - - - - - */
 /* Does not want it to apply to submit */
 input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid, textarea:valid {
     border: 1px solid green;
 }
 
-
 /* - - - - - - - - - - - - - - - - - - CONTACT US - - - - - - - - - - - - - - - - - - */
-.pageMessage {
-  margin-top: 3%;
+/* Center allign text strings */
+.contactCenterMessage {
   text-align: center;
+}
+
+.contactStyleMessage {
+  margin-top: 3%;
   font-style: italic; 
 }
 
-/* Remove margin-top from the first inputfield, so it alligns with "Contact information" box */
-#contactNameInputField {
-  margin-top: 0px;
+/* Applies styling to each inputfield */
+.inputField {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 7%;
+  border: 1px solid black;
 }
 
-#contactEmailInputField {
-  margin-top: 10%;
+/* Submit button */
+input[type="submit"] {
+  width: 100%;
+  height: 25px;
 }
 
-#contactInquiryMessage {
+#contactInquiryInput {
   height: 27%;
   
   /* Prevent textarea from resizing left or right */
   max-width: 100%;
   min-width: 100%;
 
-  padding-top: 2%;
+  /* Make extra space above inquiry input */
   margin-top: 10%;
 }
 
 #contactInformationBox {
   background-color: white;
-  margin-bottom: 17%;
+  margin-bottom: 20%;
   border: 1px solid black; 
 }
 
 #contactInformationBox > h4, #contactInformationBox p {
-  text-align: center;
-  margin-top: 5%;
+  margin-top: 4.5%;
   margin-bottom: 3%;
 } 
 
@@ -452,11 +464,6 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
   width: 100%;
   height: 27%;
   margin-bottom: 6%;
-}
-
-/* Center allign store address  */
-#contactUsAddress {
-  text-align: center;
 }
 
 /* - - - - - - - - - - - - - - - - - - IMAGE STYLING - - - - - - - - - - - - - - - - - - */
@@ -468,15 +475,46 @@ img {
 }
 
 /* - - - - - - - - - - - - - - - - - - DRONE SPECIFIC - - - - - - - - - - - - - - - - - - */
+#cover {
+  position: fixed; 
+  height: 100%; 
+  width: 100%; 
+  top:0; 
+  left: 0; 
+  background: #000; 
+  z-index: 999;
+}
+
+#displaySpecs {
+  border-radius: 5px;
+}
+
+#displaySpecs th, #displaySpecs td {
+  padding: 15px;
+  
+}
+
+#displaySpecs th {
+  border-bottom: 1px solid rgb(128, 126, 126);
+}
+
 .droneContent * {
-  padding: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1001px) {
+  .droneContent * {
+    width: 640px;
+  }
 }
 
 #rental {
   text-align: center;
   line-height: 50px;
 }
-
 
 #rental input, #rental textarea {
   display: block;
@@ -512,7 +550,12 @@ img {
   display: none;
   text-align: center;
   overflow: hidden;
-  height: 450px;
+}
+
+@media only screen and (min-width: 1001px) {
+  .mySlides{
+    height: 450px;
+  }
 }
 
 /* Style cursor on hover*/
@@ -559,10 +602,33 @@ img {
   margin-bottom: 10px;
 }
 
-iframe {
-  margin: auto;
+.horisontalLine {
+  background-color: black;
 }
+
 /* - - - - - - - - - - - - - - - - - - RESPONSIVENESS - - - - - - - - - - - - - - - - - - */
+@media only screen and (min-width: 1001px) {
+
+  .videoText {
+    padding-right: 10%;
+  }
+
+  .imgbox > img {
+    position: relative;
+  }
+
+  .textbox > h1, .textbox > p {
+    position: relative;
+    left: 10%;
+  }
+    .rentnow {
+    position: relative;
+  }
+
+  .heightVideopage {
+    height: 250px;
+  }
+}
 
 @media only screen and (max-width: 1000px) {
   .container {
@@ -571,11 +637,35 @@ iframe {
   }
   .fullscreen {
     width: 100%;
-  
+  }
+
+  .fullscreen * {
+    margin: auto;
+    display: block;
+  }
+
+  .videoTextbox {
+    max-width: 340px;
+    margin: auto;
+  }
+
+  .fill {
+    background-color: transparent;
+  }
+
+  .horisontalLine {
+    display: none;
   }
 
   .imgbox > img {
     width: 80%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+
+  .textbox {
+    text-align: center;
   }
 
   #favdrones, #favDroneDescription {
@@ -586,6 +676,9 @@ iframe {
     display: block;
   }
 
-
+  /* Queries for the drone specific page */
+  .miniImage {
+    display: none;
+  }
 }
 
