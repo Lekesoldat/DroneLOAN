@@ -94,7 +94,6 @@
 /* Debugging*/
 /* Denne gir meg en hvit border strek rundt divene*/
 .row > div {
-  background-color: white; /*#f09f9c;*/ 
   overflow: hidden;
 }
 
@@ -340,6 +339,10 @@ h1{
   left: 20px;
 }
 
+.white {
+  background-color: white;
+}
+
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
 nav {
   height: 48.5px;
@@ -565,12 +568,12 @@ img {
   }
   .fullscreen {
     width: 100%;
-  }
-
-  .fullscreen iframe {
-    display: block;
-    margin: auto;
-  }
-
   
+  }
+
+  .imgbox > img {
+    width: 80%;
+  }
+
+
 }
