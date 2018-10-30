@@ -118,20 +118,6 @@ body {
   margin: auto;
 }
 
-@media only screen and (max-width: 1000px) {
-  .container {
-    max-width: 80%;
-    margin: auto;
-  }
-  .fullscreen {
-    width: 100%;
-  }
-
-  .fullscreen iframe {
-    display: block;
-  }
-}
-
 #content {
   min-height: calc(100vh - 55px - 48px);
   overflow: hidden;
@@ -404,12 +390,6 @@ footer {
   border: 1px solid black;
 }
 
-/* 
-  CSS Lifehack
-  margin: top right bottom left
-  margin: top bottom 
-*/
-
 input[type="submit"] {
   margin-top: 30px;
   width: 100%;
@@ -423,44 +403,31 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
 
 
 /* - - - - - - - - - - - - - - - - - - CONTACT US - - - - - - - - - - - - - - - - - - */
-#headerMessage {
+.pageMessage {
   margin-top: 1%;
   text-align: center;
   font-style: italic; 
 }
 
-#googleMap {
-  width: 100%;
-  margin-bottom: 40px;  
-}
-
-/* remove margin-top from the first inputfield, so it alligns with "Contact information" box */
+/* Remove margin-top from the first inputfield, so it alligns with "Contact information" box */
 #contactFirstInputField {
   margin-top: 0px;
 }
 
-#contactInformationBox {
-    /* margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%; */
-    
-    border: 1px solid black; 
-}
-
 #contactInputField {
-  margin-top: 43px;
+  margin-top: 10%;
 }
 
 #contactInformationBox {
   background-color: white;
-  margin-bottom: 58px;
+  margin-bottom: 17%;
+  border: 1px solid black; 
 }
 
 #contactInformationBox > h4, #contactInformationBox p {
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 16px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 } 
 
 #contactUsAddress {
@@ -468,18 +435,19 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
 }
 
 #contactInquiry {
-  height: 200px;
+  height: 27%;
   /* Prevent textarea from resizing left or right */
   max-width: 100%;
   min-width: 100%;
-  padding-top: 10px;
+  padding-top: 2%;
 
-  margin-top: 43px;
+  margin-top: 12%;
 }
 
 #googleMap {
   width: 100%;
-  height: 200px;
+  height: 27%;
+  margin-bottom: 10%;
 }
 
 /* Override background-color: white; set by .row > class */
@@ -593,4 +561,22 @@ img {
 
 iframe {
   margin: auto;
+}
+/* - - - - - - - - - - - - - - - - - - RESPONSIVENESS - - - - - - - - - - - - - - - - - - */
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    max-width: 80%;
+    margin: auto;
+  }
+  .fullscreen {
+    width: 100%;
+  }
+
+  .fullscreen iframe {
+    display: block;
+    margin: auto;
+  }
+
+  
 }

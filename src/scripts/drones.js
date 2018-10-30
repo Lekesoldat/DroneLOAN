@@ -163,8 +163,8 @@ const showSlides = n => {
   }
 
   // Display first image and set active
-  slides[imageIndex].style.display = 'block';
-  miniImages[imageIndex].className += ' active';
+  slides[n].style.display = 'block';
+  miniImages[n].className += ' active';
 };
 
 const carousel = () => {
