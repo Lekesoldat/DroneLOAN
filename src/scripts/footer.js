@@ -10,8 +10,8 @@ import * as Spark from './spark.js';
 // TODO: Fix fields in footer
 // To be displayed in the footer
 const fields = [
-  'Contact: contact@droneloan.com', 
-  'Address: Advokat Allé 5C', 
+  'contact@droneloan.com', 
+  'Høgskoleringen 1, 7491 Trondheim', 
   '&copy; DroneLOAN 2018'
 ];
 
