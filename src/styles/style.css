@@ -203,7 +203,10 @@ h1{
   margin-bottom: 10px;
 }
 
-
+p > #storefront {
+  width: 700px;
+  height: auto;
+}
 
 /* - - - - - - - - - - - - - - - - - - LANDINGE PAGE IMAGE STYLING - - - - - - - - - - - - - - - - -  */
 .wrapper {
@@ -556,6 +559,9 @@ img {
   margin-bottom: 10px;
 }
 
+iframe {
+  margin: auto;
+}
 /* - - - - - - - - - - - - - - - - - - RESPONSIVENESS - - - - - - - - - - - - - - - - - - */
 
 @media only screen and (max-width: 1000px) {
