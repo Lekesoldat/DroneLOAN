@@ -1,7 +1,7 @@
 /*
   FILE NAME: './styles/style.css
   WRITTEN BY: Magnus, Andreas, Mathias, Øyvind, Carl
-  WHEN: 
+  WHEN: October 2018.
   PURPOSE: Styling for the whole page.
 */
 /* - - - - - - - - - - - - - - - - - - SELF-MADE GRID SYSTEM: Thrust Grid - - - - - - - - - - - - - - - - - - */
@@ -96,11 +96,9 @@
 }
 
 /* Debugging*/
-/* Denne gir meg en hvit border strek rundt divene*/
 .row > div {
   overflow: hidden;
 }
-
 
 /* - - - - - - - - - - - - - - - - - - CONTENT STYLING - - - - - - - - - - - - - - - - - - */
 * {
@@ -501,11 +499,16 @@ img {
 }
 
 .droneContent * {
-  width: 640px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 12px;
   text-align: center;
+}
+
+@media only screen and (min-width: 1001px) {
+  .droneContent * {
+    width: 640px;
+  }
 }
 
 #rental {
@@ -547,7 +550,12 @@ img {
   display: none;
   text-align: center;
   overflow: hidden;
-  height: 450px;
+}
+
+@media only screen and (min-width: 1001px) {
+  .mySlides{
+    height: 450px;
+  }
 }
 
 /* Style cursor on hover*/
@@ -599,7 +607,6 @@ img {
 }
 
 /* - - - - - - - - - - - - - - - - - - RESPONSIVENESS - - - - - - - - - - - - - - - - - - */
-
 @media only screen and (min-width: 1001px) {
 
   .videoText {
@@ -650,7 +657,6 @@ img {
     display: none;
   }
 
-
   .imgbox > img {
     width: 80%;
     height: auto;
@@ -670,6 +676,9 @@ img {
     display: block;
   }
 
-
+  /* Queries for the drone specific page */
+  .miniImage {
+    display: none;
+  }
 }
 
