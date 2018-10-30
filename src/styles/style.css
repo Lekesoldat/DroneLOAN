@@ -199,13 +199,22 @@ h1{
   text-align: left;
 }
 
-#favDroneDescription > p:last-child, #favDrones > p:last-child, #about > p:last-child{
-  margin-bottom: 10px;
+#favDroneDescription > p:last-child, #favDrones > p:last-child, #about > p:last-child, #favDroneMobile > p:last-child {
+  margin-bottom: 30px;
 }
 
 p > #storefront {
-  width: 700px;
+  width: 80%;
   height: auto;
+}
+
+#favDroneMobile {
+  text-align: center;
+  display: none;
+}
+
+#favDroneMobile > p:nth-child(odd) {
+  font-weight: bold;
 }
 
 /* - - - - - - - - - - - - - - - - - - LANDINGE PAGE IMAGE STYLING - - - - - - - - - - - - - - - - -  */
@@ -578,5 +587,11 @@ iframe {
     margin: auto;
   }
 
-  
+  #favdrones, #favDroneDescription {
+    display: none;
+  }
+  #favDroneMobile {
+    text-align: center;
+    display: block;
+  }
 }
