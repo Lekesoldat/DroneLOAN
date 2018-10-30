@@ -476,15 +476,41 @@ img {
 }
 
 /* - - - - - - - - - - - - - - - - - - DRONE SPECIFIC - - - - - - - - - - - - - - - - - - */
+#cover {
+  position: fixed; 
+  height: 100%; 
+  width: 100%; 
+  top:0; 
+  left: 0; 
+  background: #000; 
+  z-index: 999;
+}
+
+#displaySpecs {
+  border-radius: 5px;
+}
+
+#displaySpecs th, #displaySpecs td {
+  padding: 15px;
+  
+}
+
+#displaySpecs th {
+  border-bottom: 1px solid rgb(128, 126, 126);
+}
+
 .droneContent * {
-  padding: 12px;
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+  text-align: center;
 }
 
 #rental {
   text-align: center;
   line-height: 50px;
 }
-
 
 #rental input, #rental textarea {
   display: block;
