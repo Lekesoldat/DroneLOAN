@@ -334,6 +334,10 @@ p > #storefront {
   left: 20px;
 }
 
+.white {
+  background-color: white;
+}
+
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
 nav {
   height: 48.5px;
@@ -555,12 +559,11 @@ iframe {
   }
   .fullscreen {
     width: 100%;
-  }
-
-  .fullscreen iframe {
-    display: block;
-    margin: auto;
-  }
-
   
+  }
+
+  .imgbox > img {
+    width: 80%;
+  }
+
 }
