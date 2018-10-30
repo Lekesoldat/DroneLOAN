@@ -436,15 +436,6 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
   margin-top: 0px;
 }
 
-#contactInformationBox {
-    /* margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%; */
-    
-    border: 1px solid black; 
-}
-
 #contactInputField {
   margin-top: 10%;
 }
@@ -452,6 +443,7 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
 #contactInformationBox {
   background-color: white;
   margin-bottom: 17%;
+  border: 1px solid black; 
 }
 
 #contactInformationBox > h4, #contactInformationBox p {
