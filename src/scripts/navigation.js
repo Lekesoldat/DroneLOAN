@@ -44,14 +44,14 @@ const routes = [
 ];
 
 // Creates a clickable element, specifies where it leads and its content (children)
-function renderLink( route ) {
+function renderLink( {path, title} ) {
   return Spark.createElement(
     'a',
     {
-      href: route.path
+      href: path
     },
     [
-      route.title
+      title
     ]
   );
 }

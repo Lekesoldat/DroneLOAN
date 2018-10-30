@@ -16,27 +16,34 @@ const id = params.get('id');
 // Loop through the drones array and find the first element where ID matches.
 const drone = drones.find(drone => drone.id == id);
 
-// If ID is valid
+// If a matching drone is found.
 if (drone) {
-  // 
+  const { name, description, images, specs } = drone;
+  
   Flare.fill(
     // Root
     document.getElementById('content'),
     
     // Mapping
     {
-      title: drone.name,
-      about: drone.description,
+      title: name,
+      about: description,
 
-      bigImage: renderCarouselElement(drone.images),
-      miniImage: renderMiniSection(drone.images),
+      bigImage: renderCarouselElement(images),
+      miniImage: renderMiniSection(images),
 
       // <li></li>
-      specs: drone.specs.map(spec => Spark.createElement(
+      specs: specs.map(spec => Spark.createElement(
         'li',
         null,
         [
-          spec
+          Spark.createElement(
+            'p',
+            null,
+            [
+              spec
+            ]
+          )
         ]
       ))
     }

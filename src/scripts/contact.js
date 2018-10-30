@@ -1,3 +1,10 @@
+/*
+FILE NAME: contact.js
+WRITTEN BY: Andreas Amundsen
+WHEN:
+PURPOSE: 
+*/
+
 // Removes text from input fields
 function clearInputFields() {
   document.getElementById('contactFirstInputField').value = '';
