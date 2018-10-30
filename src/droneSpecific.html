@@ -11,13 +11,21 @@
   <meta charset="UTF-8">
   <title>Drone specific page</title>
   <link rel="stylesheet" href="./styles/style.css">
+
+    <script>
+      /*  - - - - - - - - - - - DISPLAY CONTENT WHEN PAGE IS LOADED - - - - - - - - - - - */
+      const displayContent = () => {
+        const cover = document.getElementById('cover').style.visibility = 'hidden';
+      };
+    </script>
 </head>
 
-  <body>
+  <body onload="displayContent()">
     <header>
       <nav id="navigation"></nav>
     </header>
 
+    <div id="cover"></div>
     <section class="container" id="content">
       
       <!-- Row with the drone title -->
