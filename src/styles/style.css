@@ -202,7 +202,10 @@ h1{
   margin-bottom: 10px;
 }
 
-
+p > #storefront {
+  width: 700px;
+  height: auto;
+}
 
 /* - - - - - - - - - - - - - - - - - - LANDINGE PAGE IMAGE STYLING - - - - - - - - - - - - - - - - -  */
 .wrapper {
@@ -275,14 +278,6 @@ h1{
   left: 5%;
   text-align: center;
 }
-
-/*.row:nth-child(3),.row:nth-child(4),.row:nth-child(5),.row:nth-child(7) {
-  margin-top: 20px;
-}
-
-.mavic:nth-child(1), .mavic:nth-child(2){
-  margin-top: 10px;
-}*/
 
 .textbox > p, .textbox > a {
   color: black;
@@ -399,7 +394,7 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
 
 /* - - - - - - - - - - - - - - - - - - CONTACT US - - - - - - - - - - - - - - - - - - */
 .pageMessage {
-  margin-top: 1%;
+  margin-top: 3%;
   text-align: center;
   font-style: italic; 
 }
@@ -425,17 +420,19 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
   margin-bottom: 5%;
 } 
 
+/* Center allign store address  */
 #contactUsAddress {
   text-align: center;
 }
 
 #contactInquiry {
   height: 27%;
+  
   /* Prevent textarea from resizing left or right */
   max-width: 100%;
   min-width: 100%;
-  padding-top: 2%;
 
+  padding-top: 2%;
   margin-top: 12%;
 }
 
@@ -443,15 +440,6 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
   width: 100%;
   height: 27%;
   margin-bottom: 10%;
-}
-
-/* Override background-color: white; set by .row > class */
-#removeBackground {
-  background-color: transparent;
-}
-
-#contactUsMessage {
-  background-color: #F2F2F2
 }
 
 /* - - - - - - - - - - - - - - - - - - IMAGE STYLING - - - - - - - - - - - - - - - - - - */
@@ -555,7 +543,6 @@ img {
   margin-bottom: 10px;
 }
 
-
 /* - - - - - - - - - - - - - - - - - - RESPONSIVENESS - - - - - - - - - - - - - - - - - - */
 
 @media only screen and (min-width: 1001px) {
@@ -601,6 +588,5 @@ img {
   .textbox {
     text-align: center;
   }
-
 
 }
