@@ -424,7 +424,7 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
 
 #googleMap {
   width: 100%;
-  margin-bottom: 40px;  
+  margin-bottom: 10%;  
 }
 
 /* remove margin-top from the first inputfield, so it alligns with "Contact information" box */
@@ -442,18 +442,18 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
 }
 
 #contactInputField {
-  margin-top: 43px;
+  margin-top: 10%;
 }
 
 #contactInformationBox {
   background-color: white;
-  margin-bottom: 58px;
+  margin-bottom: 17%;
 }
 
 #contactInformationBox > h4, #contactInformationBox p {
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 16px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 } 
 
 #contactUsAddress {
@@ -461,18 +461,18 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
 }
 
 #contactInquiry {
-  height: 200px;
+  height: 27%;
   /* Prevent textarea from resizing left or right */
   max-width: 100%;
   min-width: 100%;
-  padding-top: 10px;
+  padding-top: 2%;
 
-  margin-top: 43px;
+  margin-top: 12%;
 }
 
 #googleMap {
   width: 100%;
-  height: 200px;
+  height: 27%;
 }
 
 /* Override background-color: white; set by .row > class */
