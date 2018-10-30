@@ -297,10 +297,7 @@ h1{
   left: 40px;
 }
 
-.textbox > h1, .textbox > p {
-  position: relative;
-  left: 10%;
-}
+
 
 .mavic > a {
   margin: 0px;
@@ -327,7 +324,6 @@ h1{
 .rentnow {
   max-width: 25%;
   max-height: 25%;
-  position: relative;
   right: 20px;
   top: 0px;
 }
@@ -335,7 +331,6 @@ h1{
 .imgbox > img {
   width: 350px;
   height: 290px;
-  position: relative;
   left: 20px;
 }
 
@@ -551,6 +546,7 @@ img {
 .videoText{
   margin-top: 10%;
   margin-bottom: 10%;
+  padding-right: 10%
 }
 
 .whiteBackground {
@@ -559,7 +555,26 @@ img {
   margin-bottom: 10px;
 }
 
+
 /* - - - - - - - - - - - - - - - - - - RESPONSIVENESS - - - - - - - - - - - - - - - - - - */
+
+@media only screen and (min-width: 1001px) {
+  .imgbox > img {
+    position: relative;
+  }
+
+  .textbox > h1, .textbox > p {
+    position: relative;
+    left: 10%;
+  }
+    .rentnow {
+    position: relative;
+  }
+
+  .fill {
+    height: 250px;
+  }
+}
 
 @media only screen and (max-width: 1000px) {
   .container {
@@ -568,11 +583,23 @@ img {
   }
   .fullscreen {
     width: 100%;
-  
   }
+
+  .fullscreen iframe {
+    margin: auto;
+    display: block;
+  }
+
 
   .imgbox > img {
     width: 80%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+
+  .textbox {
+    text-align: center;
   }
 
 
