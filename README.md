@@ -21,6 +21,10 @@ Embedded
 
 --------------
 
+DJI Phantom 4 Cape Good Hope - 
+<iframe width="340" height="250" src="https://www.youtube.com/embed/5xdyRniWxcQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
 DJI Inspire 2 New Zealand - https://youtu.be/nhndUKor5Y8
 Embedded
 <iframe width="340" height="250" src="https://www.youtube.com/embed/nhndUKor5Y8?start=32" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

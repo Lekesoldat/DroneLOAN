@@ -279,6 +279,24 @@ p > #storefront {
   max-height: 400px;
 }
 
+.textbox > a {
+  /*position: relative;
+  bottom: 0px;
+  left: 40px;*/
+}
+
+.textbox > p, .textbox > a {
+  color: black;
+  font-size: 15px;
+  max-width: 40ch;
+  line-height: 1.5em;
+}
+
+.textbox > h1, .textbox > p {
+  position: relative;
+  left: 10%;
+}
+
 .mavic {
   height: 350px;
 }
@@ -299,24 +317,6 @@ p > #storefront {
   text-align: center;
 }
 
-.textbox > p, .textbox > a {
-  color: black;
-  font-size: 15px;
-  max-width: 40ch;
-  line-height: 1.5em;
-}
-
-.textbox > a {
-  position: relative;
-  bottom: 0px;
-  left: 40px;
-}
-
-.textbox > h1, .textbox > p {
-  position: relative;
-  left: 10%;
-}
-
 .mavic > a {
   margin: 0px;
   color: black;
@@ -331,20 +331,12 @@ p > #storefront {
   left: 30px;
 }
 
-.mavicrentnow {
-  max-width: 25%;
-  max-height: 25%;
-  position: relative;
-  right: 20px;
-  top: 70px;
-}
-
 .rentnow {
   max-width: 25%;
   max-height: 25%;
-  position: relative;
+  /*position: relative;
   right: 20px;
-  top: 0px;
+  top: 0px;*/
 }
 
 .imgbox > img {
