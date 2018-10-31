@@ -120,7 +120,7 @@ body {
 }
 
 #content {
-  min-height: calc(100vh - 55px - 48px);
+  min-height: calc(100vh - 55px - 40px);
   overflow: hidden;
 }
 
