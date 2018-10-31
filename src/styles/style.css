@@ -283,13 +283,9 @@ p > #storefront {
   max-height: 400px;
 }
 
-.textbox > a {
-  /*position: relative;
-  bottom: 0px;
-  left: 40px;*/
-}
-
 .textbox > p, .textbox > a {
+  text-decoration-line: none;
+  font-size: 16px;
   color: black;
   font-size: 15px;
   max-width: 40ch;
@@ -299,6 +295,7 @@ p > #storefront {
 .textbox > h1, .textbox > p {
   position: relative;
   left: 10%;
+  bottom: 15px;
 }
 
 .mavic {
@@ -314,54 +311,44 @@ p > #storefront {
 
 .mavictext {
   line-height: 1.5em;
-  width: 45ch;
   position: relative;
   top: 35%;
   left: 5%;
   text-align: center;
 }
 
-.textbox > p, .textbox > a {
-  color: black;
-  font-size: 15px;
-  max-width: 40ch;
-  line-height: 1.5em;
-}
-
-.textbox > a {
+.mavic > :nth-child(3) {
   position: relative;
-  bottom: 0px;
-  left: 40px;
+  right: 5px;
+  top: 140px;
 }
 
-
-
-.mavic > a {
-  margin: 0px;
+.mavic > :nth-child(4) {
+  text-decoration-line: none;
+  font-size: 17px;
   color: black;
   position: relative;
-  left: 10%;
-  top: 30px;
-}
-
-.mavic > img {
-  height: 100%;
-  position: relative;
-  left: 30px;
-}
-
-.rentnow {
-  max-width: 25%;
-  max-height: 25%;
-
-  /*right: 20px;
-  top: 0px;*/
+  left: 45px;
+  top: 130px;
 }
 
 .imgbox > img {
   width: 350px;
   height: 290px;
   left: 20px;
+}
+
+.learnmore {
+  position: relative;
+  left: 50px;
+  bottom: 10px;
+}
+
+.rentnow {
+  max-width: 25%;
+  max-height: 25%;
+  left: 30px;
+  top: 0px;
 }
 
 .white {
