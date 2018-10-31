@@ -95,7 +95,7 @@ function renderListItem(route, index) {
   );
 }
 
-// Values is an array. Calls .render() on each item in values[]
+
 function renderList(routes) {
   return Spark.createElement(
     'ul',
