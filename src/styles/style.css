@@ -306,14 +306,14 @@ p > #storefront {
   font-size: 36px;
   position: relative;
   left: 10%;
-  top: 30%;
+  top: 20%;
 }
 
 .mavictext {
   line-height: 1.5em;
   position: relative;
-  top: 35%;
-  left: 5%;
+  top: 25%;
+  left: 1%;
   text-align: center;
 }
 
