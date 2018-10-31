@@ -597,7 +597,7 @@ img {
 
 /* - - - - - - - - - - - - - - - - - - RESPONSIVENESS - - - - - - - - - - - - - - - - - - */
 @media only screen and (min-width: 1001px) {
-
+  
   .videoText {
     padding-right: 10%;
   }
@@ -668,6 +668,10 @@ img {
   /* Queries for the drone specific page */
   .miniImage {
     display: none;
+  }
+
+  .guaranties, .renter{
+    float: left;
   }
 }
 
