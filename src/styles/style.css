@@ -387,14 +387,28 @@ nav > ul > li > a, footer > ul > li {
   color: white;
 }
 
-
-
 footer {
   height: 48px;
 }
+
 .activeTab {
   background-color: rgba(255, 255, 255, 0.5);
 }
+
+.burgerIcon {
+  display: none;
+}
+
+/* When screen shrinks, only display logo */
+@media only screen and (max-width: 1000px) {
+  .footNav li:not(:first-child) {
+    display: none;
+  }
+
+
+}
+
+
 
 /* - - - - - - - - - - - - - - - - - - COMMON HTML FORM - - - - - - - - - - - - - - - - - - */
 /* Does not want it to apply to submit */
@@ -470,7 +484,7 @@ img {
   width: 100%; 
   top:0; 
   left: 0; 
-  background: #000; 
+  background: #fff; 
   z-index: 999;
 }
 
@@ -665,7 +679,7 @@ img {
     display: block;
   }
 
-  /* Queries for the drone specific page */
+  /* Query for the drone specific page */
   .miniImage {
     display: none;
   }
