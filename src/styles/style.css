@@ -376,7 +376,6 @@ nav > ul > li, footer > ul > li {
   display: inline-block;
   padding: 15px;
   padding-right: 20px; 
-  
   margin: 0 1em 0 1em;
 }
 
@@ -385,32 +384,40 @@ nav > ul > li > a, footer > ul > li {
   color: white;
 }
 
-#validate {
-  text-decoration: none;
-  color: white;
-}
-
-.activeTab {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.burgerIcon {
-  display: none;
-}
-
-/* When screen shrinks, only display logo */
-@media only screen and (max-width: 1000px) {
-  .footNav li:not(:first-child) {
-    display: none;
-  }
-
-}
-
 footer {
   height: 48px;
 }
+
+@media only screen and (max-width: 1000px) {
+  nav > ul > li{
+    /* Reset padding */
+    padding: 0;
+    margin-left: 0.1em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  nav > ul > li:not(:first-child){
+    display: none;
+  }
+}
+
+/* When screen get stoo small, only display contact information */
+@media only screen and (max-width: 1000px) {
+  footer ul li:nth-child(n+2){
+    display: none;
+  }
+}
+
 .activeTab {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+#validate {
+  text-decoration: none;
+  color: white;
 }
 
 /* - - - - - - - - - - - - - - - - - - COMMON HTML FORM - - - - - - - - - - - - - - - - - - */

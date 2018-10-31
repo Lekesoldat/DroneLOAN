@@ -42,27 +42,3 @@ export function createElement(tagName, attributes, children) {
 export const render = (root, element) => {
   root.appendChild(element);
 };
-
-/* 
-Returns a DOM element with the attribute(s) and children set.
-createElement(
-  'a',
-  {
-    href: "www.google.com",
-    target: '_blank'
-  },
-  [
-    createElement(
-      'p',
-      {
-        innerText: 'Google'
-      },
-      null
-    )
-  ]
-)
-
---> 
-
-<a href="www.google.com" target="_blank"><p>Google.com</p></a>
-*/
