@@ -385,7 +385,21 @@ nav > ul > li > a, footer > ul > li {
   color: white;
 }
 
+.activeTab {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
+.burgerIcon {
+  display: none;
+}
+
+/* When screen shrinks, only display logo */
+@media only screen and (max-width: 1000px) {
+  .footNav li:not(:first-child) {
+    display: none;
+  }
+
+}
 
 footer {
   height: 48px;
@@ -468,7 +482,7 @@ img {
   width: 100%; 
   top:0; 
   left: 0; 
-  background: #000; 
+  background: #fff; 
   z-index: 999;
 }
 

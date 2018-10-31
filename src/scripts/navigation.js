@@ -40,6 +40,21 @@ const routes = [
   {
     path: './about.html?tab=4',
     title: 'ABOUT US'
+  },
+  {
+    path: '#!',
+    className: 'burgerIcon',
+    title: Spark.createElement(
+      'img',
+      {
+        src: './img/burgerIcon.png',
+        className: 'burgerIcon',
+        alt: 'Burger Menu',
+        width: 30,
+        heigth: 30
+      },
+      null
+    )
   }
 ];
 
@@ -59,7 +74,14 @@ function renderLink( {path, title} ) {
 // Create a list item with an whatever as content.
 function renderListItem(route, index) {
   // Renders which page is active
-  const props = ((index == tab) ? { className : 'activeTab' } : null);
+  let props = {};
+
+  // If classname provided, add class and potential active tab aswell
+  if (route.className) {
+    props.className = ((index == tab) ? 'activeTab ' : '') + route.className;
+  } else {
+    props = ((index == tab) ? { className: 'activeTab' } : null);
+  }
   
   return Spark.createElement(
     'li',
@@ -75,7 +97,7 @@ function renderList(routes) {
   return Spark.createElement(
     'ul',
     {
-      className: 'container'
+      className: 'container footNav'
     },
     routes.map((route, index) => renderListItem(route, index))
   );
