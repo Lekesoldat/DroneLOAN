@@ -71,6 +71,9 @@ function renderLink( {path, title} ) {
   );
 }
 
+// TODO: FIX
+// ! IMPORTANT FIX !!!!!!!!!!!!!!!
+
 // Create a list item with an whatever as content.
 function renderListItem(route, index) {
   // Renders which page is active
