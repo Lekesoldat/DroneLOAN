@@ -6,10 +6,10 @@ PURPOSE:
 */
 
 // Display an alert when contact form is submitted
-const contactForm = document.getElementById('contactForm');
-const fakeRequest = evt => {
+const contactForm = document.getElementById('contactUs');
+function fakeRequest() {
   alert('Thank you for contacting us!🎉 You will hear from us shortly');
-};
+}
 
 contactForm.addEventListener('submit', fakeRequest, true);
 

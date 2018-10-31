@@ -414,6 +414,31 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
     border: 1px solid green;
 }
 
+/* Submit button */
+input[type="submit"] {
+  width: 50%;
+  height: 25px;
+}
+
+form {
+  text-align: center;
+  line-height: 50px;
+}
+
+form input, form textarea {
+  display: block;
+  width: 80%;
+  padding: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+}
+
+form textarea {
+  min-width: 80%;
+  max-width: 80%;
+}
+
 /* - - - - - - - - - - - - - - - - - - CONTACT US - - - - - - - - - - - - - - - - - - */
 /* Center allign text strings */
 .contactCenterMessage {
@@ -421,50 +446,32 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
 }
 
 .contactStyleMessage {
-  margin-top: 3%;
+
   font-style: italic; 
 }
 
-/* Applies styling to each inputfield */
-.inputField {
-  width: 100%;
-  padding: 12px 20px;
-  margin-bottom: 7%;
-  border: 1px solid black;
-}
-
-/* Submit button */
-input[type="submit"] {
-  width: 100%;
-  height: 25px;
-}
-
 #contactInquiryInput {
-  height: 27%;
-  
-  /* Prevent textarea from resizing left or right */
-  max-width: 100%;
-  min-width: 100%;
-
-  /* Make extra space above inquiry input */
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 #contactInformationBox {
   background-color: white;
-  margin-bottom: 20%;
+  
   border: 1px solid black; 
 }
 
 #contactInformationBox > h4, #contactInformationBox p {
-  margin-top: 4.5%;
+  margin-top: 2.5%;
   margin-bottom: 3%;
 } 
 
 #googleMap {
-  width: 100%;
-  height: 27%;
-  margin-bottom: 6%;
+  height: 300px;
+}
+
+#mapsWrapper {
+  height: 100%;
+  margin-top: 18%;
 }
 
 /* - - - - - - - - - - - - - - - - - - IMAGE STYLING - - - - - - - - - - - - - - - - - - */
@@ -510,20 +517,6 @@ img {
   .droneContent * {
     width: 640px;
   }
-}
-
-#rental {
-  text-align: center;
-  line-height: 50px;
-}
-
-#rental input, #rental textarea {
-  display: block;
-  width: 80%;
-  padding: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 12px;
 }
 
 #specsDiv ul {
