@@ -283,6 +283,21 @@ p > #storefront {
   max-height: 400px;
 }
 
+.textbox > p, .textbox > a {
+  text-decoration-line: none;
+  font-size: 16px;
+  color: black;
+  font-size: 15px;
+  max-width: 40ch;
+  line-height: 1.5em;
+}
+
+.textbox > h1, .textbox > p {
+  position: relative;
+  left: 10%;
+  bottom: 15px;
+}
+
 .mavic {
   height: 350px;
 }
@@ -296,61 +311,44 @@ p > #storefront {
 
 .mavictext {
   line-height: 1.5em;
-  width: 45ch;
   position: relative;
   top: 35%;
   left: 5%;
   text-align: center;
 }
 
-.textbox > p, .textbox > a {
-  color: black;
-  font-size: 15px;
-  max-width: 40ch;
-  line-height: 1.5em;
-}
-
-.textbox > a {
+.mavic > :nth-child(3) {
   position: relative;
-  bottom: 0px;
-  left: 40px;
+  right: 5px;
+  top: 140px;
 }
 
-
-
-.mavic > a {
-  margin: 0px;
+.mavic > :nth-child(4) {
+  text-decoration-line: none;
+  font-size: 17px;
   color: black;
   position: relative;
-  left: 10%;
-  top: 30px;
-}
-
-.mavic > img {
-  height: 100%;
-  position: relative;
-  left: 30px;
-}
-
-.mavicrentnow {
-  max-width: 25%;
-  max-height: 25%;
-  position: relative;
-  right: 20px;
-  top: 70px;
-}
-
-.rentnow {
-  max-width: 25%;
-  max-height: 25%;
-  right: 20px;
-  top: 0px;
+  left: 45px;
+  top: 130px;
 }
 
 .imgbox > img {
   width: 350px;
   height: 290px;
   left: 20px;
+}
+
+.learnmore {
+  position: relative;
+  left: 50px;
+  bottom: 10px;
+}
+
+.rentnow {
+  max-width: 25%;
+  max-height: 25%;
+  left: 30px;
+  top: 0px;
 }
 
 .white {
@@ -387,10 +385,6 @@ nav > ul > li > a, footer > ul > li {
   color: white;
 }
 
-footer {
-  height: 48px;
-}
-
 .activeTab {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -405,10 +399,14 @@ footer {
     display: none;
   }
 
-
 }
 
-
+footer {
+  height: 48px;
+}
+.activeTab {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
 /* - - - - - - - - - - - - - - - - - - COMMON HTML FORM - - - - - - - - - - - - - - - - - - */
 /* Does not want it to apply to submit */
@@ -484,7 +482,7 @@ img {
   width: 100%; 
   top:0; 
   left: 0; 
-  background: #fff; 
+  background: #000; 
   z-index: 999;
 }
 
@@ -679,7 +677,7 @@ img {
     display: block;
   }
 
-  /* Query for the drone specific page */
+  /* Queries for the drone specific page */
   .miniImage {
     display: none;
   }
