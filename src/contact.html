@@ -4,6 +4,8 @@
   WHEN: October 2018
   PURPOSE: Provide a clean and intuivite way for the costumer to contact droneLOAN costumer service, and look up the where droneLOAN is located on Google Maps
 -->
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -33,24 +35,18 @@
       <div class="col-6">
        
         <!-- Contact form  -->
-        <form id="contactForm">          
+        <form id="contactUs">          
           <label>
-            <input class="inputField" type="text" name="name" placeholder="First name" required>
+            <input type="text" placeholder="First name" required>
           </label>
-
-          <br>
           
           <label>
-            <input class="inputField" type="email" name="email" placeholder="E-mail" required>
+            <input type="email"placeholder="E-mail" required>
           </label>
-
-          <br>
 
           <label>
-            <textarea class="inputField" id="contactInquiryInput"  name="message" placeholder="Your inquiry" required></textarea>
+            <textarea id="contactInquiryInput" rows="21" placeholder="Your inquiry" required></textarea>
           </label>
-
-          <br>
 
           <input type="submit" value="Submit">
 
@@ -71,7 +67,10 @@
         </div>
     
         <!-- Google Maps API integration -->
-        <div id="googleMap"></div>
+        <div id="mapsWrapper">
+          <div id="googleMap"></div>
+        </div>
+
 
         <!-- Display address below Google Map -->
         <p class="contactCenterMessage">Høgskoleringen 1, 7491 Trondheim</p>
@@ -90,6 +89,7 @@
   </section>
   
   <footer id="footer"></footer>
+  
   <script src="scripts/contact.js"></script>
   <!-- Import Google Maps API functionality -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUD161uyW5j432MBN_AN-MTGHSz50xl30&callback=initMap"></script>
