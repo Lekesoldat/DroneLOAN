@@ -385,6 +385,11 @@ nav > ul > li > a, footer > ul > li {
   color: white;
 }
 
+#validate {
+  text-decoration: none;
+  color: white;
+}
+
 .activeTab {
   background-color: rgba(255, 255, 255, 0.5);
 }
