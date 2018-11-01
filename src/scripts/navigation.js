@@ -19,8 +19,7 @@ const routes = [
       {
         src: './img/droneIconWhite.png',
         alt: 'Drone Icon.',
-        width: 30,
-        heigth: 30
+        width: 30
       },
       null
     )
@@ -59,7 +58,7 @@ function renderLink( {path, title} ) {
 // Create a list item with an whatever as content.
 function renderListItem(route, index) {
   // Renders which page is active
-  const props = ((index == tab) ? { className : 'activeTab' } : null);
+  const props = ((index == tab) ? { className: 'activeTab' } : null);
   
   return Spark.createElement(
     'li',
@@ -70,7 +69,6 @@ function renderListItem(route, index) {
   );
 }
 
-// Values is an array. Calls .render() on each item in values[]
 function renderList(routes) {
   return Spark.createElement(
     'ul',

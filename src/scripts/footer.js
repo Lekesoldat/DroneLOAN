@@ -7,12 +7,20 @@
 
 import * as Spark from './spark.js';
 
-// TODO: Fix fields in footer
 // To be displayed in the footer
 const fields = [
   'contact@droneloan.com', 
   'Høgskoleringen 1, 7491 Trondheim', 
-  '&copy; DroneLOAN 2018'
+  Spark.createElement(
+    'a',
+    {
+      href: 'https://validator.w3.org/check/referer',
+      id: 'validate'
+    },
+    [
+      '&copy; DroneLOAN 2018'
+    ]
+  )
 ];
 
 // Create the footer.
