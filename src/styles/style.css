@@ -695,6 +695,7 @@ img {
     float: left;
     margin-left: 30%;
     padding-bottom: 5px;
+    max-width: 15%;
   }
 
   .learnmore {
@@ -724,7 +725,7 @@ img {
   }
 
   .mavictext > :nth-child(4) {
-    padding-left: 9%;
+    padding-left: 7%;
   }
 
   .mavicimg {
