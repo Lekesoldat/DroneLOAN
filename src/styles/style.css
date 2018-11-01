@@ -166,13 +166,24 @@ h1{
   font-size: 12px;
 }
 
-
+/*
 #droneFootage {
   margin-top: 30px;
   margin-left: 10%;
   width: 80%;
   height: 45%;
   
+}
+*/
+
+#droneFootage > p {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#droneFootageSize {
+  width: 85%;
+  height: 383px;
 }
 
 #droneFootageDescription  p{
@@ -258,6 +269,10 @@ p > #storefront {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#errorMargin {
+  margin-right: 30px;
 }
 
 .wrapper:hover .image {
@@ -614,7 +629,7 @@ img {
 
 /* - - - - - - - - - - - - - - - - - - RESPONSIVENESS - - - - - - - - - - - - - - - - - - */
 @media only screen and (min-width: 1001px) {
-
+  
   .videoText {
     padding-right: 10%;
   }
@@ -630,7 +645,7 @@ img {
     .rentnow {
     position: relative;
   }
-
+  
   .heightVideopage {
     height: 250px;
   }
@@ -674,9 +689,12 @@ img {
     text-align: center;
   }
 
-  #favdrones, #favDroneDescription {
+  
+  #favDroneDescription > p, #favDrones > p {
     display: none;
   }
+  
+
   #favDroneMobile {
     text-align: center;
     display: block;
@@ -686,5 +704,11 @@ img {
   .miniImage {
     display: none;
   }
+
+  .guaranties, .renter{
+    float: left;
+  }
+
+
 }
 
