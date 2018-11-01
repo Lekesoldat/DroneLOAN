@@ -293,29 +293,21 @@ p > #storefront {
   bottom: 15px;
 }
 
-.mavic {
-  height: 350px;
-}
-
-.mavic > h1 {
-  font-size: 36px;
-  position: relative;
+.mavictext > h1 {
   left: 10%;
   top: 20%;
 }
 
 
-.mavic > :nth-child(3) {
+.mavictext > :nth-child(3) {
   position: relative;
   right: 5px;
   top: 140px;
 }
 
-.mavic > :nth-child(4) {
+.mavictext > :nth-child(4) {
   text-decoration-line: none;
-  font-size: 17px;
   color: black;
-  position: relative;
   left: 45px;
   top: 130px;
 }
@@ -623,6 +615,16 @@ img {
   .col-575 h1 {
     padding-left: 36px;
   }
+  
+  .mavictext {
+    height: 350px;
+  }
+
+ 
+  .mavictext h1 {
+    position: relative;
+    font-size: 36px;
+  }
 
   .mavictext p {
     line-height: 1.5em;
@@ -630,6 +632,15 @@ img {
     top: 25%;
     left: 1%;
     text-align: center;
+  }
+
+  .mavictext > :nth-child(4) {
+    position: relative;
+    font-size: 17px;
+  }
+
+  .mavicimg {
+    padding-top: 30px;
   }
 }
 
@@ -682,13 +693,13 @@ img {
 
   .rentnow {
     float: left;
-    margin-left: 250px;
+    margin-left: 30%;
     padding-bottom: 5px;
   }
 
   .learnmore {
     float: left;
-    padding-top: 15px;
+    padding-top: 2%;
   }
 
   .mavictext {
@@ -700,8 +711,20 @@ img {
 
   .mavictext * {
     text-align: center;
-    max-width: 80%;
+  }
+
+  .mavictext h1 {
+    padding-top: 6%;
     margin: auto;
+  }
+
+  .mavictext p {
+    max-width: 40ch;
+    margin: auto;
+  }
+
+  .mavictext > :nth-child(4) {
+    padding-left: 9%;
   }
 
   .mavicimg {
