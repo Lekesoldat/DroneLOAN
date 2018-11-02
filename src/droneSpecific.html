@@ -11,92 +11,92 @@
   <meta charset="UTF-8">
   <title>Drone specific page</title>
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" href="./img/droneIcon.png" type="img/png">
 
   <script>
-    /*  - - - - - - - - - - - DISPLAY CONTENT WHEN PAGE IS LOADED - - - - - - - - - - - */
-    const displayContent = () => {
-      document.getElementById('cover').style.visibility = 'hidden';
-    };
+      /*  - - - - - - - - - - - DISPLAY CONTENT WHEN PAGE IS LOADED - - - - - - - - - - - */
+    const displayContent = () => document.getElementById('cover').style.visibility = 'hidden';
   </script>
-
-  <link rel="icon" href="./img/droneIcon.png" type="img/png">
 </head>
 
-  <body onload="displayContent()">
-    <header>
-      <nav id="navigation"></nav>
-    </header>
+<body onload="displayContent()">
+    <!-- Blank image to cover page elements before they are properly loaded -->
+  <div id="cover"></div>
+  
+  <header>
+    <nav id="navigation"></nav>
+  </header>
 
-    <div id="cover"></div>
-    <section class="container" id="content">
-      
-      <!-- Row with the drone title -->
-      <div class="row white">
-        <div class="col-12">
-          <h1>{{ title }}</h1>
-        </div>
+  <section class="container" id="content">
+
+    <!-- Row with the drone title -->
+    <div class="row white">
+      <div class="col-12">
+        <h1>{{ title }}</h1>
       </div>
+    </div>
 
-    <!-- Big image -->
+    <!-- Big image for carousel -->
     <div class="row white">
       {{ bigImage }}
     </div>
-    
+
     <!-- Thumbnails for carousel -->
     <div class="miniImage">
       {{ miniImage }}
     </div>
 
-      <!-- Row with the description -->
-      <div class="row white">
-        <div class="col-12 droneContent">
-          <h1>About</h1>
-          <p>{{ about }}</p>
-        </div>
+    <!-- Row with the description -->
+    <div class="row white">
+      <div class="col-12 droneContent">
+        <h1>About</h1>
+        <p>{{ about }}</p>
       </div>
+    </div>
 
-      <!-- Row with specs -->
-      <div class="row white">
-        <div class="col-12 droneContent">
-          <h1>Specs</h1>
+    <!-- Row with specs -->
+    <div class="row white">
+      <div class="col-12 droneContent">
+        <h1>Specs</h1>
 
-          <div id="specsDiv">
-            {{ specs }}
-          </div>
-          
+        <div id="specsDiv">
+          {{ specs }}
         </div>
+
       </div>
+    </div>
 
-      <!-- Row with form -->
-      <div class="row white">
-        <div class="col-12" id="rental">
-          <form id="requestRental">
-            <label>Your full name
-              <input type="text" placeholder="Bob Jensen" required>
-            </label>
+    <!-- Row with form -->
+    <div class="row white">
+      <div class="col-12" id="rental">
+        <form id="requestRental">
+          <label>Your full name
+            <input type="text" placeholder="Bob Jensen" required>
+          </label>
 
-            <label>Your email
-              <input type="email" placeholder="email@example.com" required>
-            </label>
+          <label>Your email
+            <input type="email" placeholder="email@example.com" required>
+          </label>
 
-            <label>Address</label>
-              <input type="text" placeholder="Street name" required>
-              <input type="text" placeholder="City" required>
-              <input type="number" placeholder="Zip / Postal Code" min="0000" max="9999" required>
+          <label>Address</label>
+          <input type="text" placeholder="Street name" required>
+          <input type="text" placeholder="City" required>
+          <input type="number" placeholder="Zip / Postal Code" min="0000" max="9999" required>
 
-            <label>Field of application
-              <textarea placeholder="Write here." rows="5" required></textarea>
-            </label>
-            
-            <input type="submit" value="Request rental" class="smallButton">
-          </form>
-        </div>
+          <label>Field of application
+            <textarea placeholder="Write here." rows="5" required></textarea>
+          </label>
+
+          <input type="submit" value="Request rental" class="smallButton">
+        </form>
       </div>
-    </section>
-    <footer id="footer"></footer>
-    
-    <!-- Scripts  -->
-    <script type="module" src="./scripts/index.js"></script>
-    <script type="module" src="./scripts/drones.js"></script>
-  </body>
+    </div>
+  </section>
+  <footer id="footer"></footer>
+
+  <!-- Scripts  -->
+  <script type="module" src="./scripts/index.js"></script>
+  <script type="module" src="./scripts/drones.js"></script>
+</body>
+
 </html>
