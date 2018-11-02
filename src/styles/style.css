@@ -142,7 +142,7 @@ h1{
 
 #introduction > p, #slogan > p, #renter1 > p, #renter2 > p, #renter3 > p{
   text-align: center;
-  margin: .5em 3em .5em 3em;
+  margin: .5% 15% 5% 15%;
 }
 
 #inspire2{
@@ -296,14 +296,9 @@ p > #storefront {
 
 /* - - - - - - - - - - - - - - - - - - OURDRONES.HTML BOX STYLING - - - - - - - - - - - - - - - - - - */
 
-.textbox > h1, .textbox > img, .textbox > a, .textbox > p {
-  height: 50px;
-  max-height: 400px;
-}
 
 .textbox > p, .textbox > a {
   text-decoration-line: none;
-  font-size: 16px;
   color: black;
   font-size: 15px;
   max-width: 40ch;
@@ -311,41 +306,26 @@ p > #storefront {
 }
 
 .textbox > h1, .textbox > p {
-  position: relative;
+  margin: auto;
   left: 10%;
   bottom: 15px;
 }
 
-.mavic {
-  height: 350px;
-}
-
-.mavic > h1 {
-  font-size: 36px;
-  position: relative;
+.mavictext > h1 {
   left: 10%;
   top: 20%;
 }
 
-.mavictext {
-  line-height: 1.5em;
-  position: relative;
-  top: 25%;
-  left: 1%;
-  text-align: center;
-}
 
-.mavic > :nth-child(3) {
+.mavictext > :nth-child(3) {
   position: relative;
   right: 5px;
   top: 140px;
 }
 
-.mavic > :nth-child(4) {
+.mavictext > :nth-child(4) {
   text-decoration-line: none;
-  font-size: 17px;
   color: black;
-  position: relative;
   left: 45px;
   top: 130px;
 }
@@ -363,8 +343,9 @@ p > #storefront {
 }
 
 .rentnow {
-  max-width: 25%;
-  max-height: 25%;
+  position: relative;
+  max-width: 100px;
+  max-height: 30px;
   left: 30px;
   top: 0px;
 }
@@ -616,8 +597,8 @@ img {
 
 /* - - - - - - - - - - - - - - - - - - VIDEO PAGE - - - - - - - - - - - - - - - - - - */
 .videoText{
-  margin-top: 10%;
-  margin-bottom: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .whiteBackground {
@@ -636,21 +617,48 @@ img {
   .videoText {
     padding-right: 10%;
   }
-
-  .imgbox > img {
-    position: relative;
-  }
-
-  .textbox > h1, .textbox > p {
-    position: relative;
-    left: 10%;
-  }
-    .rentnow {
-    position: relative;
-  }
   
   .heightVideopage {
     height: 250px;
+  }
+    .imgbox > img {
+    position: relative;
+  }
+
+  .textbox > h1, .textbox > img, .textbox > a, .textbox > p {
+    height: 50px;
+    max-height: 400px;
+  }
+
+  .col-575 h1 {
+    padding-left: 36px;
+  }
+  
+  .mavictext {
+    height: 350px;
+  }
+
+ 
+  .mavictext h1 {
+    position: relative;
+    font-size: 36px;
+  }
+
+  .mavictext p {
+    line-height: 1.5em;
+    position: relative;
+    top: 25%;
+    left: 1%;
+    text-align: center;
+  }
+
+  .mavictext > :nth-child(4) {
+    position: relative;
+    font-size: 17px;
+  }
+
+  .mavicimg {
+    padding-top: 30px;
   }
 }
 
@@ -663,7 +671,11 @@ img {
     width: 100%;
   }
 
-  .fullscreen * {
+  .marginAuto {
+    margin: auto;
+  }
+
+  .videobox {
     margin: auto;
     display: block;
   }
@@ -678,7 +690,8 @@ img {
   }
 
   .horisontalLine {
-    display: none;
+    max-width: 270px;
+    margin: auto;
   }
 
   .imgbox > img {
@@ -692,8 +705,54 @@ img {
     text-align: center;
   }
 
-  
-  #favDroneDescription > p, #favDrones > p {
+  .spaceFix {
+    margin-bottom: 20px;
+  }
+
+  .rentnow {
+    float: left;
+    margin-left: 30%;
+    padding-bottom: 5px;
+    max-width: 15%;
+  }
+
+  .learnmore {
+    float: left;
+    padding-top: 2%;
+  }
+
+  .mavictext {
+    float: right;
+    width: 100%;
+    padding-top: 40%;
+    margin: auto;
+  }
+
+  .mavictext * {
+    text-align: center;
+  }
+
+  .mavictext h1 {
+    padding-top: 6%;
+    margin: auto;
+  }
+
+  .mavictext p {
+    max-width: 40ch;
+    margin: auto;
+  }
+
+  .mavictext > :nth-child(4) {
+    padding-left: 7%;
+  }
+
+  .mavicimg {
+    float: left;
+    margin-left: 15%;
+    position: absolute;
+  }
+
+  #favdrones, #favDroneDescription {
     display: none;
   }
   
@@ -712,6 +771,15 @@ img {
     float: left;
   }
 
+
+  .smallButton {
+    padding: 0px;
+  }
+
+  .contactWide {
+    width: 80%;
+    margin: auto;
+  }
 
 }
 
