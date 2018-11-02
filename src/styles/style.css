@@ -7,7 +7,6 @@
 /* - - - - - - - - - - - - - - - - - - SELF-MADE GRID SYSTEM: Thrust Grid - - - - - - - - - - - - - - - - - - */
 
 /* På en rad skal summen av boksene alltid være lik 12! */
-
 /* Applies to all classes starting with 'col' */
 [class^='col'] {
   min-height: 1px;
