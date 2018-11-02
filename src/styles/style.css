@@ -142,7 +142,7 @@ h1{
 
 #introduction > p, #slogan > p, #renter1 > p, #renter2 > p, #renter3 > p{
   text-align: center;
-  margin: .5em 3em .5em 3em;
+  margin: .5% 15% 5% 15%;
 }
 
 #inspire2{
@@ -768,6 +768,15 @@ img {
     float: left;
   }
 
+
+  #requestButton {
+    padding: 0px;
+  }
+
+  .contactWide {
+    width: 80%;
+    margin: auto;
+  }
 
 }
 
