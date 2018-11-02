@@ -611,6 +611,14 @@ img {
   background-color: black;
 }
 
+.row > hr {
+  width: 70%;
+  color: rgba(31, 29, 28, 0.84);
+  background-color: rgba(31, 29, 28, 0.84);
+  border: none;
+  height: 1px;
+}
+
 /* - - - - - - - - - - - - - - - - - - RESPONSIVENESS - - - - - - - - - - - - - - - - - - */
 @media only screen and (min-width: 1001px) {
   
@@ -687,11 +695,6 @@ img {
 
   .fill {
     background-color: transparent;
-  }
-
-  .horisontalLine {
-    max-width: 270px;
-    margin: auto;
   }
 
   .imgbox > img {
