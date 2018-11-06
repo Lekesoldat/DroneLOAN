@@ -1,0 +1,15 @@
+** IMPORTANT **
+Our project is made out of pure HTML, CSS and JavaScript. The JavaScript in the project makes use of new features like higher order functions, object destructuring, arrow functions and modules are used. Regarding the modules, a security mechanism in Chrome and some other browser blocks the ability to run this project in a proper way locally.
+
+Firefox and Edge seem to be fine with loading Moduels across local files, but Chrome throws the following error:
+
+'Access to Script at 'file:///Users/magnusholtet/Development/Github/DroneLOAN/src/scripts/index.js' from origin 'null' has been blocked by CORS policy: Invalid response. Origin 'null' is therefore not allowed access.'
+
+It seems like Chrome treats Modules with a higher level of security than Firefox or Edge, and therefore throws the Cross Origin Resource Sharing error. It simply says that the local files are not from the same origin meaning a XSS-attack is possible and therefore blocked.
+
+This means that you cannot simply open the index.html file in your browser alone. You eiter have to simulate it using a local server or open it as an actual website from here --> http://folk.ntnu.no/magnulho/Courses/IT2085/Project/Final_Delivery/
+
+
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - *
+For further reading regarding having to run the project on a server:
+- https://medium.com/@mattlag/es6-modules-getting-started-gotchas-2ad154f38e2e
