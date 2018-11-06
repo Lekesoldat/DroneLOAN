@@ -87,6 +87,24 @@ article {
   float: none;
 }
 
+#links {
+  list-style-type: none;
+}
+
+#links a {
+  text-decoration: none;
+  color: #444;
+}
+
+#links li {
+  display: inline-block;
+  float: none;
+}
+
+#links img{
+  width: 75px;
+}
+
 /* NAVIGATION BAR */
 .sideNav {
   position: fixed;
