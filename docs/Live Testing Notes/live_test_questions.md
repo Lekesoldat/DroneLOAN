@@ -2,7 +2,7 @@
 
 Who performed the test (optional):
 
-Who was in charge of the the test: 
+Who was in charge of the test: 
 
 When did the test take place (DD.MM.YYYY HH:MM): 
 
