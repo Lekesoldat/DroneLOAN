@@ -1,0 +1,163 @@
+body {
+    background-color: #F7F7F7;
+  
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Courier New', Arial, sans-serif, monospace, serif;
+    font-size: 32px;
+  }
+  
+  h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, monospace, serif;
+    font-size: 16px;
+  }
+  
+  #todoTable {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+  
+  #todoTable, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  .section > h3 {
+    font-weight: normal;
+  }
+  
+  img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  p, ul, ol {
+    font-family: 'Courier New', Courier, monospace, serif;
+    font-size: 18px;
+    line-height: 1.25em;
+  }
+  
+  /* C every piece of text */
+  header > h1, .section > h1, .section > h3, .section img, header > p {
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  
+  .section p, .section ol, .section ul {
+    padding-left: 2em;
+    padding-right: 2em;
+    list-style-position: inside;
+  }
+  
+  article {
+    position: absolute;
+    left: calc(50% - 20em);
+    max-width: 55em;
+    min-width: 35em;
+  }
+  
+  /* box class */
+  .section {
+    border: 2px solid #ac7171;
+    margin-bottom: 10px;
+  }
+  
+  .section h3 {
+    font-size: 30px;
+  }
+  
+  #groupList {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  #groupList li {
+    font-family: 'Karla', serif;
+    font-style: italic;
+    padding: 16px;
+    display: inline-block;
+    float: none;
+  }
+  
+  #links {
+    list-style-type: none;
+  }
+  
+  #links a {
+    text-decoration: none;
+    color: #444;
+  }
+  
+  #links li {
+    display: inline-block;
+    float: none;
+  }
+  
+  #links img{
+    width: 75px;
+  }
+  
+  /* NAVIGATION BAR */
+  .sideNav {
+    position: fixed;
+    left: calc(50% - 35em);
+    z-index: 1;
+    top: 75px;
+    width: 14em;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0px 8px 5px;
+  }
+  
+  /* Remove bulletpoints and clear white spaces. */
+  .sideNav ul {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sideNav h4 {
+    margin-left: 5px;
+  }
+  
+  /* Style list items and create transition. */
+  .sideNav ul > li > a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      color: #ac7171;
+      transition: 0.1s ease;
+      display: block;
+  }
+  
+  /* Transformation on hover of navigation items*/
+  .sideNav ul > li > a:hover {
+    transform: translate(8px);
+  }
+  
+  /* Style specific link in final location-div*/
+  #finalLoc a {
+    text-align: center;
+  }
+  
+  .list ul{
+    box-sizing: border-box;
+    padding-left: 2em;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    color: #24292e;
+    font-size: 16px;
+  }
+  
+  .list li {
+    box-sizing: border-box;
+    margin-top: 0.25em;
+  }
