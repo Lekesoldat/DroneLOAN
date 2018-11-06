@@ -1,8 +1,8 @@
 /*
  FILE NAME: scripts/footer.js
- WRITTEN BY: Magnus.
+ WRITTEN BY: Magnus, Andreas
  WHEN: October 2018
- PURPOSE: For cleaner code.
+ PURPOSE: For cleaner code. Generates footer based on fields provided.
  */
 
 import * as Spark from './spark.js';

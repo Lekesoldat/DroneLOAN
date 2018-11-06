@@ -1,6 +1,6 @@
 /*
  FILE NAME: scripts/index.js
- WRITTEN BY: Magnus L. Holtet
+ WRITTEN BY: Magnus
  WHEN: October 2018
  PURPOSE: For modularity; Create navigation bar and footer. 
  */

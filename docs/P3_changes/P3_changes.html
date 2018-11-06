@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>P3 Changes</title>
+
+  <!-- View -->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+
+  <!-- Stylesheet-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="img/droneFavicon.png">
+</head>
+
+<body>
+
+  <nav class="sideNav">
+    <h4>Table of Contents</h4>
+
+    <ul>
+      <li><a href="#navBar">Navigation bar</a></li>
+      <li><a href="#layout">Layout and Appearance</a></li>
+      <li><a href="#content">Content</a></li>
+      <li><a href="#modularity">Modularity</a></li>
+      <li><a href="#minReq">Minimum Requirements</a></li>
+      <li><a href="#plan">Plan</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <header>
+      <h1>P3: Changes</h1>
+      <p>05/11/2018</p>
+    </header>
+
+    <div class="section">
+      <h3>Group members</h3>
+
+      <ul id="groupList">
+        <li>Magnus L. Holtet</li>
+        <li>Andreas Amundsen</li>
+        <li>Carl Smestad</li>
+        <li>Øyvind Jalland Schjerven</li>
+        <li>Mathias Fossum</li>
+      </ul>
+
+    </div>
+
+    <div class="section" id="navBar">
+      <h1>Navigation bar and footer</h1>
+      <p>
+        Not fixed position; top of page
+
+        - not too long pages forcing the user to scroll forever to reach the navbar
+        - better flow
+        - looked better
+
+
+        Width set to fit the content, rather than fill the whole page
+
+        Followed 1 click policy to a certain extent; could get info about everything in one click, but further information required two clicks along with the ability to order a rental.
+
+        Active tab has a grey background instead of the bold text --> easier to distinguish which tab is active
+
+      </p>
+
+        <h1>Footer</h1>
+
+        <p>
+          Address instead of phone number.
+        </p>
+    </div>
+
+    <div class="section" id="layout">
+      <h1>Layout and Appearance</h1>
+
+      <p>
+        Courier New --> Trebuchet MS
+
+        Why?
+      </p>
+
+      <p>
+        Not all H1-headlines have a font-size of 48 and bold text.
+        Why?
+      </p>
+    </div>
+
+    <div class="section" id="content">
+      <h1>Content</h1>
+      <h1>Landing Page</h1>
+
+      <p>
+        More info below each drone.
+
+        Unable to rent from hover, but able to learn more. Why?
+
+
+        Why did we not add the feature for implement 'Ideally we want to implement a function through javascript so that when you scroll underneath a certain point, the
+        video will slide into full-screen.'?
+      </p>
+
+      <h1>Our Drones</h1>
+      <p>
+        Is the promiesed 55px spacing correct? If not, why?
+      </p>
+
+      <p>Explain why we didnt implement sorting (didnt have time)</p>
+
+      <h1>Drone Specific</h1>
+      <p>
+        The title does not include a quote as first planned. This is simply because some drones did not come with a quote from the dealer, and it was concluded that not having a mix and simply just the name was the best solution.
+      </p>
+
+      <p>
+        The carousel is a bit changed. There are not three dots to show which image is presented, but instead there are three thumbnail-images giving the visitor a clear view of which pictures are comming up. Here the visitor can also click the images to go to a certain one. 
+      </p>
+
+      <p>
+        Changed the layout of the form. Concluded that it looked nicer to have each form element on a line of its own, and it made the 'field of application'-field bigger in case of a long application. The submit button was made smaller and non-colored as it was a bit too dominating in the mockup.
+      </p>
+
+      <h1>Video Gallery</h1>
+      <p>
+        No changes?
+      </p>
+
+      <h1>Contact Us</h1>
+      <p>
+        Explain why there is no white background as in the mockup.
+      </p>
+
+      <h1>About Us</h1>
+      <p>
+        No changes?
+      </p>
+    </div>
+
+
+    <div class="section" id="modularity">
+      <h1>Modularity</h1>
+
+      <p>
+        There is not one single html file rendering the different pages. The different pages have their own .html file, except for the dronespecific-pages for each drone. This page renders its content based on which drone was clicked on the 'our drones' page. The reason being for not implementing the 'load content to 'main-section' feature was simply because it was a bit overkill for this project, and each member wanted to work on their own file respectively. 
+
+        The navigation bar and footer renders itself when entering a page, and based on provided URL-parameters the 'currentTab' is displayed correctly. 
+      </p>
+    </div>
+
+
+    <div class="section" id="minReq">
+      <h1>Minimum Requirements</h1>
+      <p>
+        Met?
+      </p>
+    </div>
+
+    <div class="section" id="plan">
+      <h1>Plan</h1>
+      <p>
+        New file structure. add and explain
+        Unexpected files. explain
+      </p>
+
+      <h1>Final Work Division</h1>
+      <h3>Also stated in files</h3>
+
+      <table>
+        <tr>
+          <td>index.html</td>
+          <td>SKRIV NOE HER</td>
+          <td>Carl</td>
+        </tr>
+
+        <tr>
+          <td>drones.html</td>
+          <td>SKRIV NOE HER</td>
+          <td>Mathias</td>
+        </tr>
+
+        <tr>
+          <td>droneSpecific.html</td>
+          <td>A page providing in-depth information about a specific drone.</td>
+          <td>Magnus</td>
+        </tr>
+
+        <tr>
+          <td>contact.html</td>
+          <td>SKRIV NOE HER</td>
+          <td>Andreas</td>
+        </tr>
+
+        <tr>
+          <td>about.html</td>
+          <td>SKRIV NOE HER</td>
+          <td>Carl</td>
+        </tr>
+
+        <tr>
+          <td>style.css</td>
+          <td>Styling for the entire page and all its content.</td>
+          <td>Andreas, Carl, Mathias, Magnus Øyvind</td>
+        </tr>
+
+        <tr>
+          <td>spark.js</td>
+          <td>Used for Drone Specific page and footer/nav. A self-made library for simplifying creation of HTML DOM-elements.</td>
+          <td>Magnus</td>
+        </tr>
+
+        <tr>
+          <td>flare.js</td>
+          <td>Used for Drone Specific page. A self-made TEMPLATE library to render a drone selcted on Our Drones-page.</td>
+          <td>Magnus</td>
+        </tr>
+
+        <tr>
+          <td>contact.js</td>
+          <td>SKRIV NOE HER</td>
+          <td>Andreas</td>
+        </tr>
+
+        <tr>
+          <td>footer.js</td>
+          <td>For cleaner code. Generates footer based on fields provided.</td>
+          <td>Magnus, Andreas.</td>
+        </tr>
+
+        <tr>
+          <td>droneInfo.js</td>
+          <td>Used for Drone Specific page. Store information about each drone. Used in 'drones.js'</td>
+          <td>Carl, Mathias, Andreas, Magnus, Øyvind.</td>
+        </tr>
+
+        <tr>
+          <td>drones.js</td>
+          <td>Used for Drone Specific page. Render the Drone Specific page based on which drone was clicked on 'Our Drones'.</td>
+          <td>Magnus</td>
+        </tr>
+
+        <tr>
+          <td>index.js</td>
+          <td>For modularity; Create navigation bar and footer.</td>
+          <td>Magnus</td>
+        </tr>
+
+        <tr>
+          <td>All images and videos</td>
+          <td>SKRIV NOE HER</td>
+          <td>Mathias, Øyvind, ???</td>
+        </tr>
+
+        <tr>
+          <td>Final controls</td>
+          <td>Double checking each file for errors, checking the JavaScript, CSS and HTML.</td>
+          <td>Andreas, Mathias, Carl, Øyvind, Magnus.</td>
+        </tr>
+      </table>
+    </div>
+  </article>
+</body>
+
+</html>
