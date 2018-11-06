@@ -17,7 +17,7 @@ const routes = [
     title: Spark.createElement(
       'img',
       {
-        src: './img/droneIconWhite.png',
+        src: './img/misc/droneIconWhite.png',
         alt: 'Drone Icon.',
         width: 30
       },
