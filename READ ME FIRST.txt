@@ -17,7 +17,7 @@ For further reading regarding having to run the project on a server:
 
 
 ** NB! **
-We saw that Michail provided W3-validator links on all his pages, so we did this aswell.
+We noticed that Michail provided W3-validator links on all his pages, so we did this aswell.
 For easy validation, click the copyright in the bottom right of the footer. This only works when running from http://folk.ntnu.no/magnulho/Courses/IT2085/Project/Final_Delivery/ as the validator has to access the content in some way.
 
 If we had a real client, the validator would not be provided here, but in this case it was done to simplify the validation process both for us and the supervisor.
