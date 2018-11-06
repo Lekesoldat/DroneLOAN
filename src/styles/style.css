@@ -428,6 +428,8 @@ input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid,
 input[type="submit"] {
   width: 50%;
   height: 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 form {
