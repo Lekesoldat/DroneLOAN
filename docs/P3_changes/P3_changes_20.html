@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
   <meta charset="UTF-8">
   <title>P3 Changes</title>
@@ -20,7 +19,6 @@
 
   <nav class="sideNav">
     <h4>Table of Contents</h4>
-
     <ul>
       <li><a href="#navBar">Navigation bar</a></li>
       <li><a href="#layout">Layout and Appearance</a></li>
@@ -171,8 +169,15 @@
       <h1>Modularity</h1>
 
       <p>
-        There is not one single html file rendering the different pages. The different pages have their own .html file, except for the dronespecific-pages for each drone. This page renders its content based on which drone was clicked on the 'our drones' page. The reason being for not implementing the 'load content to 'main-section' feature was simply because it was a bit overkill for this project, and each member wanted to work on their own file respectively. 
-
+        There is not a single html file rendering the different pages. The different pages have their own .html file, except for the dronespecific-pages for each drone. Magnus created this page so that its content is rendered based on which drone was clicked on the 'our drones' page. It does so based on parameters passed in the URL.
+      </p>
+        
+      <p>
+        The reason being for not implementing the 'load content to 'main-section' feature was simply because it was a bit
+        overkill for this project, and each member wanted to work on their own html-files respectively.
+      </p>
+      
+      <p>
         The navigation bar and footer renders itself when entering a page, and based on provided URL-parameters the 'currentTab' is displayed correctly. 
       </p>
     </div>
