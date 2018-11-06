@@ -1,6 +1,6 @@
 /*
  FILE NAME: scripts/drones.js
- WRITTEN BY: Magnus.
+ WRITTEN BY: Magnus
  WHEN: October 2018
  PURPOSE: Render the drone specific page based on which drone was clicked on 'Our Drones'.
  */

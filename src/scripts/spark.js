@@ -1,6 +1,6 @@
 /*
  FILE NAME: scripts/spark.js
- WRITTEN BY: Magnus L. Holtet
+ WRITTEN BY: Magnus
  WHEN: October 2018
  PURPOSE: ⚡️ Spark: A self-made library for simplifying creation of HTML DOM-elements. 
  */
