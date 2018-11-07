@@ -89,6 +89,7 @@ article {
 
 #links {
   list-style-type: none;
+  text-align: center;
 }
 
 #links a {
