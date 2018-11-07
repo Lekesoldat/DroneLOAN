@@ -144,7 +144,7 @@ carousel();
 /*  - - - - - - - - - - - FORM SCRIPT - - - - - - - - - - - */
 const form = document.getElementById('requestRental');
 const fakeRequest = evt => {
-  alert('⚡️' + '\tRequest sent!\n' + '⏳' + '\tWe will reach back to you shortly.');
+  alert('⚡' + '\tRequest sent!\n' + '⏳' + '\tWe will reach back to you shortly.');
   evt.preventDefault();
 };
 
