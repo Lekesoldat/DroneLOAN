@@ -1,8 +1,8 @@
 /*
 FILE NAME: contact.js
 WRITTEN BY: Andreas Amundsen
-WHEN:
-PURPOSE: 
+WHEN: October 2018
+PURPOSE: Implementing Google Maps and show a popup once form is submitted
 */
 
 // Display an alert when contact form is submitted
