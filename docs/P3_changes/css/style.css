@@ -89,11 +89,17 @@ article {
 
 #links {
   list-style-type: none;
+  text-align: center;
 }
 
 #links a {
   text-decoration: none;
   color: #444;
+}
+
+#links li:hover {
+  background-color: rgba(172, 113, 113, 0.15);
+  border-radius: 10px;
 }
 
 #links li {
@@ -103,6 +109,10 @@ article {
 
 #links img{
   width: 75px;
+}
+
+#fileStructure {
+  max-width: 35em;
 }
 
 /* NAVIGATION BAR */
