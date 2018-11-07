@@ -7,10 +7,6 @@
 
 import * as Spark from './spark.js';
 
-// Grabs query parameters
-const params = new URLSearchParams(document.location.search);
-const tab = params.get('tab');
-
 const routes = [
   {
     path: './index.html',
@@ -25,29 +21,29 @@ const routes = [
     )
   },
   {
-    path: './drones.html?tab=1',
+    path: './drones.html',
     title: 'OUR DRONES'
   },
   {
-    path: './videos.html?tab=2',
+    path: './videos.html',
     title: 'VIDEO GALLERY'
   },
   {
-    path: './contact.html?tab=3',
+    path: './contact.html',
     title: 'CONTACT'
   },
   {
-    path: './about.html?tab=4',
+    path: './about.html?',
     title: 'ABOUT US'
   }
 ];
 
 // Creates a clickable element, specifies where it leads and its content (children)
-function renderLink( {path, title} ) {
+function renderLink( {path, title}, index ) {
   return Spark.createElement(
     'a',
     {
-      href: path
+      href: `${path}?tab=${index}`
     },
     [
       title
@@ -56,26 +52,30 @@ function renderLink( {path, title} ) {
 }
 
 // Create a list item with an whatever as content.
-function renderListItem(route, index) {
+function renderListItem(route, index, tab) {
   // Renders which page is active
-  const props = ((index == tab) ? { className: 'activeTab' } : null);
+  const props = ((index != 0 && index == tab) ? { className: 'activeTab' } : null);
   
   return Spark.createElement(
     'li',
     props,
     [
-      renderLink(route)
+      renderLink(route, index)
     ]
   );
 }
 
 function renderList(routes) {
+  // Grabs query parameters
+  const params = new URLSearchParams(document.location.search);
+  const tab = params.get('tab');
+
   return Spark.createElement(
     'ul',
     {
       className: 'container'
     },
-    routes.map((route, index) => renderListItem(route, index))
+    routes.map((route, index) => renderListItem(route, index, tab))
   );
 }
 
