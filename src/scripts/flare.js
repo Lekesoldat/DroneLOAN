@@ -1,6 +1,6 @@
 /*
  FILE NAME: scripts/flare.js
- WRITTEN BY: Magnus.
+ WRITTEN BY: Magnus
  WHEN: October 2018
  PURPOSE: ☄️ Flare: A self-made TEMPLATE library to render a drone selcted on Our Drones-page.
 */

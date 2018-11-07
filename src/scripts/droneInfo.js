@@ -1,6 +1,6 @@
 /*
  FILE NAME: scripts/droneInfo.js
- WRITTEN BY: Magnus, Mathias, Andreas, Carl, Øyvind.
+ WRITTEN BY: Magnus, Mathias, Andreas, Carl, Øyvind
  WHEN: October 2018
  PURPOSE: Store information about each drone. Will be used in 'drones.js'
  */
