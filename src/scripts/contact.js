@@ -1,8 +1,8 @@
 /*
 FILE NAME: contact.js
-WRITTEN BY: Andreas Amundsen
+WRITTEN BY: Andreas
 WHEN: October 2018
-PURPOSE: Implementing Google Maps and show a popup once form is submitted
+PURPOSE: Implementing Google Maps and show a popup once form is submitted.
 */
 
 // Display an alert when contact form is submitted
@@ -15,8 +15,8 @@ contactForm.addEventListener('submit', fakeRequest, true);
 
 // Google Maps API related functions
 function initMap(){
-  var location = {lat: 63.417831662, lng: 10.401831726};
-  var map = new google.maps.Map(document.getElementById('googleMap'), {
+  const location = {lat: 63.417831662, lng: 10.401831726};
+  const map = new google.maps.Map(document.getElementById('googleMap'), {
     center: location,
     zoom: 15,
     scrollwheel: false,
@@ -26,6 +26,5 @@ function initMap(){
     fullscreenControlOptions: {
       position: google.maps.ControlPosition.LEFT_BOTTOM
     },
-
   });
 }
