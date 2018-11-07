@@ -106,6 +106,10 @@ article {
   width: 75px;
 }
 
+#fileStructure {
+  max-width: 35em;
+}
+
 /* NAVIGATION BAR */
 .sideNav {
   position: fixed;
