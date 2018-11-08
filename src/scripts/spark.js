@@ -35,7 +35,7 @@ export function createElement(tagName, attributes, children) {
 }
 
 /**
- * Appends the element to the end of root (container).
+ * Appends the element to the end of root.
  * @param {HTMLElement} root 
  * @param {HTMLElement} element 
  */

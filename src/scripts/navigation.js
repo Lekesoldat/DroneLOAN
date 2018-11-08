@@ -43,6 +43,7 @@ function renderLink( {path, title}, index ) {
   return Spark.createElement(
     'a',
     {
+      // Template literals
       href: `${path}?tab=${index}`
     },
     [
@@ -51,7 +52,6 @@ function renderLink( {path, title}, index ) {
   );
 }
 
-// Create a list item with an whatever as content.
 function renderListItem(route, index, tab) {
   // Renders which page is active
   const props = ((index != 0 && index == tab) ? { className: 'activeTab' } : null);
