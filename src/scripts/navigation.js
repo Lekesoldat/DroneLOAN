@@ -2,7 +2,7 @@
  FILE NAME: scripts/navigation.js
  WRITTEN BY: Magnus, Øyvind, Carl
  WHEN: October 2018
- PURPOSE: Orbit: A self-made library extension of Spark which handles navigation-bar rendering.
+ PURPOSE: For navigation bar rendering.
  */
 
 import * as Spark from './spark.js';
@@ -46,9 +46,7 @@ function renderLink( {path, title}, index ) {
       // Template literals
       href: `${path}?tab=${index}`
     },
-    [
-      title
-    ]
+    title
   );
 }
 
@@ -59,9 +57,7 @@ function renderListItem(route, index, tab) {
   return Spark.createElement(
     'li',
     props,
-    [
-      renderLink(route, index)
-    ]
+    renderLink(route, index)
   );
 }
 
@@ -75,7 +71,7 @@ function renderList(routes) {
     {
       className: 'container'
     },
-    routes.map((route, index) => renderListItem(route, index, tab))
+    ...routes.map((route, index) => renderListItem(route, index, tab))
   );
 }
 
