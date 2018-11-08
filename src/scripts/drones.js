@@ -45,8 +45,7 @@ function renderImage(image) {
     {
       src: image.src,
       alt: image.alt
-    },
-    null
+    }
   );
 }
 
@@ -56,9 +55,7 @@ function renderBigImageDiv(image) {
     {
       className: 'mySlides carousel fade'
     },
-    [
-      renderImage(image)
-    ]
+    renderImage(image)
   );
 }
 
@@ -68,7 +65,7 @@ function renderCarouselElement(images) {
     {
       className: 'col-12'
     },
-    images.map(image => renderBigImageDiv(image))
+    ...images.map(image => renderBigImageDiv(image))
   );
 }
 
@@ -80,8 +77,7 @@ function renderMiniImage(image, index) {
       alt: image.alt,
       className: 'blur cursor',
       onclick: () => currentSlide(index)
-    },
-    null
+    }
   );
 }
 
@@ -91,14 +87,12 @@ function renderMiniSection(images) {
     {
       className: 'row white'
     },
-    images.map((image, index) => Spark.createElement(
+    ...images.map((image, index) => Spark.createElement(
       'div',
       {
         className: 'col-4 mini-image'
       },
-      [
-        renderMiniImage(image, index)
-      ]
+      renderMiniImage(image, index)
     ))
   );
 }
@@ -159,10 +153,8 @@ function renderTable(specs) {
     {
       id: 'displaySpecs'
     },
-    [
-      createHeaderRow(specs),
-      createDataRow(specs)
-    ]
+    createHeaderRow(specs),
+    createDataRow(specs)
   );
 }
 
@@ -170,12 +162,10 @@ function createHeaderRow(specs) {
   return Spark.createElement(
     'tr',
     null,
-    Object.keys(specs).map(key => Spark.createElement(
+    ...Object.keys(specs).map(key => Spark.createElement(
       'th',
       null,
-      [
-        key
-      ]
+      key
     ))
   
   );
@@ -185,12 +175,10 @@ function createDataRow(specs) {
   return Spark.createElement(
     'tr',
     null,
-    Object.values(specs).map(spec => Spark.createElement(
+    ...Object.values(specs).map(spec => Spark.createElement(
       'td',
       null,
-      [
-        spec
-      ]
+      spec
     ))
   );
 }

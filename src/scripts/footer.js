@@ -17,9 +17,7 @@ const fields = [
       href: 'https://validator.w3.org/check/referer',
       id: 'validate'
     },
-    [
-      '&copy; DroneLOAN 2018'
-    ]
+    '&copy; DroneLOAN 2018'
   )
 ];
 
@@ -29,11 +27,9 @@ export default Spark.createElement(
   {
     className: 'container'
   },
-  fields.map(field => Spark.createElement(
+  ...fields.map(field => Spark.createElement(
     'li', 
     null, 
-    [
-      field
-    ]
+    field
   ))
 );

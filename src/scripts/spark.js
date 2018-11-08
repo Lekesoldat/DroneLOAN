@@ -13,7 +13,7 @@
  * 
  * @returns The created HTML-element.
  */
-export function createElement(tagName, attributes, children) {
+export function createElement(tagName, attributes, ...children) {
   const element = document.createElement(tagName);
   
   // Copies all properties from attributes{key:value} to element
