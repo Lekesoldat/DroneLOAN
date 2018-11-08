@@ -8,7 +8,7 @@ When did the test take place (DD.MM.YYYY HH:MM): 07.11.2018 14:30
 
 1. **Category - Navigation and information accessability**
    
-   Navigate to About Us and find the name of our CEO
+   Find thename of our CEO on the page.
 
    Intention: Detect problems regarding information accessability
 
