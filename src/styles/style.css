@@ -94,12 +94,16 @@
   font-family: 'Trebuchet MS', Courier, monospace;
 }
 
-/* Debugging*/
 .row > div {
   overflow: hidden;
 }
 
 /* - - - - - - - - - - - - - - - - - - CONTENT STYLING - - - - - - - - - - - - - - - - - - */
+section {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+
 * {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -305,6 +309,11 @@ p > #storefront {
   border-radius: 5px;
 }
 
+/* Style rent-now link hover */
+.droneBox a:not(:last-child) p:hover {
+  background-color: grey;
+}
+
 .droneBox p, .droneBox h1, .droneBox a {
   padding: 5%;
 }
@@ -339,6 +348,10 @@ nav > ul > li, footer > ul > li {
   padding: 15px;
   padding-right: 20px; 
   margin: 0 1em 0 1em;
+}
+
+nav > ul > li:hover , footer > ul > li:hover {
+  font-weight: bold;
 }
 
 nav > ul > li > a, footer > ul > li {
@@ -377,7 +390,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-#validate {
+#footerLink {
   text-decoration: none;
   color: white;
 }
