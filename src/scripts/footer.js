@@ -13,16 +13,23 @@ const fields = [
     'a',
     {
       href: 'mailto:contact@droneloan.com',
-      id: 'footerLink'
+      className: 'footerLink'
     },
     'contact@droneloan.com', 
   ),
-  'Høgskoleringen 1, 7491 Trondheim', 
+  Spark.createElement(
+    'a', 
+    {
+      href: 'https://goo.gl/maps/dAo6CUxhBUD2',
+      className: 'footerLink'
+    },
+    'Høgskoleringen 1, 7491 Trondheim', 
+  ),
   Spark.createElement(
     'a',
     {
       href: 'https://validator.w3.org/check/referer',
-      id: 'footerLink'
+      className: 'footerLink'
     },
     '&copy; DroneLOAN 2018'
   )
