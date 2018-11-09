@@ -12,6 +12,7 @@
   min-height: 1px;
 }
 
+/* When big screen, use grid */
 @media only screen and (min-width: 1001px) {
   [class^='col'] {
     float: left;
@@ -98,16 +99,18 @@
   overflow: hidden;
 }
 
-/* - - - - - - - - - - - - - - - - - - CONTENT STYLING - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - GENERAL CONTENT STYLING - - - - - - - - - - - - - - - - - - */
 section {
   margin-top: 15px !important;
   margin-bottom: 15px !important;
 }
 
+/* Remove standard margins ('experimental technology' staded by MDN) */
 * {
   margin-block-start: 0;
   margin-block-end: 0;
 }
+
 body {
   background-color: #F2F2F2;
   padding: 0;
@@ -115,6 +118,12 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 16px;
   background-color: #f2f2f2;
+}
+
+/* Fit to parent */
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .container {
@@ -130,7 +139,6 @@ body {
 .row > .col-12 > h1 {
   text-align: center;
 }
-
 
 .row > .col-12 > p > video{
   width: 700px;
@@ -270,7 +278,6 @@ p > #storefront {
   transform: translate(-50%, -50%);
 }
 
-
 .wrapper:hover .image {
   opacity: 0.3;
 }
@@ -286,7 +293,7 @@ p > #storefront {
   padding: 16px 10px;
 }
 
-/* - - - - - - - - - - - - - - - - - - OURDRONES.HTML BOX STYLING - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - OURDRONES BOX STYLING - - - - - - - - - - - - - - - - - - */
 .white {
   background-color: white;
 }
@@ -366,6 +373,16 @@ footer {
   height: 48px;
 }
 
+.activeTab {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#footerLink {
+  text-decoration: none;
+  color: white;
+}
+
+/* For smaller screens, minimize spacing */
 @media only screen and (max-width: 1000px) {
   nav > ul > li{
     /* Reset padding */
@@ -382,20 +399,11 @@ footer {
   }
 }
 
-/* When screen get stoo small, only display contact information */
+/* When screen gets too small, only display contact information. Site is not to be used on mobile phones*/
 @media only screen and (max-width: 1000px) {
   footer ul li:nth-child(n+2){
     display: none;
   }
-}
-
-.activeTab {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-#footerLink {
-  text-decoration: none;
-  color: white;
 }
 
 /* - - - - - - - - - - - - - - - - - - COMMON HTML FORM - - - - - - - - - - - - - - - - - - */
@@ -432,7 +440,6 @@ form textarea {
 }
 
 /* - - - - - - - - - - - - - - - - - - CONTACT US - - - - - - - - - - - - - - - - - - */
-/* Center allign text strings */
 .contactCenterMessage {
   text-align: center;
 }
@@ -464,14 +471,6 @@ form textarea {
 #mapsWrapper {
   height: 100%;
   margin-top: 18%;
-}
-
-/* - - - - - - - - - - - - - - - - - - IMAGE STYLING - - - - - - - - - - - - - - - - - - */
-
-/* Fit to parent */
-img {
-  max-width: 100%;
-  max-height: 100%;
 }
 
 /* - - - - - - - - - - - - - - - - - - DRONE SPECIFIC - - - - - - - - - - - - - - - - - - */
@@ -569,11 +568,11 @@ img {
 @keyframes fade {
   from {
     opacity: .2;
-  };
+  }
 
   to {
     opacity: 1;
-  };
+  }
 }
 
 /* - - - - - - - - - - - - - - - - - - VIDEO PAGE - - - - - - - - - - - - - - - - - - */
@@ -588,23 +587,12 @@ img {
   margin-bottom: 10px;
 }
 
-.horisontalLine {
-  background-color: black;
-}
-
-.row > hr {
-  width: 70%;
-  color: rgba(31, 29, 28, 0.84);
-  background-color: rgba(31, 29, 28, 0.84);
-  border: none;
-  height: 1px;
-}
-
 iframe {
   border: none;
 }
 
 /* - - - - - - - - - - - - - - - - - - RESPONSIVENESS - - - - - - - - - - - - - - - - - - */
+/* Full screen */
 @media only screen and (min-width: 1001px) {
   
   .videoText {
@@ -624,11 +612,14 @@ iframe {
   }
 }
 
+/* Smaller screens */
 @media only screen and (max-width: 1000px) {
   .container {
     max-width: 80%;
     margin: auto;
   }
+
+  /* Video page */
   .fullscreen {
     width: 100%;
   }
@@ -647,13 +638,19 @@ iframe {
     margin: auto;
   }
 
+  .videoTextbox p {
+    padding: 5% 10% 5% 10%;
+  }
+
   .fill {
     background-color: transparent;
   }
 
+  /* About page */
   #favDroneDescription {
     display: none;
   }
+
   #favDrones > p{
     display: none;
   }
@@ -679,5 +676,28 @@ iframe {
   .contactWide {
     width: 80%;
     margin: auto;
+  }
+
+  /* Our Drones */
+  .spaceFixLeft {
+    margin-bottom: 20px;
+  }
+
+  .droneBox img {
+    margin: auto;
+    display: block; 
+  }
+
+  .droneText {
+    float: right;
+    padding-top: 50%;
+    width: 100%;
+    margin: auto;
+  }
+
+  .droneImage {
+    position: absolute;
+    float: left;
+    margin-left: 15%;
   }
 }
