@@ -284,17 +284,16 @@ p > #storefront {
 
 
 /* - - - - - - - - - - - - - - - - - - OURDRONES.HTML BOX STYLING - - - - - - - - - - - - - - - - - - */
-
 .white {
   background-color: white;
 }
 
-.smallBox > img {
+.droneBox > img {
   min-height: 290px;
   max-height: 290px;
 }
 
-.smallBox :not(a){
+.droneBox :not(a){
   text-align: center;
 }
 
@@ -306,11 +305,11 @@ p > #storefront {
   border-radius: 5px;
 }
 
-.smallBox p, .smallBox h1, .smallBox a {
+.droneBox p, .droneBox h1, .droneBox a {
   padding: 5%;
 }
 
-.smallBox a {
+.droneBox a {
   display: inline;
 }
 
@@ -663,4 +662,3 @@ img {
   }
 
 }
-

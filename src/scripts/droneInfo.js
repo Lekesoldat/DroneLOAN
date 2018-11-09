@@ -10,7 +10,7 @@ export default [
     id: 1,
     images: [
       {
-        src: './img/drones/dji/spark/spark1.jpeg',
+        src: './img/drones/dji/spark/spark1.jpg',
         alt: 'First image'
       },
       {
