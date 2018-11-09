@@ -169,16 +169,6 @@ h1 {
   font-size: 12px;
 }
 
-/*
-#droneFootage {
-  margin-top: 30px;
-  margin-left: 10%;
-  width: 80%;
-  height: 45%;
-  
-}
-*/
-
 #droneFootage > p {
   margin-top: 30px;
   text-align: center;
@@ -308,8 +298,12 @@ p > #storefront {
   text-align: center;
 }
 
-.smallBox a {
-  
+.rentNowStyling {
+  background-color: rgba(31, 29, 28, 0.84);
+  color: #fff;
+  width: 25%;
+  line-height: 1%;
+  border-radius: 5px;
 }
 
 .smallBox p, .smallBox h1, .smallBox a {
@@ -322,8 +316,6 @@ p > #storefront {
 
 .rentLearn {
   display: inline-block;
-  max-width: 100px;
-  max-height: 30px;
 }
 
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
