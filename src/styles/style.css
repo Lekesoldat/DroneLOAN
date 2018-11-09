@@ -150,7 +150,6 @@ h1 {
 } 
 
 /* - - - - - - - - - - - - - - - - - - LANDING PAGE CONTENT STYLING - - - - - - - - - - - - - - - - - */
-
 #introduction > p, #slogan > p, #renter1 > p, #renter2 > p, #renter3 > p{
   text-align: center;
   margin: .5% 15% 5% 15%;
@@ -167,10 +166,10 @@ h1 {
 #specifications1 ul {
   margin-left: 3em;
 }
+
 #specifications1 > ul, #specifications2 > ul, #specifications3 > ul{
   margin-left: 1.5em;
 }
-
 
 #specifications1 > p, #specifications2 > p, #specifications3 > p{
   margin-left: 3em;
@@ -191,12 +190,11 @@ h1 {
   height: 383px;
 }
 
-#droneFootageDescription  p{
+#droneFootageDescription p {
   text-align: center;
   font-style: italic;
   margin-bottom: 10px;
 }
-
 
 /* - - - - - - - - - - - - - - - - - - ABOUT US CONTENT STYLING - - - - - - - - - - - - - - - - - - - */
 #mortenDrones {
@@ -220,6 +218,7 @@ h1 {
   text-align: right;
   margin-left: 2em;
 }
+
 #favDroneDescription > p{
   margin-left: 3em;
   text-align: left;
@@ -445,7 +444,6 @@ form textarea {
 }
 
 .contactStyleMessage {
-
   font-style: italic; 
 }
 
@@ -520,7 +518,6 @@ form textarea {
 }
 
 /* Make image fit small box */
-
 .mini-image {
   height: 150px;
 }
