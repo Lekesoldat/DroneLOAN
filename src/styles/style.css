@@ -584,6 +584,10 @@ img {
   height: 1px;
 }
 
+iframe {
+  border: none;
+}
+
 /* - - - - - - - - - - - - - - - - - - RESPONSIVENESS - - - - - - - - - - - - - - - - - - */
 @media only screen and (min-width: 1001px) {
   
