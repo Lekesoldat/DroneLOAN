@@ -161,3 +161,8 @@ body {
     box-sizing: border-box;
     margin-top: 0.25em;
   }
+
+  .bold {
+    font-weight: bold;
+    margin-bottom: -1em;
+  }
