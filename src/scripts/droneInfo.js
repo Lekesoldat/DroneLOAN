@@ -2,7 +2,7 @@
  FILE NAME: scripts/droneInfo.js
  WRITTEN BY: Magnus, Mathias, Andreas, Carl, Øyvind
  WHEN: October 2018
- PURPOSE: Store information about each drone. Will be used in 'drones.js'
+ PURPOSE: Store information about each drone. Will be used in 'drones.js'. Works as a .json file, but was told that using the line ending .json was not allowed, so solved it in this way. Would use .json if allowed.
  */
 
 export default [
