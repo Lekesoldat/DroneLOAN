@@ -350,8 +350,12 @@ nav > ul > li, footer > ul > li {
   margin: 0 1em 0 1em;
 }
 
+/* When hovering navbar/footer, display outline glow */
 nav > ul > li:hover , footer > ul > li:hover {
-  font-weight: bold;
+  -webkit-stroke-width: 5.3px;
+  -webkit-stroke-color: #FFFFFF;
+  -webkit-fill-color: #FFFFFF;
+  text-shadow: 1px 0px 20px white;
 }
 
 nav > ul > li > a, footer > ul > li {
