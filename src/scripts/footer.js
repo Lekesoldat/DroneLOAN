@@ -9,13 +9,20 @@ import * as Spark from './spark.js';
 
 // To be displayed in the footer
 const fields = [
-  'contact@droneloan.com', 
+  Spark.createElement(
+    'a',
+    {
+      href: 'mailto:contact@droneloan.com',
+      id: 'footerLink'
+    },
+    'contact@droneloan.com', 
+  ),
   'Høgskoleringen 1, 7491 Trondheim', 
   Spark.createElement(
     'a',
     {
       href: 'https://validator.w3.org/check/referer',
-      id: 'validate'
+      id: 'footerLink'
     },
     '&copy; DroneLOAN 2018'
   )

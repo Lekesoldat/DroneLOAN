@@ -33,7 +33,7 @@ const routes = [
     title: 'CONTACT'
   },
   {
-    path: './about.html?',
+    path: './about.html',
     title: 'ABOUT US'
   }
 ];
