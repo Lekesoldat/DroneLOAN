@@ -133,9 +133,9 @@ body {
   height: auto;
 }
 
-h1{
-  margin: .5em;
-}
+h1 {
+  margin: .5em 0.5em;
+} 
 
 /* - - - - - - - - - - - - - - - - - - LANDING PAGE CONTENT STYLING - - - - - - - - - - - - - - - - - */
 
@@ -295,62 +295,35 @@ p > #storefront {
 
 /* - - - - - - - - - - - - - - - - - - OURDRONES.HTML BOX STYLING - - - - - - - - - - - - - - - - - - */
 
-
-.textbox > p, .textbox > a {
-  text-decoration-line: none;
-  color: black;
-  font-size: 15px;
-  max-width: 40ch;
-  line-height: 1.5em;
-}
-
-.textbox > h1, .textbox > p {
-  margin: auto;
-  left: 10%;
-  bottom: 15px;
-}
-
-.mavictext > h1 {
-  left: 10%;
-  top: 20%;
-}
-
-
-.mavictext > :nth-child(3) {
-  position: relative;
-  right: 5px;
-  top: 140px;
-}
-
-.mavictext > :nth-child(4) {
-  text-decoration-line: none;
-  color: black;
-  left: 45px;
-  top: 130px;
-}
-
-.imgbox > img {
-  width: 350px;
-  height: 290px;
-  left: 20px;
-}
-
-.learnmore {
-  position: relative;
-  left: 50px;
-  bottom: 10px;
-}
-
-.rentnow {
-  position: relative;
-  max-width: 100px;
-  max-height: 30px;
-  left: 30px;
-  top: 0px;
-}
-
 .white {
   background-color: white;
+}
+
+.smallBox > img {
+  min-height: 290px;
+  max-height: 290px;
+}
+
+.smallBox :not(a){
+  text-align: center;
+}
+
+.smallBox a {
+  
+}
+
+.smallBox p, .smallBox h1, .smallBox a {
+  padding: 5%;
+}
+
+.smallBox a {
+  display: inline;
+}
+
+.rentLearn {
+  display: inline-block;
+  max-width: 100px;
+  max-height: 30px;
 }
 
 /* - - - - - - - - - - - - - - - - - - NAV BAR AND FOOTER STYLING - - - - - - - - - - - - - - - - - - */
@@ -638,37 +611,6 @@ img {
     height: 50px;
     max-height: 400px;
   }
-
-  .col-575 h1 {
-    padding-left: 36px;
-  }
-  
-  .mavictext {
-    height: 350px;
-  }
-
- 
-  .mavictext h1 {
-    position: relative;
-    font-size: 36px;
-  }
-
-  .mavictext p {
-    line-height: 1.5em;
-    position: relative;
-    top: 25%;
-    left: 1%;
-    text-align: center;
-  }
-
-  .mavictext > :nth-child(4) {
-    position: relative;
-    font-size: 17px;
-  }
-
-  .mavicimg {
-    padding-top: 30px;
-  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -698,64 +640,6 @@ img {
     background-color: transparent;
   }
 
-  .imgbox > img {
-    width: 80%;
-    height: auto;
-    margin: auto;
-    display: block;
-  }
-
-  .textbox {
-    text-align: center;
-  }
-
-  .spaceFix {
-    margin-bottom: 20px;
-  }
-
-  .rentnow {
-    float: left;
-    margin-left: 30%;
-    padding-bottom: 5px;
-    max-width: 15%;
-  }
-
-  .learnmore {
-    float: left;
-    padding-top: 2%;
-  }
-
-  .mavictext {
-    float: right;
-    width: 100%;
-    padding-top: 40%;
-    margin: auto;
-  }
-
-  .mavictext * {
-    text-align: center;
-  }
-
-  .mavictext h1 {
-    padding-top: 6%;
-    margin: auto;
-  }
-
-  .mavictext p {
-    max-width: 40ch;
-    margin: auto;
-  }
-
-  .mavictext > :nth-child(4) {
-    padding-left: 7%;
-  }
-
-  .mavicimg {
-    float: left;
-    margin-left: 15%;
-    position: absolute;
-  }
-
   #favDroneDescription {
     display: none;
   }
@@ -763,7 +647,6 @@ img {
     display: none;
   }
   
-
   #favDroneMobile {
     text-align: center;
     display: block;
@@ -777,7 +660,6 @@ img {
   .guaranties, .renter{
     float: left;
   }
-
 
   .smallButton {
     padding: 0px;
