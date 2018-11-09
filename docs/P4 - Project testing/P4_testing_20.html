@@ -2,349 +2,326 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <title>P4 Testing</title>
+  <meta charset="UTF-8">
+  <title>P4 Testing</title>
 
-    <!-- View -->
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <!-- View -->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
 
-    <!-- Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Stylesheet-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="./img/droneIcon.png">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="./img/droneIcon.png">
 </head>
 
 <body>
 
-    <nav class="sideNav">
-        <h4>Table of Contents</h4>
+  <nav class="sideNav">
+    <h4>Table of Contents</h4>
+    <ul>
+      <li><a href="#adminDetails">Administrative Details</a></li>
+      <li><a href="#testDoc">Testing Document</a></li>
+      <li><a href="#testAud">Tester Audience</a></li>
+      <li><a href="#testPlat">Testing Platform</a></li>
+      <li><a href="#feedback">Feedback Summary</a></li>
+      <li><a href="#response">Our Responce</a></li>
+      <li><a href="#reflection">Self-reflection</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <header>
+      <h1>P4: Testing</h1>
+      <p>06/11/2018</p>
+    </header>
+
+    <div class="section">
+      <h3>Group members</h3>
+
+      <ul id="groupList">
+        <li>Magnus L. Holtet</li>
+        <li>Andreas Amundsen</li>
+        <li>Carl Smestad</li>
+        <li>Øyvind Jalland Schjerven</li>
+        <li>Mathias Fossum</li>
+      </ul>
+    </div>
+
+    <div class="section" id="adminDetails">
+      <h3>Administrative Details</h3>
+    
+      <p>Our client is Morten Rustad, an imaginary person running a rental store for
+        drones called DroneLOAN. His wish is for us to set up a website for information
+        and renting options for the drones he has available in his store. He wants a clean
+        and user-friendly layout with several functions.</p>
+    </div>
+
+
+    <div class="section" id="testDoc">
+      <h1>Testing Document</h1>
+      <p>
+        We chose to split the testing into two different parts: Google form survey and live testing.<br><br>
+
+        With our Google forms, we wanted to gather data on topics such as design, 
+        functionality, accessibility, performance and potential changes which could be implemented. 
+        In the form, we ask questions such as: 'How pleasing is the appearance?' and 
+        'Did you ever require more than three clicks to get to your destination?'. 
+        After a sufficient number of surveys is submitted, 
+        we aim to analyze the data and make potential changes to our site.
+      </p>
+
+      <p>
+        <a href="https://docs.google.com/forms/d/1_D1JwawavPgOPrw1r89O_TZC3wesyGPUf1aN5Fg2l84/viewform?fbclid=IwAR2dhex0pPLIu6f15Nj8SwxM8LRt-4VhQ_KsApBBw-iomFiw9zoOdDWdzQ4&edit_requested=true">Link to the Google Form</a>
+      </p>
+
+      <p>
+        The live testing differs from the form survey because in the live testing we ask the test subject 
+        to perform different tasks on the website. We aim to see if the design, accessibility, 
+        and functionality combined make sense to a person who never has visited the site before, 
+        and therefore the person testing is not allowed to browse the site before the tasks begin. 
+        We will gather data on things like bugs, slow performing pages etc. We will take notes 
+        during the whole live testing process.
+      </p>
+
+      <p>
+        The live testing consist of seven different tasks, and a 
+        section where the test-subject can comment about the experience 
+        (what was good, what was bad, what could be improved etc). 
+        A detailed list of all the questions can be found 
+        <a href="http://folk.ntnu.no/magnulho/Courses/IT2085/Project/Documents/Project_P4%20-%20Testing/Testing/tasksLiveTesting.md">here.</a>
+      </p>
+      
+    </div>
+
+    <div class="section" id="testAud">
+      <h1>Tester Audience</h1>
+
+      <p>
+        In P2 we pointed out that our target audience was aimed at the hardcore drone enthusiast, while still reaching out to people 
+        who has never experienced drone flying. Therefore in our testing, we focused on gathering data from people in all different ages, fields, and genders.
+        75% of our live test subjects do not have a background or are studying computer science.
+      </p>
+    </div>
+
+    <div class="section" id="testPlat">
+      <h1>Testing Platform</h1>
+      <p>
+        To discover as many bugs and errors as possible, we found it essential for the live testing to take place on different platforms. 
+        Therefore we got data from phones, tablets, laptops, and desktops.
+      </p>
+    </div>
+
+
+    <div class="section" id="feedback">
+      <h1>Feedback Summary</h1>
+      <h3>Live Test</h3>
+      <p class='bold'>Find the name of our CEO on the page.</p>
+      <p>Intention: Detect problems regarding information accessibility.</p>
+      <p>
+        One out of twelve participants tried to find the information on the contact page before going to 'About Us'.
+        No other issues occurred, and all the other participants found the information immediately.
+      </p>
+
+      <p class='bold'> Check out the max flight time of DJI Inspire 2 (Ans: 27 min).</p>
+      <p>Intention: Detect problems regarding information accessibility.</p>
+      <p>
+        One of the mobile participants went back to the landing page and found the correct drone there. 
+        However, the participant was unable to open the drone specific page. Then went to 'Our Drones' and found it immediately. 
+        All other participants went to 'Our Drones' first try.
+      </p>
+
+      <p class='bold'>Fill out a contact form where you write a message to droneLOAN</p>
+      <p>Intention: Detect issues relating to contacting droneLOAN.</p>
+      <p>
+        No participants found this task troublesome.
+      </p>
+
+      <p class='bold'>From the contact page, access the landing/index-page in just one click</p>
+      <p> Intention: Detect if the the droneiconbutton, which loads index.html, works as intended.</p>
+      <p>
+        Every participant understood that the white drone icon was a direct link to the landing page.
+        Thus, everyone managed to get to the page in exactly one click - which was the intended purpose.
+      </p>
+
+      <p class='bold'>Fill out a rental form for the drone: Parrot Disco</p>
+      <p>Intention: Detect if the the droneicon-button, which loads index.html, works as intended.</p>
+      <p>
+        A few people chose to click 'Learn More' rather than 'Rent Now'. Due to how the drone specific page is coded - 
+        they both lead to the same page with the rental form at the bottom. The only difference being that the  
+        'Rent Now' leads directly to the form whereas with the 'Learn Now' you have to scroll to the bottom. No participants found this challenging.
+      </p>
+
+      <p class='bold'>Intention: Detect any problems regarding playing videos</p>
+      <p>Intention: Detect any problems regarding playing videos.</p>
+      <p>
+        No problems occurred during this task.
+      </p>
+
+      <p class='bold'>Get the address of droneLOAN store</p>
+      <p>Intention: Detect if the user spots the address in the footer.</p>
+      <p>
+        Only one participant found the information in the footer whereas everyone else found it under the 'About Us'-tab.
+        This is not too surprising due to the fact that the footer does not contain the address on the mobile platform.
+      </p>
+
+      <p class='bold'>Additional comments (optional)</p>
+      <p>Intention: Take notes of any issues not covered in the questions above.</p>
+      <p>
+        The mobile participants encountered a few minor difficulties due to the fact that the page is not designed for 
+        mobile use. The main issue was due to the footer losing its content when scaled under a certain size. Otherwise,
+        the participants found the design simple, but yet effective!
+      </p>
+
+      <h3>Google Form</h3>
+
+      <p class='bold'>Design</p>
+      <p>Questions: What do you think about the design? Do you think the design makes the page easily readable?</p>
+      <p>
+        The general consensus was that the website was functional and its minimalistic design helped make the site more
+        accessible. However, some users would have preferred a more colorful design.
+      </p>
+
+      <p class='bold'>Functionality</p>
+      <p>Questions: Did any functionalities positively stand out? Did anything not work as intended?</p>
+      <p>
+        Many users found the image and video-gallery to be positively standing out. Some users found the text to be
+        overlapping and the 'Rent Now'-buttons to not be displayed as intended.
+      </p>
+
+      <p class='bold'>Accessibility</p>
+      <p>Questions: How easy is it to navigate through the site? Were you able to navigate destination on the page on
+        three clicks or less?
+      </p>
+      <p>
+        As pointed out in the section about the design. Every user reported that they did not need more than three
+        clicks to get to a specific destination.
+      </p>
+
+      <p class='bold'>Performance</p>
+      <p>Questions: Did anything load too slowly? Is there anything not working as it should?</p>
+      <p>
+        Some users reported that the videos were loading slowly in the video gallery.
+      </p>
+
+      
+      <p class='bold'>Ideas and Comments</p>
+      <p>Questions: Is there anything the page is lacking? Do you have any further comments?</p>
+      <p>Users would like the following functionalities to be added:</p> 
+      <ul>
+        <li>More colors on the website</li>
+        <li>Rental prices and information on how long you could rent</li>
+        <li>Chatbot</li>
+        <li>Drone sorting filer functionality</li>
+      </ul>
+      <p>Overall, users were very pleased with the site and enjoyed the simplicity and accessibility of the page.</p>
+
+    </div>
+
+
+    <div class="section" id="response">
+      <h1>Our Response</h1>
+
+      <p>
+        As pointed out earlier, several users reported that they would like to see more colors. 
+        We purposefully went for a minimalistic and clean design, which contribute to accessibility. 
+      </p>
+
+      <p>
+        As stated, some users reported slow video loading speeds, especially in 'Video Gallery'. Loading speeds
+        depend on several different factors such as internet speed, and therefore it is hard to tackle this problem.
+        It could also be a server issue. 
+      </p>
+
+      <h3>Changes we implemented</h3>
+      <p>
+        We got feedback on the introduction header text on index.html. 
+        We changed the text to: At DroneLOAN we do our best to ensure the best rental deals on high-end drones.
+        Check out our drones below. Please fill out the form in the contact tab for any inquiry.
+      </p>
+
+      <p>
+        Many users found the 'Rent Now'-button and other text to not be displaying correctly. 
+        We fixed this by essentially redoing the whole 'Our Drones' CSS.
+      </p>
+
+      <h3>Possible future implementations</h3>
+      <p>Based on user-feedback the following is possible future implementations:</p>
+      <ul>
+        <li>Chatbot
         <ul>
-            <li><a href="#adminDetails">Administrative Details</a></li>
-            <li><a href="#testDoc">Testing Document</a></li>
-            <li><a href="#testAud">Tester Audience</a></li>
-            <li><a href="#testPlat">Testing Platform</a></li>
-            <li><a href="#feedback">Feedback Summary</a></li>
-            <li><a href="#response">Our Responce</a></li>
-            <li><a href="#reflection">Self-reflection</a></li>
-        </ul>
-    </nav>
+          <li>Though would be practically impossible to do without backend</li>
+        </ul></li>
+        <li>Drone sorting filter functionality</li>
+        <li>Info on how long you can rent and prices</li>
+      </ul>
+    </div>
 
-    <article>
-        <header>
-            <h1>P4: Testing</h1>
-            <p>06/11/2018</p>
-        </header>
+    <div class="section" id="reflection">
+      <h1>Self-reflection</h1>
 
-        <div class="section">
-            <h3>Group members</h3>
+      <h3>Techincal aspects</h3>
+        <p>
+          During this project, we have learned a lot about different technologies, such as HTML,
+          CSS and JavaScript. We had to do everything from the ground up, 
+          and therefore we now have a better understanding of these technologies.
+        </p>
 
-            <ul id="groupList">
-                <li>Magnus L. Holtet</li>
-                <li>Andreas Amundsen</li>
-                <li>Carl Smestad</li>
-                <li>Øyvind Jalland Schjerven</li>
-                <li>Mathias Fossum</li>
-            </ul>
-        </div>
+        <p>
+          We also have a much better understanding of Version Control Systems, especially GitHub. 
+          Throughout the project, we have used GitHub to collaborate and work on the same codebase. We decided
+          to use Figma to create a sketch of the whole site, which was very helpful when we started doing the coding.
+        </p>
 
-        <div class="section" id="adminDetails">
-            <h3>Administrative Details</h3>
-        
-            <p>Our client is Morten Rustad, an imaginary person running a rental store for
-                drones called DroneLOAN. His wish is for us to set up a website for information
-                and renting options for the drones he has available in his store. He wants a clean
-                and user-friendly layout with several functions.</p>
-        </div>
+        <p>
+          In order to assign tasks between the group members, we decided to use GitHub projects and GitHub issues.
+          This was a great way to get an overview of the tasks needing to be done and tasks completed. 
+        </p> 
 
+      <h3>Teamwork</h3>
+        <p>
+          Throughout the project, we have learned a lot about teamwork, first of all, the importance of communication. In order
+          to be successful, especially with these coding projects, you need to be proficient at communication. A lot of our conversations was done over 
+          Facebook Messenger, which is far from ideal. It is hard to find previous messages and you can't really search for a 
+          specific message. We could have set up a Slack channel which is a better platform for exchanging information. 
+        </p>
 
-        <div class="section" id="testDoc">
-            <h1>Testing Document</h1>
-            <p>
-                We chose to split the testing into two different parts: Google form survey and live testing.<br><br>
+        <p>
+          Overall things went pretty smoothly since most of us have been coding in HTML, CSS, and JS before. We managed to 
+          cooperate well as a group which made the process easier. There were no discrepancies between group members which could have complicated the project.
+        </p>
 
-                With our Google forms, we wanted to gather data on topics such as design, 
-                functionality, accessibility, performance and potential changes which could be implemented. 
-                In the form, we ask questions such as: 'How pleasing is the appearance?' and 
-                'Did ever require more than three clicks to get to your destination?'. 
-                After a sufficient number of surveys is submitted, 
-                we aim to analyze the data and make potential changes to our site.
-            </p>
-
-            <p>
-                <a href="https://docs.google.com/forms/d/1_D1JwawavPgOPrw1r89O_TZC3wesyGPUf1aN5Fg2l84/viewform?fbclid=IwAR2dhex0pPLIu6f15Nj8SwxM8LRt-4VhQ_KsApBBw-iomFiw9zoOdDWdzQ4&edit_requested=true">Link to the Google Form</a>
-            </p>
-
-            <p>
-                The live testing differs from the form survey because in the live testing we ask the test subject 
-                to perform different tasks on the website. We aim to see if the design, accessibility, 
-                and functionality combined make sense to a person who never has visited the site before, 
-                and therefore the person testing is not allowed to browse the site before the tasks begin. 
-                We will gather data on things like bugs, slow performing pages etc. We will take notes 
-                during the whole live testing process.
-            </p>
-
-            <p>
-                The live testing consist of seven different tasks, and a 
-                section where the test-subject can comment about the experience 
-                (what was good, what was bad, what could be improved etc). 
-                A detailed list of all the questions can be found 
-                <a href="http://folk.ntnu.no/magnulho/Courses/IT2085/Project/Documents/Project_P4%20-%20Testing/Testing/tasksLiveTesting.md">here</a>
-            </p>
-            
-        </div>
-
-        <div class="section" id="testAud">
-            <h1>Tester Audience</h1>
-
-            <p>
-                In P2 we pointed out that our target audience was aimed at the hardcore drone enthusiast, while still reaching out to people 
-                who has never experienced drone flying. Therefore in our testing, we focused on gathering data from people in all different ages, fields, and genders.
-                75% of our live test subjects do not have a background or are studying computer science.
-            </p>
-        </div>
-
-        <div class="section" id="testPlat">
-            <h1>Testing Platform</h1>
-            <p>
-                To discover as many bugs and errors as possible, we found it essential for the live testing to take place on different platforms. 
-                Therefore we got data from phones, tablets, laptops, and desktops.
-            </p>
-        </div>
-
-
-        <div class="section" id="feedback">
-            <h1>Feedback Summary</h1>
-            <h3>Live Test</h3>
-            <p class='bold'>Find the name of our CEO on the page.</p>
-            <p>Intention: Detect problems regarding information accessibility.</p>
-            <p>
-                One out of twelve participants tried to find the information on the contact page before going to 'About Us'.
-                No other issues occurred, and all the other participants found the information immediately.
-            </p>
-
-            <p class='bold'> Check out the max flight time of DJI Inspire 2 (Ans: 27 min).</p>
-            <p>Intention: Detect problems regarding information accessibility.</p>
-            <p>
-                One of the mobile participants went back to the landing page and found the correct drone there. 
-                However, the participant was unable to open the drone specific page. Then went to 'Our Drones' and found it immediately. 
-                All other participants went to 'Our Drones' first try.
-            </p>
-
-            <p class='bold'>Fill out a contact form where you write a message to droneLOAN</p>
-            <p>Intention: Detect issues relating to contacting droneLOAN</p>
-            <p>
-                No participants found this task troublesome.
-            </p>
-
-            <p class='bold'>From the contact page, access the landing/index-page in just one click</p>
-            <p> Intention: Detect if the the droneiconbutton, which loads index.html, works as intended</p>
-            <p>
-                Every participant understood that the white drone icon was a direct link to the landing page.
-                Thus, everyone managed to get to the page in exactly one click - which was the intended purpose.
-            </p>
-
-            <p class='bold'>Fill out a rental form for the drone: Parrot Disco</p>
-            <p>Intention: Detect if the the droneicon-button, which loads index.html, works as intended</p>
-            <p>
-                A few people chose to click 'Learn More' rather than 'Rent Now'. Due to how the drone specific page is coded - 
-                they both lead to the same page with the rental form at the bottom. The only difference being that the  
-                'Rent Now' leads directly to the form whereas with the 'Learn Now' you have to scroll to the bottom. No participants found this challenging.
-            </p>
-
-            <p class='bold'>Intention: Detect any problems regarding playing videos</p>
-            <p>Intention: Detect any problems regarding playing videos</p>
-            <p>
-                No problems occurred during this task.
-            </p>
-
-            <p class='bold'>Get the address of droneLOAN store</p>
-            <p>Intention: Detect if the user spots the address in the footer</p>
-            <p>
-                Only one participant found the information in the footer whereas everyone else found it under the 'About Us'-tab.
-                This is not too surprising due to the fact that the footer does not contain the address on the mobile platform.
-            </p>
-
-            <p class='bold'>Additional comments (optional)</p>
-            <p>Intention: Take notes of any issues not covered in the questions above</p>
-            <p>
-                The mobile participants encountered a few minor difficulties due to the fact that the page is not designed for 
-                mobile use. The main issue was due to the footer losing its content when scaled under a certain size. Otherwise,
-                the participants found the design simple, but yet effective!
-            </p>
-
-            <h3>Google Form</h3>
-
-            <p class='bold'>Design</p>
-            <p>Questions: What do you think about the design? Do you think the design makes the page easily readable?</p>
-            <p>
-                The general consensus was that the website was functional and its minimalistic design helped make the site more
-                accessible. However, some users would have preferred a more colorful design.
-            </p>
-
-            <p class='bold'>Functionality</p>
-            <p>Questions: Did any functionalities positively stand out? Did anything not work as intended?</p>
-            <p>
-                Many users found the image and video-gallery to be positively standing out. Some users found the text to be
-                overlapping and the 'Rent Now'-buttons to not be displayed as intended.
-            </p>
-
-            <p class='bold'>Accessibility</p>
-            <p>Questions: How easy is it to navigate through the site? Were you able to navigate destination on the page on
-                three clicks or less?
-            </p>
-            <p>
-                As pointed out in the section about the design. Every user reported that they did not need more than three
-                clicks to get to a specific destination.
-            </p>
-
-            <p class='bold'>Performance</p>
-            <p>Questions: Did anything load too slowly? Is there anything not working as it should?</p>
-            <p>
-                Some users reported that the videos were loading slowly in the video gallery.
-            </p>
-
-            
-            <p class='bold'>Ideas and Comments</p>
-            <p>Questions: Is there anything the page is lacking? Do you have any further comments?</p>
-            <p>Users would like the following functionalities to be added:</p> 
-            <ul>
-                <li>More colors on the website</li>
-                <li>Rental prices and information on how long you could rent</li>
-                <li>Chatbot</li>
-                <li>Drone sorting filer functionality</li>
-            </ul>
-            <p>Overall, users were very pleased with the site and enjoyed the simplicity and accessibility of the page.</p>
-
-        </div>
-
-
-        <div class="section" id="response">
-            <h1>Our Response</h1>
-
-            <p>
-                As pointed out earlier, several users reported that they would like to see more colors. 
-                We purposefully went for a minimalistic and clean design, which contribute to accessibility. 
-            </p>
-
-            <p>
-                As stated, some users reported slow video loading speeds, especially in 'Video Gallery'. Loading speeds
-                depend on several different factors such as internet speed, and therefore it is hard to tackle this problem.
-                It could also be a server issue. 
-            </p>
-
-            <h3>Changes we implemented</h3>
-            <p>
-                We got feedback on the introduction header text on index.html. 
-                We changed the text to: At DroneLOAN we do our best to ensure the best rental deals on high-end drones.
-                Check out our drones below. Please fill out the form in the contact tab for any inquiry.
-            </p>
-
-            <p>
-                Many users found the 'Rent Now'-button and other text to not be displaying correctly. 
-                We fixed this by essentially redoing the whole 'Our Drones' CSS.
-            </p>
-
-            <h3>Functionality to be implemented</h3>
-            <p>We plan to implement the following features based on user-feedback:</p>
-            <ul>
-                <li>Chatbot</li>
-                <ul>
-                    <li>Though would be practically impossible to do without backend</li>
-                </ul>
-                <li>Drone sorting filter functionality</li>
-                <li>Info on how long you can rent and prices</li>
-            </ul>
-        </div>
-
-        <div class="section" id="reflection">
-            <h1>Self-reflection</h1>
-
-            <h3>Techincal aspects</h3>
-                <p>
-                    During this project, we have learned a lot about different technologies, such as HTML,
-                    CSS and JavaScript. We had to do everything from the ground up, 
-                    and therefore we now have a better understanding of these technologies.
-                </p>
-
-                <p>
-                    We also have a much better understanding of Version Control Systems, especially GitHub. 
-                    Throughout the project, we have used GitHub to collaborate and work on the same codebase. We decided
-                    to use Figma to create a sketch of the whole site, which was very helpful when we started doing the coding.
-                </p>
-
-                <p>
-                    In order to assign tasks between the group members, we decided to use GitHub projects and GitHub issues.
-                    This was a great way to get an overview of the tasks needing to be done and tasks completed. 
-                </p> 
-
-            <h3>Teamwork</h3>
-                <p>
-                    During this project, we have learned a lot about teamwork, first of all, the importance of communication. In order
-                    to be successful, especially with these coding projects, you need to be proficient at communication. A lot of our conversations was done over 
-                    Facebook Messenger, which is far from ideal. It is hard to find previous messages and you can't really search for a 
-                    specific message. We could have set up a Slack channel which is a better platform for exchanging information. 
-                </p>
-
-                <p>
-                    Overall things went pretty smoothly since most of us have been coding in HTML, CSS, and JS before. We managed to 
-                    cooperate well as a group which made the process easier. There were no discrepancies between group members which could have complicated the project.
-                </p>
-
-            <h3>Project flow</h3>
-                <p>           
-                    The group has been very responsible and held the team contract exceptionally well where each individual has done their part.
-                    While this is true, there has encountered quite a few different roadblocks on the way. Firstly, our initial scheduling-program,
-                    Monday, appeared to only be free for a couple of weeks so we switched to GitHub projects. Secondly, we started out designing the sketches 
-                    for the website in Adobe XD, from a recommendation from a group member. Unfortunately, it was nearly impossible to work on the same 
-                    project as there was no functionality for copying others design into the master branch. 
-                    Thus we ended up with completing the whole sketch in Figma where all the members could work simultaneously.
-                </p>
-                <p>
-                    Most of the site, layout and advanced features were finished way before the deadline which was superb. Nevertheless, one of the
-                    more elementary features of the side, the responsiveness, would at the end seem to be the more challenging aspect of finishing the project.
-                    This arose from early miss-judges and lack of coding skills when starting the project, and thus trailing all the way to the end.
-                    Luckily as we were far ahead of the project we had time to fix all major difficulties.
-                </p>
-                <p>
-                    All in all, the project went fluently due to competent, responsible group members.
-                </p>
-            <h3>Project thoughts</h3>
-                <p>
-                    We found ourselves to be spending a lot more time writing on P2, P3_changes, and P4 rather than coding. 
-                    As a result, we feel that we did not learn as much coding as we could have, if the project had been structured differently.
-                    In spite of this, we understand that the work we did on planning and testing is important and often essential for a project like this.
-                </p>
-                <p>
-                    We would like to point out that the fact that we could not use flexbox, severely slowed down the coding process. Flexbox is an essential part
-                    of modern web development, and we see few reasons why not to use this feature in this project and IT2805 in general. In addition, it would be greatly
-                    appreciated if we could use JSON.
-                </p>
-        </div>
-    </article>
+      <h3>Project flow</h3>
+        <p>       
+          The group has been very responsible and held the team contract exceptionally well where each individual has done their part.
+          While this is true, there has encountered quite a few different roadblocks on the way. Firstly, our initial scheduling-program,
+          Monday, appeared to only be free for a couple of weeks so we switched to GitHub projects. Secondly, we started out designing the sketches 
+          for the website in Adobe XD, from a recommendation from a group member. Unfortunately, it was nearly impossible to work on the same 
+          project as there was no functionality for copying others design into the master branch. 
+          Thus we ended up with completing the whole sketch in Figma where all the members could work simultaneously.
+        </p>
+        <p>
+          Most of the site, layout and advanced features were finished way before the deadline which was superb. Nevertheless, one of the
+          more elementary features of the side, the responsiveness, would at the end seem to be the more challenging aspect of finishing the project.
+          This arose from early miss-judges and lack of coding skills when starting the project, and thus trailing all the way to the end.
+          Luckily as we were far ahead of the project we had time to fix all major difficulties.
+        </p>
+        <p>
+          All in all, the project went fluently due to competent, responsible group members.
+        </p>
+      <h3>Project thoughts</h3>
+        <p>
+          We found ourselves to be spending a lot more time writing on P2, P3_changes, and P4 rather than coding. 
+          As a result, we feel that we did not learn as much coding as we could have, if the project had been structured differently.
+          In spite of this, we understand that the work we did on planning and testing is important and often essential for a project like this.
+        </p>
+        <p>
+          We would like to point out that the fact that we could not use flexbox, severely slowed down the coding process. Flexbox is an essential part
+          of modern web development, and we see few reasons why not to use this feature in this project and IT2805 in general. In addition, it would be greatly
+          appreciated if we could use .json files.
+        </p>
+    </div>
+  </article>
 </body>
-
 </html>
-
-<!-- 
-Keypoints - What we have learned
-
-Techincal aspects
-    - HTML, CSS, JavaScript
-    - GitHub
-    - Design platforms (Figma/Adobe XD)
-    - GitHub projects/Issues
-
-Teamwork
-    - Cooperation
-    - Communication
-    - Ting gikk smud, ettersom en del av oss har en del erfaring fra f�r
-
-Project flow from start to finish
-
-What did we not like
-
-Prosjektet har tatt for lang tid kontra hva vi faktisk sitter igjen med av kunnskap
-om HTML, CSS og JS
- -->
