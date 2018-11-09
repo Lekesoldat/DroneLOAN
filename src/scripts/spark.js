@@ -13,7 +13,7 @@
  * 
  * @returns The created HTML-element.
  */
-export function createElement(tagName, attributes, children) {
+export function createElement(tagName, attributes, ...children) {
   const element = document.createElement(tagName);
   
   // Copies all properties from attributes{key:value} to element
@@ -35,7 +35,7 @@ export function createElement(tagName, attributes, children) {
 }
 
 /**
- * Appends the element to the end of root (container).
+ * Appends the element to the end of root.
  * @param {HTMLElement} root 
  * @param {HTMLElement} element 
  */

@@ -1,20 +1,20 @@
 # droneLOAN Live Testing Form
 
-Who performed the test (optional): Johanne
+Who performed the test (optional): Anhkha Nguyen Vo
 
-Who was in charge of the test: Andreas
+Who was in charge of the test: Magnus
 
-When did the test take place (DD.MM.YYYY HH:MM): 07.11.2018 14:30
+When did the test take place (DD.MM.YYYY HH:MM):  08.11.2018 13:00
 
 1. **Category - Navigation and information accessability**
    
-   Navigate to About Us and find the name of our CEO
+   Find thename of our CEO on the page.
 
    Intention: Detect problems regarding information accessability
 
    What went wrong? What could we improve?
 
-   No problems occured
+   No problems occured.
 
 2. **Category - Navigation and information accessability**
 
@@ -24,8 +24,7 @@ When did the test take place (DD.MM.YYYY HH:MM): 07.11.2018 14:30
 
     What went wrong? What could we improve?
 
-    No problems occured, found the anwser straight away
-
+    No problems occured.
 
 3. **Category - Contact**
 
@@ -35,19 +34,18 @@ When did the test take place (DD.MM.YYYY HH:MM): 07.11.2018 14:30
 
     What went wrong? What could we improve?
 
-    No problems occured
+    No problems occured.
 
 
 4. **Category - Navigation and information accessability**
    
-   From the contact page, access the landing/index-page in just one click
+    From the contact page, access the landing/index-page in just one click
 
-   Intention: Detect if the the droneiconbutton, which loads index.html, works as intended
+    Intention: Detect if the the droneiconbutton, which loads index.html, works as intended
 
-   What went wrong? What could we improve?
+    What went wrong? What could we improve?
 
-   No problems occured
-
+    No problems occured.
 
 5. **Category - Drone rental**
 
@@ -57,9 +55,7 @@ When did the test take place (DD.MM.YYYY HH:MM): 07.11.2018 14:30
 
     What went wrong? What could we improve?
 
-    Subjet pressed 'Rent now' button rather than 'Learn more' (Positive!)
-    No problems occured
-
+    On the specific device the buttons did NOT appear. Must fix media queries.
 
 6. **Category - Video gallery**
 
@@ -69,7 +65,8 @@ When did the test take place (DD.MM.YYYY HH:MM): 07.11.2018 14:30
 
     What went wrong? What could we improve?
 
-    No problems occured
+    No problems occured.
+
 
 7. **Category - Information accessability**
 
@@ -79,9 +76,7 @@ When did the test take place (DD.MM.YYYY HH:MM): 07.11.2018 14:30
 
     What went wrong? What could we improve?
 
-    Subject found the address in the footer
-    No problems occured
-
+    No problems occured.
 
 8. **Additional comments (optional)**
 
@@ -93,10 +88,14 @@ When did the test take place (DD.MM.YYYY HH:MM): 07.11.2018 14:30
 
     Intention: Take notes of any issues not covered in the questions above
 
-    Design
-    - Font on 'Rent now' looks bad
-    - Parret disco img outside of container
+    Design:
+      - Clean design.
 
-    Bug with emoji in contact form popup message (after both first emojis). Bug occured in Chrome
+    Bugs:
+      - Bugs encountered on Our Drones page. Buttons disappeared and spacing was not correct.
 
-    Proposal: Include filters in 'Our drones'
+    Improvement:
+      - Fix bugs.
+
+    Something to be added:
+      - Nothing.s

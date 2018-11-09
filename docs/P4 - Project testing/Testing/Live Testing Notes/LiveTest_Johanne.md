@@ -1,10 +1,10 @@
 # droneLOAN Live Testing Form
 
-Who performed the test (optional):
+Who performed the test (optional): Johanne
 
-Who was in charge of the test: 
+Who was in charge of the test: Andreas
 
-When did the test take place (DD.MM.YYYY HH:MM): 
+When did the test take place (DD.MM.YYYY HH:MM): 07.11.2018 14:30
 
 1. **Category - Navigation and information accessability**
    
@@ -14,6 +14,7 @@ When did the test take place (DD.MM.YYYY HH:MM):
 
    What went wrong? What could we improve?
 
+   No problems occured
 
 2. **Category - Navigation and information accessability**
 
@@ -22,6 +23,8 @@ When did the test take place (DD.MM.YYYY HH:MM):
     Intention: Detect problems regarding information accessability
 
     What went wrong? What could we improve?
+
+    No problems occured, found the anwser straight away
 
 
 3. **Category - Contact**
@@ -32,6 +35,8 @@ When did the test take place (DD.MM.YYYY HH:MM):
 
     What went wrong? What could we improve?
 
+    No problems occured
+
 
 4. **Category - Navigation and information accessability**
    
@@ -40,6 +45,8 @@ When did the test take place (DD.MM.YYYY HH:MM):
    Intention: Detect if the the droneiconbutton, which loads index.html, works as intended
 
    What went wrong? What could we improve?
+
+   No problems occured
 
 
 5. **Category - Drone rental**
@@ -50,6 +57,9 @@ When did the test take place (DD.MM.YYYY HH:MM):
 
     What went wrong? What could we improve?
 
+    Subjet pressed 'Rent now' button rather than 'Learn more' (Positive!)
+    No problems occured
+
 
 6. **Category - Video gallery**
 
@@ -59,6 +69,7 @@ When did the test take place (DD.MM.YYYY HH:MM):
 
     What went wrong? What could we improve?
 
+    No problems occured
 
 7. **Category - Information accessability**
 
@@ -67,6 +78,9 @@ When did the test take place (DD.MM.YYYY HH:MM):
     Intention: Detect if the user spots the address in the footer
 
     What went wrong? What could we improve?
+
+    Subject found the address in the footer
+    No problems occured
 
 
 8. **Additional comments (optional)**
@@ -78,3 +92,11 @@ When did the test take place (DD.MM.YYYY HH:MM):
     - Would he/she liked to see something new added?
 
     Intention: Take notes of any issues not covered in the questions above
+
+    Design
+    - Font on 'Rent now' looks bad
+    - Parret disco img outside of container
+
+    Bug with emoji in contact form popup message (after both first emojis). Bug occured in Chrome
+
+    Proposal: Include filters in 'Our drones'
