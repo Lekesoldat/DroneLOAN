@@ -1,20 +1,21 @@
 # droneLOAN Live Testing Form
 
-Who performed the test (optional): Anhkha Nguyen Vo
+Who performed the test (optional): Synne Amundsgård (Nurse)
 
-Who was in charge of the test: Magnus
+Who was in charge of the test: Carl
 
-When did the test take place (DD.MM.YYYY HH:MM):  08.11.2018 13:00
+When did the test take place (DD.MM.YYYY HH:MM): 08.11.2018 23:10
 
 1. **Category - Navigation and information accessability**
    
-   Find thename of our CEO on the page.
+   Navigate to About Us and find the name of our CEO
 
    Intention: Detect problems regarding information accessability
 
    What went wrong? What could we improve?
 
-   No problems occured.
+   Seemed comfused about the task and checked 'Contact' first. Then went to 'About Us'
+
 
 2. **Category - Navigation and information accessability**
 
@@ -24,7 +25,10 @@ When did the test take place (DD.MM.YYYY HH:MM):  08.11.2018 13:00
 
     What went wrong? What could we improve?
 
-    No problems occured.
+    Understood that he had to click Our Drones and even clicked 'Learn More' rather than rent
+
+    Found it first try under Our Drones
+
 
 3. **Category - Contact**
 
@@ -34,18 +38,20 @@ When did the test take place (DD.MM.YYYY HH:MM):  08.11.2018 13:00
 
     What went wrong? What could we improve?
 
-    No problems occured.
+    Found it quickly and really enjoyed the pop up message and asked if that was hard to code
+
+    Tried to fill it in with nonsense. Liked that one must enter a valid email
 
 
 4. **Category - Navigation and information accessability**
    
-    From the contact page, access the landing/index-page in just one click
+   From the contact page, access the landing/index-page in just one click
 
-    Intention: Detect if the the droneiconbutton, which loads index.html, works as intended
+   Intention: Detect if the the droneiconbutton, which loads index.html, works as intended
 
-    What went wrong? What could we improve?
+   What went wrong? What could we improve?
 
-    No problems occured.
+    Went to the landing page in one click
 
 5. **Category - Drone rental**
 
@@ -55,7 +61,7 @@ When did the test take place (DD.MM.YYYY HH:MM):  08.11.2018 13:00
 
     What went wrong? What could we improve?
 
-    On the specific device the buttons did NOT appear. Must fix media queries.
+    Found it first try under 'Our Drones'
 
 6. **Category - Video gallery**
 
@@ -76,7 +82,10 @@ When did the test take place (DD.MM.YYYY HH:MM):  08.11.2018 13:00
 
     What went wrong? What could we improve?
 
-    No problems occured.
+    Found it under Contact Us.
+
+    She had noticed it in the footer on inital scrolling. Thus, knew to find it at the bottom.
+
 
 8. **Additional comments (optional)**
 
@@ -88,14 +97,4 @@ When did the test take place (DD.MM.YYYY HH:MM):  08.11.2018 13:00
 
     Intention: Take notes of any issues not covered in the questions above
 
-    Design:
-      - Clean design.
-
-    Bugs:
-      - Bugs encountered on Our Drones page. Buttons disappeared and spacing was not correct.
-
-    Improvement:
-      - Fix bugs.
-
-    Something to be added:
-      - Nothing.
+    Impressed with the page. "Looked like a real page" - Synne
