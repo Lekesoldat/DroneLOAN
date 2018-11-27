@@ -6,10 +6,3 @@ Final result can be found [here](http://folk.ntnu.no/magnulho/Courses/IT2085/Pro
 
 Final project size:
 ![cloc](./cloc.png)
-
-Development:  
-```bash
-$ brew install node
-$ npm install
-$ npm run serve
-```
